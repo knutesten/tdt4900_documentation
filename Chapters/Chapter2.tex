@@ -4,10 +4,18 @@
 
 \lhead{Chapter 2. \emph{Technology}} % This is for the header on each page - perhaps a shortened title
 
-\section{HTML}
+\section{HTML5}
 
-\section{Javascript}
+\section{JavaScript}
+        
+\section{Data-Driven Documents}
 
-\section{D3.JS}
 
-\section{activPal}
+\section{activPAL}
+Recording the activity pattern of the test persons will be done using a device called activPAL. activPAL is a small device that is taped to the test persons thigh. While active the device continuously records acceleromter data in three axis. The accelorometer data are used to classify the periods when the test person was sitting, standing and walking.
+
+When the data has been gathered the device can be connected to a computer running software delivered by PAL Technologies. The software contains proprietary algirithms, \emph{Intelligent Acitivty Classification}, to classify the test persons activites into sitting, standing and walking.
+
+%Maybe write something about the configuration that is needed to spedify what is considered walking etc.
+
+After running the classification algorithms the data can be exported as a csv-file (comma-separated values). The csv-file file is then parsed, using JavaScript, to created input for the different graphs.
