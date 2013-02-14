@@ -30,15 +30,17 @@ One of the focus of this project is to create different visualizations to presen
 
 Creating graphics using svg-tags directly is cumbersome and time consuming. Therfore a framework that greatly simplifies this task is used. \emph{Data-Driven Documents} (D3) is an open source framework written in JavaScript. D3 also supports animation and interaction with the SVG elements. This allows us to explore if animation an interactivity can improve the readablity of the visualizations. 
 
-%Det som står her er relevant og riktig men vinklet helt feil. Vi burde ikke snakke om våre test personer osv. Bare beskrive hvordan det fungerer, og hvordan vi planlegger å bruke det i forhold til vårt prosjekt. Skrive at vi bruker denne devicen, men det er ikke i den er ikke sentralt til prosjektet vårt. Alt vi trenger er egentlig noe som gir ut 3 states og tid.
+%I <3 review.
 \section{activPAL}
-To record the activity pattern of elderly a device called \emph{activPAL} will be used. activPAL 
+To record the activity pattern of elderly a device called \emph{activPAL} will be used. activPAL has the shape of a small rectangle and is worn on the thigh. When the device is active it continuously records accelerometer data using an internal accelerometer. This data can be interpreted using a algorithms provided by PAL Technologies.
+
+When the activity data has been gathered the \emph{Intelligent Activity Classification}-algorithm, provided by PAL Technologies, is used to classify the data into three different types of behavior: sitting/laying, standing and walking. Because activPAL is worn on the thigh the accelerometer is unable to detect the difference between sitting and lying. Number of steps is also counted when walking. This data can be used to analyze how fast the person was walking.
+
+The accuracy of the classification and step-counting has been shown to be satisfactory by several independent studies %cite shit here
+activPAL has also been used in multiple studies for obtainging and analyzing activity patterns %cite here
+%is the below true?
+Though this projects main focus is how to present the data and not analysis of it, the accuracy is not a huge concern. It is however important that the data presented to the focus groups* reflects a realistic activity pattern. Another important factor is to show that data form a simple monitoring device can be used to create complex visualizations.
+%is the above derp?
 
 
-Recording the activity pattern of the test persons will be done using a device called activPAL \ref{fig:activePAL}. activPAL is a small device that is taped to the test persons thigh. While active the device continuously records acceleromter data in three axis. The accelorometer data are used to classify the periods when the test person was sitting, standing and walking.
 
-When the data has been gathered the device can be connected to a computer running software delivered by PAL Technologies. The software contains proprietary algirithms, \emph{Intelligent Acitivty Classification}, to classify the test persons activites into sitting, standing and walking.
-
-%Maybe write something about the configuration that is needed to spedify what is considered walking etc.
-
-After running the classification algorithms the data can be exported as a csv-file (comma-separated values). The csv-file file is then parsed, using JavaScript, to created input for the different graphs.
