@@ -4,6 +4,48 @@
 
 \lhead{Chapter 5. \emph{Prototype}} % This is for the header on each page - perhaps a shortened title}
 
+\section{Initial Graphs}
+
+\subsection{Pie chart}
+The pie chart can easily show the sum of time spend in sedentary position, standing, and walking. It is however unable to show when they occurred during the day, and for how long each activity took place. We imagine this could be used to quickly identify days with a low amount of activity, before spending time looking at a more detailed visualisation.
+
+
+\subsubsection{Scientific}
+Our first draft for a pie chart can be seen in figure \ref{fig:scientificPie}, is what we primarily think of when the word pie chart is mentioned. We have discussed if we should display percentage, time or both and how this should be implemented. Putting them next to legends, on the pie chart itself, or having it appear when a section of the pie chart is selected are all possible solutions.
+
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
+		\caption{\footnotesize A sketch of how we envision the scientific pie chart}
+		\label{fig:scientificPie}
+\end{figure}
+
+\subsubsection{Symbolic}
+Our initial approaches were very scientific, therefore our advisor suggested we think a bit more symbolic and artistic. One of the suggestions (Figure\ref{fig:symbolicPie}) was using stick figures to represent an activity. The size of each stick figure would reflect time spent in each activity, i.e a large walking figure would represent a high amount of hours walking. %SKAL VI HA TELL HE ELLER IKKE, SI NOE OM HVORFOR/HVORFOR IKKE
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
+		\caption{\footnotesize Rough drafts of a symbolic "pie chart"}
+		\label{fig:symbolicPie}
+\end{figure}
+
+\subsection{Timeline}
+A timeline visualisation is effective at illustrating when the various activities occurred and for how long. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long.
+
+\subsubsection{Scientific}
+A simple yet effective timeline was our first approach. A sketch can be seen in figure \ref{fig:simpleTimeline}. The entire day is represented by a horizontal bar where each color corresponds to an activity. A warning triangle or symbol could be used to highlight where sedentary time is higher then a set limit. The size of the bar would have to be quite big in order for a user to inspect some of the shorter time frames, therefore the possibility for a zoom functionality should be explored.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
+		\caption{\footnotesize Rough drafts of a symbolic "pie chart"}
+		\label{fig:simpleTimeline}
+\end{figure}
+
+\subsection{Symbolic}
+CLOCK
 \section{Protoype goal/focus}
 
 \section{Prototype implementation}
