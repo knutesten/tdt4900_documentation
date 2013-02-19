@@ -7,11 +7,13 @@
 \section{Initial Graphs}
 
 \subsection{Pie chart}
-The pie chart can easily show the sum of time spend in sedentary position, standing, and walking. It is however unable to show when they occurred during the day, and for how long each activity took place. We imagine this could be used to quickly identify days with a low amount of activity, before spending time looking at a more detailed visualisation.
+The pie chart can easily show the sum of time spend in sedentary position, standing, and walking. It is however unable to show when they occurred during the day, and for how long each activity took place. We imagine this could be used to quickly identify days with a low amount of activity, before spending time looking at more detailed visualisations.
 
 
 \subsubsection{Scientific}
-Our first draft for a pie chart can be seen in figure \ref{fig:scientificPie}, is what we primarily think of when the word pie chart is mentioned. We have discussed if we should display percentage, time or both and how this should be implemented. Putting them next to legends, on the pie chart itself, or having it appear when a section of the pie chart is selected are all possible solutions.
+The first draft for a pie chart can be seen in figure \ref{fig:scientificPie}, is what we primarily think of when the word pie chart is mentioned. We have discussed if we should display percentage, time or both and how this should be implemented. Putting them next to legends, on the pie chart itself, or having it appear when a section of the pie chart is selected are all possible solutions.
+
+Instead of using solid colours the pie chart a set of circles or "balls" can be used. Each ball represents a interval of continuous activity. So a small number of large sedentary balls represent few but long periods in a sedentary position. A ball chart visualization has more elements to take in, but help illustrate the subjects activity pattern.
 
 
 \begin{figure}[h!]
@@ -22,7 +24,7 @@ Our first draft for a pie chart can be seen in figure \ref{fig:scientificPie}, i
 \end{figure}
 
 \subsubsection{Symbolic}
-Our initial approaches were very scientific, therefore our advisor suggested we think a bit more symbolic and artistic. One of the suggestions (Figure\ref{fig:symbolicPie}) was using stick figures to represent an activity. The size of each stick figure would reflect time spent in each activity, i.e a large walking figure would represent a high amount of hours walking. %SKAL VI HA TELL HE ELLER IKKE, SI NOE OM HVORFOR/HVORFOR IKKE
+Our Initial approaches were very scientific, therefore our advisor suggested we think a bit more symbolic and artistic. One of the suggestions (Figure\ref{fig:symbolicPie}) was using stick figures to represent an activity. The size of each stick figure would reflect time spent in each activity, i.e a large walking figure would represent a high amount of hours walking. %SKAL VI HA TELL HE ELLER IKKE, SI NOE OM HVORFOR/HVORFOR IKKE
 
 \begin{figure}[h!]
 	\centering
@@ -32,10 +34,12 @@ Our initial approaches were very scientific, therefore our advisor suggested we 
 \end{figure}
 
 \subsection{Timeline}
-A timeline visualisation is effective at illustrating when the various activities occurred and for how long. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long.
+Timeline visualisations are effective at illustrating when various activities occurred during the day. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long.
 
 \subsubsection{Scientific}
-A simple yet effective timeline was our first approach. A sketch can be seen in figure \ref{fig:simpleTimeline}. The entire day is represented by a horizontal bar where each color corresponds to an activity. A warning triangle or symbol could be used to highlight where sedentary time is higher then a set limit. The size of the bar would have to be quite big in order for a user to inspect some of the shorter time frames, therefore the possibility for a zoom functionality should be explored.
+A simple yet effective timeline was our first approach. A sketch can be seen in figure \ref{fig:simpleTimeline}. The entire day is represented by a horizontal bar where each color corresponds to an activity. A symbol can be used to highlight where sedentary time is higher than a set limit. The size of the bar would have to be quite big in order for a user to inspect some of the shorter time frames, therefore the possibility for a zoom functionality should be explored.
+
+Instead of having a continuous scale a blocked approach can be used. The timeline would be divided into 24 blocks, each block corresponding to an hour. A gradient colour scale would be used to represent the amount of activity inside the hour block. This should make it easy to identify hours in the day where prolonged sedentary positions are present.
 
 \begin{figure}[h!]
 	\centering
@@ -45,7 +49,21 @@ A simple yet effective timeline was our first approach. A sketch can be seen in 
 \end{figure}
 
 \subsection{Symbolic}
-CLOCK
+An alternative approach to the standard timeline was to shape is a a clock as shown by the sketch in figure \ref{fig:clock}. Two clock would be used to split the 24 with the first clock going from 1 to 12 and the second from 13 to 24. In addition a darker colour palette could be used during hours of the night. This would deter focus away from these hours and help indicate that a high sedentary time is expected in the time period.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
+		\caption{\footnotesize Rough drafts of a symbolic "pie chart"}
+		\label{fig:clock}
+\end{figure}
+
+To really illustrate the day we came up with the idea to animate the day by using stick figures. A timeline will be drawn in real time while stick figures simultaneously perform the activities depicted on the timeline. By displaying the day gradually we hope that the subject will gain a firm understanding of their day. This means that this visualization can not be used to gain a quick overview, but is intended to be used when viewing a day for the first time.
+
+The more motivational approach would be to replace the stick figure with an analogy or metaphor. Instead of a stick figure, a flower could be used. Activity would allowed the plant to get sunlight, making it grow. Sedentary positions would make the weather cloudy and the flower would be unaffected.
+
+
+
 \section{Protoype goal/focus}
 
 \section{Prototype implementation}
