@@ -7,19 +7,18 @@
 \section{Initial Graphs}
 
 %We must settle on a name for these types of graphs
-%Changed this section, have a look.
 \subsection{Fractional charts}
 These types of charts shows the sum of time spent sedentary, standing, and walking. Summing over the three classifications makes it easy to get an overview of the day as a whole. Though the summation gives a great overview, details are lost and it is not possible to pinpoint when each activity occurred during the day. (Name of chart)* can be useful for quickly identifying days with a low amount of activity, before spending time looking at more detailed visualisations. It might also serve as an alert for subjects with a low activity level.
 
 \subsubsection{Pie/box chart}
-Our first draft for a pie chart is what we primarily think of when the word pie chart is mentioned. We have discussed if we should display percentage, time or both and how this should be implemented. Putting them next to legends, on the pie chart itself, or having it appear when a section of the pie chart is selected are all possible solutions.
-
+Our first draft for a pie chart is what we primarily think of when the word pie chart is mentioned. We have discussed if we should display percentage, time or both and how this should be implemented. Putting them next to legends, on the pie chart itself, or having it appear when a section of the pie chart is selected are all possible solutions. The pie chart can be replaced by a box chart. The concept is the same but the circle is replaced by a box, inside are 3 boxes, each representing the different activities.
 %Would move this paragraph to another section. Maybe one about experimental charts or something. This does not have that much to do with a pie chart?
+
 Instead of using solid colours the pie chart a set of circles or "balls" can be used. Each ball represents a interval of continuous activity. So a small number of large sedentary balls represent few but long periods in a sedentary position. A ball chart visualization has more elements to take in, but help illustrate the subjects activity pattern.
 
 \subsubsection{Symbolic}
 %Rewrote this section
-Our initial approaches were very scientific, and such we were advised to try more symbolic and metaphorical approaches. Using stick figures instead of colors to represent the various activities was one of the results, and a sketch can be seen below. (Figure \ref{fig:symbolicPie}). The size of each stick figure would reflect time spent in each activity, i.e. a large walking figure would represent a high amount of hours walking. %SKAL VI HA TELL HE ELLER IKKE, SI NOE OM HVORFOR/HVORFOR IKKE
+Our initial approaches were very scientific, and such we were advised to try more symbolic and metaphorical approaches. Using stick figures instead of colours to represent the various activities was one of the results, and a sketch can be seen below. (Figure \ref{fig:symbolicPie}). The size of each stick figure would reflect time spent in each activity, i.e. a large walking figure would represent a high amount of hours walking. %SKAL VI HA TELL HE ELLER IKKE, SI NOE OM HVORFOR/HVORFOR IKKE
 %We can leave this section here as long as we change the section name (not the subsubsection) to reflect that we are talking about graphs that sum over the different activities. That is what these graphs have in common.
 
 \begin{figure}[h!]
@@ -33,7 +32,7 @@ Our initial approaches were very scientific, and such we were advised to try mor
 Timeline visualisations are effective at illustrating when various activities occurred during the day. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long.
 
 \subsubsection{Scientific}
-A simple yet effective timeline was our first approach. A sketch can be seen in figure \ref{fig:simpleTimeline}. The entire day is represented by a horizontal bar, where each colour corresponds to an activity. A symbol can be used to highlight where sedentary time is higher than a set limit. The size of the bar would have to be quite big in order for a user to inspect some of the shorter time frames, therefore the possibility for zoom functionality should be explored.
+A simple yet effective timeline was our first approach. The entire day is represented by a horizontal bar, where each colour corresponds to an activity. A symbol can be used to highlight where sedentary time is higher than a set limit. The size of the bar would have to be quite big in order for a user to inspect some of the shorter time frames, therefore the possibility for zoom functionality should be explored.
 
 Instead of having a continuous scale, a blocked approach can be used. The timeline would be divided into 24 blocks, each block corresponding to an hour. A gradient colour scale would be used to represent the amount of activity inside the hour block. This should make it easy to identify hours in the day where prolonged sedentary positions are present. Giving feedback about specific hours might make it easier to interpret and make use of the chart, because you are alerted to certain hours of the day where you should be more active.
 
@@ -46,9 +45,9 @@ Instead of having a continuous scale, a blocked approach can be used. The timeli
 \end{figure}
 
 \subsection{Symbolic}
-An alternative approach to the standard timeline is to shape it as a clock. shown by the sketch in figure \ref{fig:clock}. Two clock would be used to split the 24 with the first clock going from 1 to 12 and the second from 13 to 24. 
-%Wasn't it the background that should have a darker background? I guess this would work too though.
-In addition a darker colour palette could be used during hours of the night. This would deter focus away from these hours and help indicate that a high sedentary time is expected in the time period.
+The symbolic approach would be to shape it as a clock. shown by the sketch in figure \ref{fig:clock}. Two clocks would be used to split the 24 with the first clock going from 1 to 12 and the second from 13 to 24. Symbols and distinct background colours can help identify hours of the day easier. 
+
+A darker colour palette could be used during hours of the night. This would deter focus away from these hours and help indicate that a high sedentary time is expected in the time period. 
 
 \begin{figure}[h!]
 	\centering
