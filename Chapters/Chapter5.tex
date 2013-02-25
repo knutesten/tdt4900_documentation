@@ -14,11 +14,14 @@ These types of charts shows the sum of time spent sedentary, standing, and walki
 Our first draft for a pie chart is what we primarily think of when the word pie chart is mentioned. We have discussed if we should display percentage, time or both and how this should be implemented. Putting them next to legends, on the pie chart itself, or having it appear when a section of the pie chart is selected are all possible solutions. The pie chart can be replaced by a box chart. The concept is the same but the circle is replaced by a box, inside are 3 boxes, each representing the different activities.
 %Would move this paragraph to another section. Maybe one about experimental charts or something. This does not have that much to do with a pie chart?
 
-Instead of using solid colours the pie chart a set of circles or "balls" can be used. Each ball represents a interval of continuous activity. So a small number of large sedentary balls represent few but long periods in a sedentary position. A ball chart visualization has more elements to take in, but help illustrate the subjects activity pattern.
+Instead of using solid colours the pie chart a set of circles or ``balls'' can be used. Each ball represents a interval of continuous activity. So a small number of large sedentary balls represent few but long periods in a sedentary position. A ball chart visualization has more elements to take in, but help illustrate the subjects activity pattern.
 
 \subsubsection{Symbolic}
+
+Another approach to the same type of graph is using illustrations that intuitively show which activity each illustration represents. The pictures are then scaled so that the size represents the sum of the different types of activity compared to each other.
+
 %Rewrote this section
-Our initial approaches were very scientific, and such we were advised to try more symbolic and metaphorical approaches. Using stick figures instead of colours to represent the various activities was one of the results, and a sketch can be seen below. (Figure \ref{fig:symbolicPie}). The size of each stick figure would reflect time spent in each activity, i.e. a large walking figure would represent a high amount of hours walking. %SKAL VI HA TELL HE ELLER IKKE, SI NOE OM HVORFOR/HVORFOR IKKE
+In our design we use stick figures instead of colours to represent the various activities, a sketch can be seen below (Figure \ref{fig:symbolicPie}). The size of each stick figure would reflect time spent in each activity, i.e. a large walking figure would represent a high amount of hours walking. %SKAL VI HA TELL HE ELLER IKKE, SI NOE OM HVORFOR/HVORFOR IKKE
 %We can leave this section here as long as we change the section name (not the subsubsection) to reflect that we are talking about graphs that sum over the different activities. That is what these graphs have in common.
 
 \begin{figure}[h!]
@@ -29,7 +32,7 @@ Our initial approaches were very scientific, and such we were advised to try mor
 \end{figure}
 
 \subsection{Timeline}
-Timeline visualisations are effective at illustrating when various activities occurred during the day. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long.
+Timeline visualisations are effective at illustrating when various activities occurred during the day. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long. By looking at multiple days, the user can detect patterns in the day where he needs to be more active.
 
 \subsubsection{Scientific}
 A simple yet effective timeline was our first approach. The entire day is represented by a horizontal bar, where each colour corresponds to an activity. A symbol can be used to highlight where sedentary time is higher than a set limit. The size of the bar would have to be quite big in order for a user to inspect some of the shorter time frames, therefore the possibility for zoom functionality should be explored.
@@ -59,6 +62,11 @@ A darker colour palette could be used during hours of the night. This would dete
 We came up with a suggestions to represent the passing of time during a day by using an animated timeline and stick figures. The timeline will be drawn in real time while stick figures simultaneously perform the corresponding activities. By displaying the day gradually we hope that the subject will gain a firm understanding of their day. This means that this visualization can not be used to gain a quick overview, but is intended to be used when viewing a day for the first time.
 
 The more motivational approach would be to replace the stick figure with an analogy or metaphor. Instead of a stick figure, a flower could be used. Activity would allow the plant to get sunlight, making it grow. Sedentary positions would make the weather cloudy and the flower would be unaffected.
+
+\subsection{Week overview}
+To get an overview of the week as a whole it could be useful to classify each day as either active, not very active or inactive. By calculating the overall activity level and classifying the days into three categories the user can easily see which days he need to be more active and which days the activity level is satisfactory. In our sketch the three different classifications are illustrated by smilies (smiling for active days, and inactive for bad days). 
+
+This chart could also be used ad the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart. The week overview makes it easy to identify the inactive days, which could then be investigated further by clicking on that day.
 
 \section{Protoype goal/focus}
 
