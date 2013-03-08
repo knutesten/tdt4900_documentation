@@ -2,7 +2,7 @@
 
 \label{Chapter5} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-\lhead{Chapter 5. \emph{Prototype}} % This is for the header on each page - perhaps a shortened title}
+\lhead{Chapter 5. \emph{Prototype}} % This is for the header on each page - perhaps a shortened title.
 
 \section{Initial Graphs}
 
@@ -10,20 +10,15 @@
 \subsection{Fractional charts}
 These types of charts shows the sum of time spent sedentary, standing, and walking. Summing over the three classifications makes it easy to get an overview of the day as a whole. Though the summation gives a great overview, details are lost and it is not possible to pinpoint when each activity occurred during the day. (Name of chart)* can be useful for quickly identifying days with a low amount of activity, before spending time looking at more detailed visualisations. It might also serve as an alert for subjects with a low activity level.
 
-\subsubsection{Pie/box chart}
-Our first draft for a pie chart is what we primarily think of when the word pie chart is mentioned. We have discussed if we should display percentage, time or both and how this should be implemented. Putting them next to legends, on the pie chart itself, or having it appear when a section of the pie chart is selected are all possible solutions. The pie chart can be replaced by a box chart. The concept is the same but the circle is replaced by a box, inside are 3 boxes, each representing the different activities.
-%Would move this paragraph to another section. Maybe one about experimental charts or something. This does not have that much to do with a pie chart?
-
-Instead of using solid colours the pie chart a set of circles or ``balls'' can be used. Each ball represents a interval of continuous activity. So a small number of large sedentary balls represent few but long periods in a sedentary position. A ball chart visualization has more elements to take in, but help illustrate the subjects activity pattern.
+\subsubsection{Pie chart}
+The pie chart is a standard way of showing fraction of time spent on each behavioural pattern. The overall design of the pie chart is very standard. We decided to create a separate legend instead of writing a descriptive text on different pie slices. The legend is a simple box which connects a behavioural pattern to each colour. The exact percentage for each behavioural pattern is also displayed.
 
 \subsubsection{Symbolic}
+Another approach is to remove the legend and instead use illustrations so that the user intuitively understands what each colour or box corresponds to. Since the illustrations are had to fit into a pie slice this chart uses scaled boxes instead of a circle to represent the fraction. 
 
-Another approach to the same type of graph is using illustrations that intuitively show which activity each illustration represents. The pictures are then scaled so that the size represents the sum of the different types of activity compared to each other.
+The first idea was to only use the illustrations \ref{fig:symbolicPie}, without the boxes, and scale the height to represent the ratio between each activity classification. However this idea was discarded because it was too hard to identify the ratio between the different illustrations. This is much easier with boxes.
 
-%Rewrote this section
-In our design we use stick figures instead of colours to represent the various activities, a sketch can be seen below (Figure \ref{fig:symbolicPie}). The size of each stick figure would reflect time spent in each activity, i.e. a large walking figure would represent a high amount of hours walking. %SKAL VI HA TELL HE ELLER IKKE, SI NOE OM HVORFOR/HVORFOR IKKE
-%We can leave this section here as long as we change the section name (not the subsubsection) to reflect that we are talking about graphs that sum over the different activities. That is what these graphs have in common.
-
+%We may have to redraw this picture compared to the explanation in this section?
 \begin{figure}[h!]
 	\centering
 		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
@@ -31,49 +26,87 @@ In our design we use stick figures instead of colours to represent the various a
 		\label{fig:symbolicPie}
 \end{figure}
 
+\subsubsection{Ball chart}
+Another approach, is to include some more details into a pie chart style, by using balls instead of normal pie slices. Each ball represents an interval of one of the classifications, so that many balls of one colour both represents the amount of that behaviour and shows how long each period of that behaviour was. Figure %need a figure here
+shows an example of such a graph. The benefit with this type of graph is that you easily can identify if you have long stretches of sedentary behaviour. Taking small breaks with active behaviour can help ``split up'' those balls, which may be beneficial for your health. Adding interactivity to the chart you can select each ball and see what time it corresponds to. This way you can quickly find the larger balls and identify what time of the day this behaviour occurred. 
+%I don't even know man, fuck you.
+
 \subsection{Timeline}
-Timeline visualisations are effective at illustrating when various activities occurred during the day. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long. By looking at multiple days, the user can detect patterns in the day where he needs to be more active.
+Timeline visualisations are effective at illustrating when various activities occurred during the day. The illustration uses a long horizontal bar that has different colours for different behavioural classification. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long. By looking at multiple days, the user can detect patterns in the day where he needs to be more active.
 
-\subsubsection{Scientific}
-A simple yet effective timeline was our first approach. The entire day is represented by a horizontal bar, where each colour corresponds to an activity. A symbol can be used to highlight where sedentary time is higher than a set limit. The size of the bar would have to be quite big in order for a user to inspect some of the shorter time frames, therefore the possibility for zoom functionality should be explored.
-
-Instead of having a continuous scale, a blocked approach can be used. The timeline would be divided into 24 blocks, each block corresponding to an hour. A gradient colour scale would be used to represent the amount of activity inside the hour block. This should make it easy to identify hours in the day where prolonged sedentary positions are present. Giving feedback about specific hours might make it easier to interpret and make use of the chart, because you are alerted to certain hours of the day where you should be more active.
+\subsubsection{Continuous}
+One approach to this visualization is to create a continuous timeline that contains every little detail of behaviour, see figure \ref{fig:timelineContinuous}. The continuous timeline is useful for quickly identifying periods of the day with unsatisfactory behaviour, but the detail can also be distracting and make it harder to read the graph. Adding a fourth colour to highlight long periods of sedentary behaviour can make the timeline easier to interpret.
 
 %Perhaps represent the block based one instead?
 \begin{figure}[h!]
 	\centering
 		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
-		\caption{\footnotesize Rough drafts of a symbolic "pie chart"}
-		\label{fig:simpleTimeline}
+		\caption{\footnotesize Timeline with hour blocks}
+		\label{fig:timelineContinuous}
 \end{figure}
-
-\subsection{Symbolic}
-The symbolic approach would be to shape it as a clock. shown by the sketch in figure \ref{fig:clock}. Two clocks would be used to split the 24 with the first clock going from 1 to 12 and the second from 13 to 24. Symbols and distinct background colours can help identify hours of the day easier. 
-
-A darker colour palette could be used during hours of the night. This would deter focus away from these hours and help indicate that a high sedentary time is expected in the time period. 
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
-		\caption{\footnotesize Rough drafts of a symbolic "pie chart"}
-		\label{fig:clock}
-\end{figure}
+%Does this part need more of an introduction?
+%Why would you make it less formal?
 %Skrevet det litt om for å gjøre det mindre formelt
 We came up with a suggestions to represent the passing of time during a day by using an animated timeline and stick figures. The timeline will be drawn in real time while stick figures simultaneously perform the corresponding activities. By displaying the day gradually we hope that the subject will gain a firm understanding of their day. This means that this visualization can not be used to gain a quick overview, but is intended to be used when viewing a day for the first time.
 
 The more motivational approach would be to replace the stick figure with an analogy or metaphor. Instead of a stick figure, a flower could be used. Activity would allow the plant to get sunlight, making it grow. Sedentary positions would make the weather cloudy and the flower would be unaffected.
 
+\subsubsection{Blocks}
+Instead of having a continuous scale, a blocked approach can be used, as seen in figure \ref{fig:timelineBlocks}. The timeline would be divided into 24 blocks, each block corresponding to an hour. A gradient colour scale would be used to represent the amount of activity inside the hour block. This should make it easy to identify hours in the day where prolonged sedentary positions are present. Giving feedback about specific hours might make it easier to interpret and make use of the chart, because you are alerted to certain hours of the day where you should be more active.
+
+%Perhaps represent the block based one instead?
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
+		\caption{\footnotesize Timeline with hour blocks}
+		\label{fig:timelineBlocks}
+\end{figure}
+
+\section{Clock}
+%Is this part too short now?
+A timeline may need some explanation before the user understands it properly. By creating two clocks instead of a long horizontal bar the user can more intuitively understand what the visualization is presenting. Since a clock has only 12 hours, two clocks would need to be drawn. To make it easier to identify day and night, a descriptive background will be added, see figure \ref{fig:clock12}.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
+		\caption{\footnotesize Two 12 hour clocks show the activity of the day.}
+		\label{fig:clock12}
+\end{figur}
+
+Another approach is to use one 24 hour clock, see figure \ref{fig:clock24}. This makes it easier to see the transition between AM and PM, but the users will not be used to seeing a 24 hour clock. This clock will also utilize different background to differentiate between day and night more easily.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
+		\caption{\footnotesize A single 24 hour clocks show the activity of the day.}
+		\label{fig:clock24}
+\end{figur}
+
+%Might add a paragraph about highlighting long periods of sedentary behaviour.
+
 \subsection{Week overview}
-These graphs are designed to give an overview of the week as a whole. %write something more here i guess mine firend.
-\subsubsection{Basic}
-To get an overview of the week as a whole it could be useful to classify each day as either active, not very active or inactive. By calculating the overall activity level and classifying the days into three categories the user can easily see which days he need to be more active and which days the activity level is satisfactory. In our sketch the three different classifications are illustrated by smilies (smiling for active days, and inactive for bad days). 
+Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify problem days that can then be investigated further. These charts could also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart. 
 
-This chart could also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart. The week overview makes it easy to identify the inactive days, which could then be investigated further by clicking on that day.
+\subsubsection{Day classification}
+By calculating the overall activity level and classifying the days into three categories the user can easily see which days he need to be more active and which days the activity level is satisfactory. In our sketch, see figure \ref{fig:smileyWeek} the three different classifications are illustrated by smilies (smiling face for active days, and sad face for inactive days).
 
-\subsubsection{Strange Dean-chart}
-A more complex version of the above chart is to show a square for each day, while still using the same classification into sad and happy smilies. Each day square will then contain 24 smaller squares that represent each hour of the day. The small hour square are coloured with a gradient to show the activity level that hour.
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
+		\caption{\footnotesize Week overview with each day classified into one of three categories.}
+		\label{fig:clock24}
+\end{figur}
 
-With this chart you can get an overview of the week as a whole, and identify what hours of the inactive days had the most sedentary behaviour. This graph could also be a good starting point for an interactive application.
+A more complex version of the above chart, see figure \ref{fig:x} is to show a square for each day, while still using the same classification into sad and happy smilies. Each day square will then contain 24 smaller squares that represent each hour of the day. The small hour square are coloured with a gradient to show the activity level that hour.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
+		\caption{\footnotesize Some explanation here.}
+		\label{fig:x}
+\end{figur}
+
+With this chart you can get an overview of the week as a whole, and identify what hours of the inactive days had the most sedentary behaviour. 
 
 \section{Prototype goal/focus}
 
