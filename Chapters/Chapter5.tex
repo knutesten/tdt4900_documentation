@@ -1,10 +1,11 @@
 \chapter{Prototype} % Main chapter title
-
+Vi må vell kanskje rename denne seksjonen ,til graphs eller noe. Ettersom det er jo egentlig ikke prototypen som er i fokus
 \label{Chapter5} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
 \lhead{Chapter 5. \emph{Prototype}} % This is for the header on each page - perhaps a shortened title.
 
 \section{Initial Graphs}
+\label{sec:initialGraphs}
 
 %We must settle on a name for these types of graphs
 \subsection{Fractional charts}
@@ -62,7 +63,7 @@ Instead of having a continuous scale, a blocked approach can be used, as seen in
 		\label{fig:timelineBlocks}
 \end{figure}
 
-\section{Clock}
+\subsubsection{Clock}
 %Is this part too short now?
 A timeline may need some explanation before the user understands it properly. By creating two clocks instead of a long horizontal bar the user can more intuitively understand what the visualization is presenting. Since a clock has only 12 hours, two clocks would need to be drawn. To make it easier to identify day and night, a descriptive background will be added, see figure \ref{fig:clock12}.
 
@@ -108,27 +109,29 @@ A more complex version of the above chart, see figure \ref{fig:detailedWeek} is 
 
 With this chart you can get an overview of the week as a whole, and identify what hours of the inactive days had the most sedentary behaviour. 
 
-\section{Prototype goal}
-The prototype is to be used in a focus group, and therefore needs to be of adequate quality. The visualizations need to be implemented as close as possible to our sketches and behave as expected.
+%This should be moved I guess, or the section should be renamed away from prototype to something like "Graphs" I am not sure.
+\section{Hypothesis}
+During the initial creation of the graphs %(rename to workshop?) 
+we discussed what purpose each graph was designed to serve. A set of hypothesis were created to facilitate our assumptions and allow them to be confirmed or disproved. The graphs are primarily compared to those within the same category as they have been divided to in section \ref{sec:initialGraphs}
+
+\begin{description}
+\item[Hypothesis F1:] The stick figures will make the symbolic box chart more intuitive than the pie chart, removing the need for legends.
+
+\item[Hypothesis F2:] The ball chart makes it easier to identify sedentary intervals, while depicting the ratio between the activities in an efficient matter.
+
+\item[Hypothesis F3:] The pie chart is the easiest out of the three to grasp, because it is the most common one.
+
+\item[Hypothesis T1:] The blocked timeline makes it easier to identify hours of the day with high sedentary instead of the continuous timeline.
+
+\item[Hypothesis T2:] The continous timeline is useful for going through the patients day.
+
+\item[Hypothesis T3:] Two 12 hour clocks are easier to interpret then a single 24 hour clock.
+
+\item[Hypothesis W1:] The smiley week is a good and simple starting point when consulting with patients about their days
+\end{description}
 
 
-Hypothesis 1: The stick figures will make the symbolic box chart more intuitive than the pie chart, removing the need for legends.
+\section{Interactive graphs}
 
-Hypothesis 2: The ball chart makes it easier to identify sedentary intervals, while depicting the ratio between the activities in an efficient matter.
-
-Hypothesis 3: The pie chart is the easiest out of the three to grasp, because it is the most common one.
-
-Hypothesis 4: The blocked timeline makes it easier to identify hours of the day with high sedentary instead of the continuous timeline.
-
-Hypothesis 5: The continous timeline is useful for going through the patients day.
-
-Hypothesis 6: Two 12 hour clocks are easier to interpret then a single 24 hour clock.
-
-Hypothesis 7: The smiley week is a good and simple starting point when consulting with patients about their days
-
-Hypothesis 8: 
-
-\section{Prototype implementation}
-Skal vi skrive om endelig implementasjon av prototypen her?
 
 \section{Findings}
