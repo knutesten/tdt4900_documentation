@@ -55,8 +55,7 @@ The Flex is the first wrist worn activity monitor from Fitbit, and is slated for
 \section{Related Research}
 
 \subsection{Stage-Based Model of Personal Informatics Systems}
-%If you like this section about the different stages I can probably add some more text about how we overcome the different barriers of each stage (barriers are mentioned in the study). DO IT!
-When talking about personal informatics it is useful to divide the personal informatics system into stages. Ian Li et al. created a stage-based model \cite{li2010} with five different stages: \emph{preparation}, \emph{collection}, \emph{integration}, \emph{reflection}, \emph{action}. The preparation stage is the stage before actual data is collected. This stage describes how and why people are motivated to collect data about themselves, which data is to be collected, and how.Most elderly would not by them self be motivated to start collecting data about them selves. Healthcare personnel can be an important motivator in this regard, by explaining the concept and benefits of self-reflection. %I decided it was fitting to add the image located in the article, but you need to mention in the text and write more around it I guess. I read the article and mentioning barriers might be a good idea. Not all barriers are truly applicable for us though. You can just mention them then and note that they are not applicable for us. Feel free to switch the footnote text 
+When talking about personal informatics it is useful to divide the personal informatics system into stages. Ian Li et al. created a stage-based model (see figure~\ref{fig:stageModelPi}) \cite{li2010} with five different stages: \emph{preparation}, \emph{collection}, \emph{integration}, \emph{reflection}, \emph{action}. The preparation stage is the stage before actual data is collected. This stage describes how and why people are motivated to collect data about themselves, which data is to be collected, and how.Most elderly would not by them self be motivated to start collecting data about them selves. Healthcare personnel can be an important motivator in this regard, by explaining the concept and benefits of self-reflection. 
 
 \begin{figure}[h!]
 	\centering
@@ -65,7 +64,7 @@ When talking about personal informatics it is useful to divide the personal info
 		\label{fig:stageModelPi}
 \end{figure}
 
-The collection stage the data is collected. In this project all data collection was system driven, and the participants did not have to write down or be aware of their activity during this stage. Using a fully automated system will make it more attractive, since there is almost no effort connected to the collection of data. The sensor is small and barely noticeable.
+In the collection stage, data is collected. In this project all data collection was system driven, and the participants did not have to write down or be aware of their activity during this stage. Using a fully automated system will make it more attractive, since there is almost no effort connected to the collection of data. The sensor is small and barely noticeable.
 
 The stage before reflection is the integration stage. This is the stage where the collected data is transformed into something that is useful. Creating visualizations is a powerful way to present large amount of data in a way that can be understood by humans in a short amount of time. 
 
@@ -73,9 +72,16 @@ In the reflection stage the users looks at the different charts to get an overvi
 
 The last stage is the action stage. In this stage the user should change their behaviour to improve themselves. This stage is probably the most important, but also the hardest. For the users to improve they have to want to improve and they need to know how to improve. The reflection stage can help to identify periods of the day with long sedentary behaviour and with the help of the healthcare personnel a plan with concrete goals should be created. 
 
+Ian Li et al. also identified a set of barriers for each of the five steps in the model. Barriers are problems that the participants of the study had when performing each step of the model. We will now list some of barriers that are applicable to our project, and how we aim to solve them. 
+
+In the collection stage some of the most important barriers are having the right tools, remembering to collect data and lack of time. All of these barriers should be easily countered by the use of the activePAL sensor. Data is automatically recorded and the users does not have to do anything except wear the sensor and make sure not to break it while it is being uses. Using a fully system-driven approach in the collection stage give us more consistent and reliable data.
+
+The integration stage is also mostly system-driven in our solution. The most important barriers for this step are related to transcribing and organizing data. Our program handles all the parsing and presents the data as different visualizations, so the transcribing will not be hard. Currently the application only handles a singe entry of data, and lets you see different visualizations of this data. Future work may be adding the possibility of comparing not only days, but weeks and months.
+
+Notable barriers in the reflection stage are lack of time, visualizations, interpretation and self-criticism. Lack of time should not be to much of an issue for us, because the elderly population will most likely have more than enough time to participate in tests recommended to them by healthcare personnel. The visualization and interpretation barriers are central for our project. The goal of this project is to measure the effectiveness of different types of visualizations and discuss what types visualizations gives the most useful information as well as how easy they are to interpret. Self-criticism is  
 
 %This section is not written yet.
-Using this model Li %should I mention the others? Use et. al?
+Using this model Li %should I mention the others? Use et al.?
 came up with four recommendations for personal informatics systems. 
 \begin{quote}
 	Personal informatics systems should
