@@ -29,3 +29,7 @@ chapters/06_initialRequirements.aux
 chapters/07_prototype1.aux
 chapters/08_focusGroup1.aux
 chapters/09_prototype2.aux
+*.acr
+*.alg
+*.glg
+*.gls

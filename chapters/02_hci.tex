@@ -3,10 +3,7 @@
 \section{HCI Overview (working title)}
 
 \section{Information Visualization}
-%Tufte examples articles MMI book
-Information visualization is useful when you want to display large amounts of data simultaneously. The human brain is not good at getting an overview of the information by looking at large tables of numbers or text. Creating visualizations utilizes the strengths of human cognition. Using computer graphics to make visualizations, large amounts of information can be displayed in a way that humans can process and analyse quickly and intuitively.
-
-%Review: Blir det ikke Visulizations utilize bla bla bla" og ikke "creating visulizations" Må skrives om til By creating visulizations one can utilize bla bla bla?"
+Information visualization is useful when you want to display large amounts of data simultaneously. The human brain is not good at getting an overview of the information by looking at large tables of numbers or text. Visualizations utilizes the strengths of human cognition. Using computer graphics to make visualizations, large amounts of information can be displayed in a way that humans can process and analyse quickly and intuitively.
 
 Many guidelines have been suggested for creation of the optimal visualization. Shneiderman summarized many of these principles in his \emph{visual-information-seeking mantra} \cite{shneiderman}:
 %Seems like the space between this paragraph and the quote is greater than the quote in the introduction...
@@ -18,34 +15,34 @@ For the visualization to be effective the user has to get an overview of how the
 
 Shneiderman also identifies the importance of showing the relationships between different items, allowing the user to extract subcollections of the displayed items and storing the user action history to allow for undo/redo functionality.
 
-%Review: I am not sure how I feel about the section below, the content is not neccessarily bad, the presentation is just terrible though. Needs to be tables i think. Why do you go from a section to subsubsections instead? and why is Data Types empty?
-
-%Do we need this section?
-\subsubsection{Data Types}
-
-%Don't know if I like this section particularly. Suggestions?
-\subsubsection{Visual Variables}
-%UHHH, I don't know if I like this first paragraph.
+\subsection{Visual Variables}
 One important factor to consider when creating a visualizations are which visual variables to use. To create an intuitive visualization it is important use the different visual variables correctly. We will briefly go through some of the more common visual variables here and discuss how and how not to use them, based on Carpendales article about the subject \cite{carpendale}.
 
 %This should be changed to a table.
 Visual variables:
-\begin{description}
-    \item[Position] Position of the object, for example x, y for two dimensions.
-    \item[Size] Size of object.
-    \item[Value] Changes in colour scale from light to dark.
-    \item[Colour] Change hue for given value.
-\end{description}
+\begin{table}[h!]
+    \begin{tabular}{|l|p{10cm}|}
+        \hline
+        Position    & Position of object, for example x- and y-coordinates in a two dimensional system. \\ \hline
+        Size        & Size of object. \\ \hline
+        Value       & Change in colour scale from light to dark. \\ \hline
+        Colour      & Change hue for given value, for example blue, red and yellow. \\ \hline
+    \end{tabular}
+    \caption{Overview of visual variables.}
+\end{table}
 
-%This should be changed to a table.
 Characteristics of visual variables:
-\begin{description}
-    \item[Selective] Will a change in this variable make it easier to select it from a group of variables?
-    \item[Associative] Will changes in variables make us able to distinguish different groups of variables?
-    \item[Quantitative] Can the visual variable be used to illustrate the numerical value behind the variable?
-    \item[Order] Will changes in the visual variable allow us to order them?
-    \item[Length] How many changes is it possible to distinguish between for this variable?
-\end{description}
+\begin{table}[h!]
+    \begin{tabular}{|l|p{10cm}|}
+        \hline
+        Selective   & Will a change in this variable make it easier to select it from a group of variables? \\ \hline
+        Associative & Will changes in variables make us able to distinguish different groups of variables \\ \hline 
+        Qualitative & Can the visual variable be used to illustrate the numerical value and relationship between variables? \\ \hline
+        Order       & Will changes in the visual variable allow us to order them? \\ \hline
+        Length      & How many changes is it possible to distinguish between for this type of variable? \\ \hline
+    \end{tabular}
+    \caption{Description of characteristics of visual variables}
+\end{table}
 
 Position fulfils all the characteristics of visual variables. When thinking of a scatter plot it is easy to see that positioning the points will make them selective and associative. By using scales, position can be used to show the value of the variable in a numerical sense, so it is also quantitative. Order is also fulfilled, a ruler is a simple example of how position can be used to order. The length is theoretically infinite, and only restricted by the screen resolution.
 
@@ -60,12 +57,19 @@ Colours are selective and associative. Unless you are colour blind you can easil
 \section{Prototyping}
 
 \section{Focus groups}
-Focus group, or group interview is an informal technique that can help software developers identify the users needs and feelings about the system in question. The technique can be used both before interface design and long after implementation. 
+Focus group, or group interview is an informal technique that can help software developers identify the users needs and feelings about the system in question. The technique can be used both before interface design and long after implementation.
+%REVIEW: Can you say "... long after implementation"?, is this the correct way to use the English language?! 
 
-According to Nielsen \cite{focusGroup} the focus group should have at least six participant to maintain a flowing discussion and provide different perspectives. The participants should be representative of the intended users, or be the final users themselves. Sessions normally last two hours and are run by a moderator. The moderator is responsible for keeping the discussion relevant to the session goals while letting everyone contribute and not hindering the input of ideas and comments from the participants. %Liker ikke helt den siste setningen
+According to Nielsen \cite{focusGroup} the focus group should have at least six participant to maintain a flowing discussion and provide different perspectives. The participants should be representative of the intended users, or be the final users themselves. Sessions normally last two hours and are run by a moderator. 
+%----------Suggestion------------%
+The moderators job is to keep the discussion flowing and let everyone get their point across. Moderators can also guide the discussion in the direction relevant to the goals of the focus groups. 
+%----------Your shit------------%
+The moderator is responsible for keeping the discussion relevant to the session goals while letting everyone contribute and not hindering the input of ideas and comments from the participants. %Liker ikke helt den siste setningen
 A single session may not be representative enough or can get sidetracked, it is therefore important to run more than one focus group.
+%REVIEW: Though the above might be correct, I think it is more important to mention that several iterations are required to take the ideas of previous focus groups modify product and then get feedback on the modifications. Alternatively you can say that several focus groups are needed to get all the ideas out of the participants, because of several factors (there were some sections about this in the papers you forced me to read, you can refer to them).
 
 Nielsen \cite{focusGroup} discusses two pitfalls with focus groups: Sessions are in groups therefore the participants are unable to test the system themselves, so a demo is normally provided instead. The problem with such a demo is that the participants never have to question what to do next or consider the meaning of the screen options. The second problem is that what participants say they want is not necessarily what they need, or things described by the moderator might be perceived differently by the participants. By providing concrete examples through prototypes of the technology, one can minimize this problem.
+% Isn't having several iterations of the focus group also a way to combat the last problem?
 
 \section{Validity (Should this be here?)}
 
