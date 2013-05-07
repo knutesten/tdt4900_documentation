@@ -1,11 +1,33 @@
 \chapter{Human-computer interaction and user centered design}
 
 \section{HCI Overview (working title)}
+\gls{hci} is the science of the interaction between humans and computers, the goal of \gls{hci} is to make this interaction as smooth and seamless as possible. Research done in the \gls{hci}-field have resulted in guidelines and design methods for the creation of efficient and usable software. One important factor when focusing on usability is to include the future users the design process to get feedback on the user interface.
+
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,
+  thick,main node/.style={circle,fill=blue!20,draw,font=\sffamily\Large\bfseries}]
+
+  \node[main node] (1) at (0, -2) {prot};
+  \node[main node] (2) at (-3, 0) {design};
+  \node[main node] (3) at (0, 2) {req};
+  \node[main node] (4) at (3, 0) {eval};
+
+  \path[every node/.style={font=\sffamily\small}]
+    (1) edge [bend right] node[left] {} (4)
+        edge [bend right] node[left] {} (2)
+    (2) edge [bend right] node[left] {} (1)
+        edge [bend right] node[left] {} (3)
+    (3) edge [bend right] node[left] {} (2)
+    (4) edge [bend right] node[left] {} (3)
+        edge node[left] {}              (2);
+\end{tikzpicture}
+
+The figure above shows an interaction design lifecycle model. The model shows an iterative approach to the design, starting with gathering and defining requirements. The requirements are used as basis for designing the user interface, during the design phase. Prototypes are then created to be evaluated by the users. After an evaluation the feedback on the prototype is used to revise the user interface design or the requirements. When the evaluation gives satisfactory results the product completed, often after several iterations.
+
 
 \section{Information Visualization}
 Information visualization is useful when you want to display large amounts of data simultaneously. The human brain is not good at getting an overview of the information by looking at large tables of numbers or text. Visualizations utilizes the strengths of human cognition. Using computer graphics to make visualizations, large amounts of information can be displayed in a way that humans can process and analyse quickly and intuitively.
 
-Many guidelines have been suggested for creation of the optimal visualization. Shneiderman summarized many of these principles in his \emph{visual-information-seeking mantra} \cite{shneiderman}:
+Many guidelines have been suggested for creation of the optimal visualization. Shneiderman summarized many of these principles in his \emph{visual-information-seeking mantra}~\cite{shneiderman}:
 %Seems like the space between this paragraph and the quote is greater than the quote in the introduction...
 \begin{quote}
 \textit{Overview first, zoom and filter, then details on demand.}
@@ -16,26 +38,26 @@ For the visualization to be effective the user has to get an overview of how the
 Shneiderman also identifies the importance of showing the relationships between different items, allowing the user to extract subcollections of the displayed items and storing the user action history to allow for undo/redo functionality.
 
 \subsection{Visual Variables}
-One important factor to consider when creating a visualizations are which visual variables to use. To create an intuitive visualization it is important use the different visual variables correctly. We will briefly go through some of the more common visual variables here and discuss how and how not to use them, based on Carpendales article about the subject \cite{carpendale}.
+One important factor to consider when creating a visualizations are which visual variables to use. To create an intuitive visualization it is important use the different visual variables correctly. We will briefly go through some of the more common visual variables here and discuss how and how not to use them, based on Carpendales article about the subject~\cite{carpendale}.
 
 %This should be changed to a table.
 Visual variables:
 \begin{table}[h!]
-    \begin{tabular}{|l|p{10cm}|}
-        \hline
-        Position    & Position of object, for example x- and y-coordinates in a two dimensional system. \\ \hline
-        Size        & Size of object. \\ \hline
-        Value       & Change in colour scale from light to dark. \\ \hline
-        Colour      & Change hue for given value, for example blue, red and yellow. \\ \hline
-    \end{tabular}
-    \caption{Overview of visual variables.}
+  \begin{tabular}{|l|p{10cm}|}
+      \hline
+      Position    & Position of object, for example x- and y-coordinates in a two dimensional system. \\ \hline
+      Size        & Size of object. \\ \hline
+      Value       & Change in colour scale from light to dark. \\ \hline
+      Colour      & Change hue for given value, for example blue, red and yellow. \\ \hline
+  \end{tabular}
+  \caption{Overview of visual variables.}
 \end{table}
 
 Characteristics of visual variables:
 \begin{table}[h!]
-    \begin{tabular}{|l|p{10cm}|}
-        \hline
-        Selective   & Will a change in this variable make it easier to select it from a group of variables? \\ \hline
+  \begin{tabular}{|l|p{10cm}|}
+      \hline
+      Selective   & Will a change in this variable make it easier to select it from a group of variables? \\ \hline
         Associative & Will changes in variables make us able to distinguish different groups of variables \\ \hline 
         Qualitative & Can the visual variable be used to illustrate the numerical value and relationship between variables? \\ \hline
         Order       & Will changes in the visual variable allow us to order them? \\ \hline
@@ -59,11 +81,11 @@ Colours are selective and associative. Unless you are colour blind you can easil
 \section{Focus groups}
 Focus group, or group interview is an informal technique that can help software developers identify the users needs and feelings about the system in question. The technique can be used both before interface design and long after the system has been implemented. 
 
-According to Nielsen \cite{focusGroup} the focus group should have at least six participant to maintain a flowing discussion and provide different perspectives. The participants should be representative of the intended users, or be the final users themselves. Sessions normally last two hours and are run by a moderator. The moderators job is to keep the discussion flowing and let everyone get their point across. Moderators can also guide the discussion in the direction relevant to the goals of the focus groups. 
+According to Nielsen~\cite{focusGroup} the focus group should have at least six participant to maintain a flowing discussion and provide different perspectives. The participants should be representative of the intended users, or be the final users themselves. Sessions normally last two hours and are run by a moderator. The moderators job is to keep the discussion flowing and let everyone get their point across. Moderators can also guide the discussion in the direction relevant to the goals of the focus groups. 
 
-A single session may not be representative enough or can get sidetracked, it is therefore important to run more than one focus group. If improvements suggested by participants have been implemented it is important to run another iteration of the focus group with the same participants to attain feedback on the changes that have been made. Enough focus groups have been conducted when new information is no longer being received, i.e a point of saturation has been reached \cite{howFocusGroup}. 
+A single session may not be representative enough or can get sidetracked, it is therefore important to run more than one focus group. If improvements suggested by participants have been implemented it is important to run another iteration of the focus group with the same participants to attain feedback on the changes that have been made. Enough focus groups have been conducted when new information is no longer being received, i.e a point of saturation has been reached~\cite{howFocusGroup}. 
 
-Nielsen \cite{focusGroup} discusses two pitfalls with focus groups: Sessions are in groups therefore the participants are unable to test the system themselves, so a demo is normally provided instead. The problem with such a demo is that the participants never have to question what to do next or consider the meaning of the screen options. The second problem is that what participants say they want is not necessarily what they need, or things described by the moderator might be perceived differently by the participants. By providing concrete examples through prototypes of the technology, one can minimize this problem.
+Nielsen~\cite{focusGroup} discusses two pitfalls with focus groups: Sessions are in groups therefore the participants are unable to test the system themselves, so a demo is normally provided instead. The problem with such a demo is that the participants never have to question what to do next or consider the meaning of the screen options. The second problem is that what participants say they want is not necessarily what they need, or things described by the moderator might be perceived differently by the participants. By providing concrete examples through prototypes of the technology, one can minimize this problem.
 % Isn't having several iterations of the focus group also a way to combat the last problem?
 
 \section{Validity (Should this be here?)}
