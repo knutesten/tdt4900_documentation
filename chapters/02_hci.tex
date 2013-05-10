@@ -1,28 +1,34 @@
 \chapter{Human-computer interaction and user centered design}
 
 \section{HCI Overview (working title)}
-\gls{hci} is the science of the interaction between humans and computers, the goal of \gls{hci} is to make this interaction as smooth and seamless as possible. Research done in the \gls{hci}-field have resulted in guidelines and design methods for the creation of efficient and usable software. One important factor when focusing on usability is to include the future users the design process to get feedback on the user interface.
+The science of \gls{hci} studies the intearction between humans and computers. The goal of is to make this interaction as smooth and seamless as possible. Research done in the \gls{hci}-field have resulted in guidelines and design methods for the creation of efficient and usable software. One important factor when focusing on usability is to include the future users the design process to get feedback on the user interface.
 
-\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,
-  thick,main node/.style={circle,fill=blue!20,draw,font=\sffamily\Large\bfseries}]
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[
+        every node/.style={align=center}
+      ]
 
-  \node[main node] (1) at (0, -2) {prot};
-  \node[main node] (2) at (-3, 0) {design};
-  \node[main node] (3) at (0, 2) {req};
-  \node[main node] (4) at (3, 0) {eval};
+      \node[state] (1) at (0, -2) {Prototypeing};
+      \node[state] (2) at (-3, 0) {Design/\\redesign};
+      \node[state] (3) at (0, 2)  {Define\\requirements};
+      \node[state] (4) at (3, 0)  {Evaluate\vspace{20mm}};
 
-  \path[every node/.style={font=\sffamily\small}]
-    (1) edge [bend right] node[left] {} (4)
-        edge [bend right] node[left] {} (2)
-    (2) edge [bend right] node[left] {} (1)
-        edge [bend right] node[left] {} (3)
-    (3) edge [bend right] node[left] {} (2)
-    (4) edge [bend right] node[left] {} (3)
-        edge node[left] {}              (2);
-\end{tikzpicture}
+      \path[->]
+        (1) edge [bend right] node[left] {} (4)
+            edge [bend right] node[left] {} (2)
+        (2) edge [bend right] node[left] {} (1)
+            edge [bend right] node[left] {} (3)
+        (3) edge [bend right] node[left] {} (2)
+        (4) edge [bend right] node[left] {} (3)
+            edge node[left] {}              (2);
+    \end{tikzpicture}
+  \end{center}
+  \caption{Interaction design lifcycle model}
+  \label{fig:interactionDesignModel}
+\end{figure}
 
-The figure above shows an interaction design lifecycle model. The model shows an iterative approach to the design, starting with gathering and defining requirements. The requirements are used as basis for designing the user interface, during the design phase. Prototypes are then created to be evaluated by the users. After an evaluation the feedback on the prototype is used to revise the user interface design or the requirements. When the evaluation gives satisfactory results the product completed, often after several iterations.
-
+Figure~\ref{fig:interactionDesignModel} shows the interaction design lifecycle model. The model shows an iterative approach to the design, starting with gathering and defining requirements. The requirements are used as basis for designing the user interface, during the design phase problems or ideas may arise that will require changes in the requirements. When the design phase is done, prototypes are created for evaluation by users or domain experts. After an evaluation with the users or domain experts, feedback on the prototype is used to revise the user interface design or the requirements. When the evaluation gives satisfactory results the product is completed, often after several iterations.
 
 \section{Information Visualization}
 Information visualization is useful when you want to display large amounts of data simultaneously. The human brain is not good at getting an overview of the information by looking at large tables of numbers or text. Visualizations utilizes the strengths of human cognition. Using computer graphics to make visualizations, large amounts of information can be displayed in a way that humans can process and analyse quickly and intuitively.
