@@ -8,7 +8,7 @@
 These type of charts show the sum of time spent sedentary, standing, and walking. Summing over the three classifications makes it easy to get an overview of the day as a whole. Though the summation gives a great overview, details are lost and it is not possible to pinpoint when each activity occurred during the day. Fractional charts can be useful for quickly identifying days with a low amount of activity, before spending time looking at more detailed visualisations. It might also serve as an alert for subjects with a low activity level.
 
 \subsubsection{Pie chart}
-The pie chart is a standard way of showing fraction of time spent on each behavioural pattern. The overall design of the pie chart is very standard. We decided to create a separate legend instead of writing a descriptive text on different pie slices. The legend is a simple box which connects a behavioural pattern to each colour. The exact percentage for each behavioural pattern is also displayed.
+The pie chart is a standard way of showing the amount of time spent in each activity state. The overall design of the pie chart is very standard. We decided to create a separate legend instead of writing a descriptive text on different pie slices. The legend is a simple box which connects an activity state to each colour. The exact percentage for each activity state is also displayed.
 
 \subsubsection{Symbolic}
 A more symbolic approach is to remove the legend and instead use illustrations so that the user intuitively understands what each colour or box corresponds to. Since the illustrations are had to fit into a pie slice this chart uses scaled boxes instead of a circle to represent the fraction. 
@@ -25,26 +25,23 @@ The first idea was to only use the illustrations \ref{fig:symbolicPie}, without 
 \end{figure}
 
 \subsubsection{Ball chart}
-Another approach, is to include some more details into a pie chart style, by using balls instead of normal pie slices. Each ball represents an interval of one of the classifications, so that many balls of one colour both represents the amount of that behaviour and shows how long each period of that behaviour was. Figure %need a figure here
-shows an example of such a graph. The benefit with this type of graph is that you easily can identify if you have long stretches of sedentary behaviour. Taking small breaks with active behaviour can help ``split up'' those balls, which may be beneficial for your health. Adding interactivity to the chart you can select each ball and see what time it corresponds to. This way you can quickly find the larger balls and identify what time of the day this behaviour occurred. 
-%I don't even know man, fuck you.
+An alternative is to include more detail into a pie chart style, by using balls instead of normal pie slices. The balls are colour coded so that each colour reflects an activity state, while the size of the ball represent the continuous amount of time spent in the corresponding state. Each ball represents an interval of one of the classifications, so that many balls of one colour both represents the amount of that behaviour and shows how long each period of that behaviour was. Figure ~\ref{fig:ballChart}
+shows an example of such a graph. The benefit with this type of graph is that one can easily identify long periods of sedentary behaviour. Taking small breaks with movement can help ``split up'' those balls, which is beneficial for ones health. By adding interactivity to the chart the user can select each ball and see what time it corresponds to. Overall the chart allows for the large balls to be easily spotted and the time of day quickly identified.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.7\textwidth]{ballChart.png}
+		\caption{\footnotesize Rough drafts of the Ball chart}
+		\label{fig:ballChart}
+\end{figure}
+
 
 \subsection{Timeline}
 Timeline visualisations are effective at illustrating when various activities occurred during the day. The illustration uses a long horizontal bar that has different colours for different behavioural classification. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long. By looking at multiple days, the user can detect patterns in the day where he needs to be more active.
 
 \subsubsection{Continuous}
-One approach to this visualization is to create a continuous timeline that contains every little detail of behaviour, see figure \ref{fig:timelineContinuous}. The continuous timeline is useful for quickly identifying periods of the day with unsatisfactory behaviour, but the detail can also be distracting and make it harder to read the graph. Adding a fourth colour to highlight long periods of sedentary behaviour can make the timeline easier to interpret.
+One approach to this visualization type is to create a continuous timeline that contains every little detail of activity. The continuous timeline is useful for quickly identifying periods of the day with unsatisfactory behaviour, but the detail can also be distracting and make it harder to read the graph. Adding a fourth colour to highlight long periods of sedentary behaviour can make the timeline easier to interpret.
 
-%Perhaps represent the block based one instead?
-\begin{figure}[h!]
-	\centering
-		\includegraphics[width=0.7\textwidth]{continousTimelineSketch.png}
-		\caption{\footnotesize Timeline with hour blocks}
-		\label{fig:timelineContinuous}
-\end{figure}
-%Does this part need more of an introduction?
-%Why would you make it less formal?
-%Skrevet det litt om for å gjøre det mindre formelt
 We came up with a suggestions to represent the passing of time during a day by using an animated timeline and stick figures. The timeline will be drawn in real time while stick figures simultaneously perform the corresponding activities. By displaying the day gradually we hope that the subject will gain a firm understanding of their day. This means that this visualization can not be used to gain a quick overview, but is intended to be used when viewing a day for the first time.
 
 The more motivational approach would be to replace the stick figure with an analogy or metaphor. Instead of a stick figure, a flower could be used. Activity would allow the plant to get sunlight, making it grow. Sedentary positions would make the weather cloudy and the flower would be unaffected.
@@ -71,19 +68,12 @@ A timeline may need some explanation before the user understands it properly. By
 		\label{fig:clock12}
 \end{figure}
 
-Another approach is to use one 24 hour clock, see figure \ref{fig:clock24}. This makes it easier to see the transition between AM and PM, but the users will not be used to seeing a 24 hour clock. This clock will also utilize different background to differentiate between day and night more easily.
+Another approach is to use one 24 hour clock. This makes it easier to see the transition between AM and PM, but the users will not be used to seeing a 24 hour clock. This clock will also utilize different background to differentiate between day and night more easily.
 
-\begin{figure}[h!]
-	\centering
-		\includegraphics[width=0.5\textwidth]{placeholder.jpg}
-		\caption{\footnotesize A single 24 hour clocks show the activity of the day.}
-		\label{fig:clock24}
-\end{figure}
-
-%Might add a paragraph about highlighting long periods of sedentary behaviour.
+%Might add a paragraph about highlighting long periods of sedentary behaviour. Skal vi gjøre det her eller spare det til running prototype seksjonen?
 
 \subsection{Week overview}
-Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify problem days that can then be investigated further. These charts could also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart. 
+Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify bad days that can then be investigated further. These charts could also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart. 
 
 \subsubsection{Day classification}
 By calculating the overall activity level and classifying the days into three categories the user can easily see which days he need to be more active and which days the activity level is satisfactory. In our sketch, see figure \ref{fig:smileyWeek} the three different classifications are illustrated by smilies (smiling face for active days, and sad face for inactive days).
@@ -95,7 +85,7 @@ By calculating the overall activity level and classifying the days into three ca
 		\label{fig:smileyWeek}
 \end{figure}
 
-A more complex version of the above chart, see figure \ref{fig:detailedWeek} is to show a square for each day, while still using the same classification into sad and happy smilies. Each day square will then contain 24 smaller squares that represent each hour of the day. The small hour square are coloured with a gradient to show the activity level that hour.
+A more complex version of the above chart, see figure \ref{fig:detailedWeek} is to show a square for each day, while still using the same classification into sad and happy smilies. Each day square will then contain 24 smaller squares that represent each hour of the day. The small hour square are coloured with a gradient to show the activity level for that hour.
 
 \begin{figure}[h!]
 	\centering
@@ -106,10 +96,8 @@ A more complex version of the above chart, see figure \ref{fig:detailedWeek} is 
 
 With this chart you can get an overview of the week as a whole, and identify what hours of the inactive days had the most sedentary behaviour. 
 
-%This should be moved I guess, or the section should be renamed away from prototype to something like "Graphs" I am not sure.
-\section{Programming Framework}
-%Do we need to add some text before the HTML5 subsection?
-
+\section{Programming framework}
+%%We need some filler text here once the section is done.
 \subsection{HTML5}
 HTML is a markup language for the creation of web pages. HTML describes the structure and the contents of the web page. In later years, the need for advanced styling and complex interaction with web pages has made CSS and JavaScript increasingly popular. HTML5 was created as a response to this, HTML5 is an umbrella term for creating web pages using HTML5, CSS3 and JavaScript.
 
