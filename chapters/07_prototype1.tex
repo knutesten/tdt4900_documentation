@@ -97,24 +97,32 @@ A more complex version of the above chart, see figure \ref{fig:detailedWeek} is 
 With this chart you can get an overview of the week as a whole, and identify what hours of the inactive days had the most sedentary behaviour. 
 
 \section{Programming framework}
+%%We need some filler text here once the section is done.
 \subsection{HTML5}
 HTML is a markup language for the creation of web pages. HTML describes the structure and the contents of the web page. In later years, the need for advanced styling and complex interaction with web pages has made CSS and JavaScript increasingly popular. HTML5 was created as a response to this, HTML5 is an umbrella term for creating web pages using HTML5, CSS3 and JavaScript.
 
-HTML5 has simplified the syntax compared to earlier versions. New tags have been added to better represent the modern web page elements. Other features include media tags which greatly simplifies adding multimedia content, such as playing audio and video files. More importantly for our project is the extensive support for interactive and animated graphics through the \emph{canvas}- and \emph{svg}-tag.
+HTML5 has simplified the syntax compared to earlier versions. New tags have been added to better represent the modern web page elements. Other features include media tags which greatly simplifies adding multimedia content, such as playing audio and video files. More importantly for our project is the extensive support for interactive and animated graphics through the \emph{canvas-} and \emph{svg}-tag.
 
-The new features of HTML5 and CSS3 make it much easier to create web applications for multiple platforms and screen sizes. After the smartphone and tablet revolution creating responsive and adaptable websites has become more important. The new features included in HTML5 give large amount of flexibility with respect to the user interface and graphical visualizations.
+The new features of HTML5 and CSS3 make it much easier to create web applications for multiple platforms and screen sizes. After the smartphone and tablet revolution, creating responsive and adaptable websites has become more important. The new features included in HTML5 give large amount of flexibility with respect to the user interface and graphical visualizations.
 
+<<<<<<< HEAD
 \emph{Cascading Style Sheets} (CSS) is a language used to describe the styling of an HTML document. Using CSS the size, color and look of HTML elements can be configured. A new feature in CSS3, which is part of HTML5, is \emph{Media Queries}. With Media Queries it is possible to specify different styling relative to the size of the screen. This functionality is useful when creating applications that target devices with different screen sizes, such as smartphones, tablets and laptops. 
 
 \section{Data-Driven Documents}
+=======
+% This may not be very relevant.
+\emph{Cascading Style Sheets} (CSS) is a language used to describe the styling of an HTML document. CSS documents describes the size, color and look of HTML elements. A new feature in CSS3, which is part of HTML5, is \emph{Media Queries}. With Media Queries it is possible to specify different styling relative to the size of the screen. This functionality is useful when creating applications that target devices with different screen sizes, such as smartphones, tablets and laptops. 
+
+\subsection{Data-Driven Documents}
+>>>>>>> 7ed606f4a10178d60d972d6b46e5ca45c12e422c
 JavaScript is the main scripting language for web pages. It is a client-side scripting language that allows programmers to add functionality to otherwise static HTML-pages. While CSS3 takes care of the styling of HTML-elements, JavaScript is used to create customized behaviour. All modern browsers have JavaScript engines/interpreters that compile and run JavaScript code.
 
-JavaScript is now an industry standard maintained by ECMA International. The standardized version of the script is named ECMAScript. Today ECMAScript and JavaScript are used interchangeably, and JavaScript is often used to refer to ECMAScript. Because different browsers have different implementations of the JavaScript engine, slight variations in the way JavaScript code will run on these browsers exists.
+JavaScript is now an industry standard maintained by ECMA International. The standardized version of the script is named ECMAScript. Today, the names ECMAScript and JavaScript are used interchangeably, and JavaScript is often used to refer to ECMAScript. Because different browsers have different implementations of the JavaScript engine, slight variations in the way JavaScript code will run on these browsers exists.
 
 Together with HTML5 and CSS3, JavaScript is great for creating web applications that can be designed to run on both mobile and stationary devices. JavaScript has a multitude of useful open source libraries that can be used to create complex user interaction, animation, and custom graphics.
 
-One of the challenges in this project is to create different visualizations to represent the activity patterns of subject. Creating custom graphics in HTML5 can be done using both the canvas- and the svg-tag. In this project SVG is used. Scalable Vector Graphics (SVG) is an image format that uses XML encoding. All popular browsers, and most mobile devices, support rendering of the svg-tags.
+One of the challenges in this project was to create different visualizations to represent the activity patterns of subject. Creating custom graphics in HTML5 can be done using both the canvas- and the svg-tag. In this project \gls{svg} is used. \gls{svg} is an image format that uses XML encoding to define shapes, lines, colors, and text. One benefit of this, compared to other image formats, is that details in \gls{svg}-images will not be lost when zooming. All popular browsers, and most mobile devices, support rendering of the \gls{svg}-images.
 
-Creating graphics using svg-tags directly is cumbersome and time consuming. Therefore a framework that greatly simplifies this task is used. \emph{\gls{d3}} is an open source framework written in JavaScript. D3 supports animation and interaction with the SVG elements. This allows us to explore if animation and interactivity can improve the readability of the visualizations.
+Creating graphics using svg-tags directly is cumbersome and time consuming. \gls{d3} is an open source framework that greatly simplifies this task. \gsl{d3} is written in JavaScript and designed to be used in combination with HTML5. The framework can be used both to create new \gls{svg} images from scratch or modify and edit existing images. Another feature is the ability to easily add interactivity and animation to the \gls{svg}-elements. HTML5 in combination with \gls{d3} will gives us a flexibility to create almost any type of visualization and adding interactivity and animation to it.
 
 \section{Running prototype}
