@@ -1,7 +1,8 @@
 \chapter{Human-computer interaction and user centered design}
 
+%Avsinttet var veldig tynt, starter ganske bra, men så plutselig hoppper du til iterasjonsprossesen. Du nevner at en factor er å putte brukeren i sentrum, heter ikke dette user centered design? Hva slags andre metodolgier er det. Dette med design prinsippene (iterasjonene) er veldig fint å ha med men burde kanskje skrive litt mer om selveste feltet først og design prinsippene. Det er greit å ha med siden vi tross alt har et kapittel som heter research design hvor vi skriver hvorfor vi akkurat valgte det vi gjorde. Du mangler kilder på alt, motherfucking sources son!
 \section{HCI Overview (working title)}
-The science of \gls{hci} studies the intearction between humans and computers. The goal of is to make this interaction as smooth and seamless as possible. Research done in the \gls{hci}-field have resulted in guidelines and design methods for the creation of efficient and usable software. One important factor when focusing on usability is to include the future users the design process to get feedback on the user interface.
+The science of \gls{hci} studies the interaction between humans and computers. The goal is to make this interaction as smooth and seamless as possible. Research done in the \gls{hci}-field have resulted in guidelines and design methods for the creation of efficient and usable software. One important factor when focusing on usability is to include the future users the design process to get feedback on the user interface.
 
 \begin{figure}
   \begin{center}
@@ -9,7 +10,7 @@ The science of \gls{hci} studies the intearction between humans and computers. T
         every node/.style={align=center}
       ]
 
-      \node[state] (1) at (0, -2) {Prototypeing};
+      \node[state] (1) at (0, -2) {Prototyping};
       \node[state] (2) at (-3, 0) {Design/\\redesign};
       \node[state] (3) at (0, 2)  {Define\\requirements};
       \node[state] (4) at (3, 0)  {Evaluate\vspace{20mm}};
@@ -31,7 +32,7 @@ The science of \gls{hci} studies the intearction between humans and computers. T
 Figure~\ref{fig:interactionDesignModel} shows the interaction design lifecycle model. The model shows an iterative approach to the design, starting with gathering and defining requirements. The requirements are used as basis for designing the user interface, during the design phase problems or ideas may arise that will require changes in the requirements. When the design phase is done, prototypes are created for evaluation by users or domain experts. After an evaluation with the users or domain experts, feedback on the prototype is used to revise the user interface design or the requirements. When the evaluation gives satisfactory results the product is completed, often after several iterations.
 
 \section{Information Visualization}
-Information visualization is useful when you want to display large amounts of data simultaneously. The human brain is not good at getting an overview of the information by looking at large tables of numbers or text. Visualizations utilizes the strengths of human cognition. Using computer graphics to make visualizations, large amounts of information can be displayed in a way that humans can process and analyse quickly and intuitively.
+Information visualization is useful when you want to display large amounts of data simultaneously. The human brain is not good at getting an overview of the information by looking at large tables of numbers or text. Visualizations utilize the strengths of human cognition. By using computer graphics to make visualizations, large amounts of information can be displayed in a way that humans can process and analyse quickly and intuitively.
 
 Many guidelines have been suggested for creation of the optimal visualization. Shneiderman summarized many of these principles in his \emph{visual-information-seeking mantra}~\cite{shneiderman}:
 
@@ -74,7 +75,7 @@ When the user has used the visualization and found what he was looking for, the 
 One important factor to consider when creating a visualizations are which visual variables to use. To create an intuitive visualization it is important use the different visual variables correctly. We will briefly go through some of the more common visual variables here and discuss how and how not to use them, based on Carpendales article about the subject~\cite{carpendale}.
 
 %This should be changed to a table.
-Visual variables:
+\textbf{Visual variables:}
 \begin{table}[h!]
   \begin{tabular}{|l|p{10cm}|}
       \hline
@@ -86,7 +87,7 @@ Visual variables:
   \caption{Overview of visual variables.}
 \end{table}
 
-Characteristics of visual variables:
+\textbf{Characteristics of visual variables:}
 \begin{table}[h!]
   \begin{tabular}{|l|p{10cm}|}
       \hline
@@ -101,7 +102,7 @@ Characteristics of visual variables:
 
 Position fulfils all the characteristics of visual variables. When thinking of a scatter plot it is easy to see that positioning the points will make them selective and associative. By using scales, position can be used to show the value of the variable in a numerical sense, so it is also quantitative. Order is also fulfilled, a ruler is a simple example of how position can be used to order. The length is theoretically infinite, and only restricted by the screen resolution.
 
-Size fulfils all of the characteristics. It is both selective and associative, humans can easily identify for example the smallest circle in a group of circles. Though size can be used to visualize a numerical value, it is often hard for humans to accurately see how much large one object is compared to another. Different sizes can easily be ordered. As for the length of this variable Carpendale suggest about five different sizes for selection and about 20 different sizes for distinction. It is important to note that humans can identify small changes in size when objects are close, however when the distance between objects is increased it is hard to distinguish between these differences.
+Size fulfils all of the characteristics. It is both selective and associative, humans can easily identify for example the smallest circle in a group of circles. Though size can be used to visualize a numerical value, it is often hard for humans to accurately see how much larger one object is compared to another. Different sizes can easily be ordered. As for the length of this variable Carpendale suggest about five different sizes for selection and about 20 different sizes for distinction. It is important to note that humans can identify small changes in size when objects are close, however when the distance between objects is increased it is hard to distinguish between these differences.
 
 Value can be used both for selection and association. Humans can identify darker parts and group them with ease. It is not quantitative, it is difficult to identify that one tone of grey is twice as dark as another. One can however say that one grey tone is darker than another, and therefore you can order them. Carpendale suggest that the length of this variable is less than 7 for selection, and about 10 for distinction.
 
