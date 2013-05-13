@@ -14,7 +14,7 @@ The pie chart is a standard way of showing the amount of time spent in each acti
 A more symbolic approach is to remove the legend and instead use illustrations so that the user intuitively understands what each colour or box corresponds to. Since the illustrations are had to fit into a pie slice this chart uses scaled boxes instead of a circle to represent the fraction. 
 
 %Dette burde kanskje flyttes til running prototype? Sammen med andre ting vi fant ut ikke funket like bra i praksis som papir.
-The first idea was to only use the illustrations \ref{fig:symbolicPie}, without the boxes, and scale the height to represent the ratio between each activity classification. However this idea was discarded because it became apparent that it was too hard to identify the ratio between the different illustrations. This is much easier with boxes.
+The first idea was to only use the illustrations~\ref{fig:symbolicPie}, without the boxes, and scale the height to represent the ratio between each activity classification. However this idea was discarded because it became apparent that it was too hard to identify the ratio between the different illustrations. This is much easier with boxes.
 
 %We may have to redraw this picture compared to the explanation in this section?
 \begin{figure}[h!]
@@ -25,8 +25,7 @@ The first idea was to only use the illustrations \ref{fig:symbolicPie}, without 
 \end{figure}
 
 \subsubsection{Ball chart}
-An alternative is to include more detail into a pie chart style, by using balls instead of normal pie slices. The balls are colour coded so that each colour reflects an activity state, while the size of the ball represent the continuous amount of time spent in the corresponding state. Each ball represents an interval of one of the classifications, so that many balls of one colour both represents the amount of that behaviour and shows how long each period of that behaviour was. Figure ~\ref{fig:ballChart}
-shows an example of such a graph. The benefit with this type of graph is that one can easily identify long periods of sedentary behaviour. Taking small breaks with movement can help ``split up'' those balls, which is beneficial for ones health. By adding interactivity to the chart the user can select each ball and see what time it corresponds to. Overall the chart allows for the large balls to be easily spotted and the time of day quickly identified.
+An alternative is to include more detail into a pie chart style, by using balls instead of normal pie slices. The balls are colour coded so that each colour reflects an activity state, while the size of the ball represent the continuous amount of time spent in the corresponding state. Each ball represents an interval of one of the classifications, so that many balls of one colour both represents the amount of that behaviour and shows how long each period of that behaviour was. Figure~\ref{fig:ballChart} shows an example of such a graph. The benefit with this type of graph is that one can easily identify long periods of sedentary behaviour. Taking small breaks with movement can help ``split up'' those balls, which is beneficial for ones health. By adding interactivity to the chart the user can select each ball and see what time it corresponds to. Overall the chart allows for the large balls to be easily spotted and the time of day quickly identified.
 
 \begin{figure}[h!]
 	\centering
@@ -97,7 +96,8 @@ A more complex version of the above chart, see figure \ref{fig:detailedWeek} is 
 With this chart you can get an overview of the week as a whole, and identify what hours of the inactive days had the most sedentary behaviour. 
 
 \section{Programming framework}
-%%We need some filler text here once the section is done.
+The task was to create custom visualizations form data gathered the activPAL sensor. The choice of programming tools fell on HTML5 and an open source JavaScript framework called D3.js.
+
 \subsection{HTML5}
 HTML is a markup language for the creation of web pages. HTML describes the structure and the contents of the web page. In later years, the need for advanced styling and complex interaction with web pages has made CSS and JavaScript increasingly popular. HTML5 was created as a response to this, HTML5 is an umbrella term for creating web pages using HTML5, CSS3 and JavaScript.
 
@@ -105,7 +105,6 @@ HTML5 has simplified the syntax compared to earlier versions. New tags have been
 
 The new features of HTML5 and CSS3 make it much easier to create web applications for multiple platforms and screen sizes. After the smartphone and tablet revolution, creating responsive and adaptable websites has become more important. The new features included in HTML5 give large amount of flexibility with respect to the user interface and graphical visualizations.
 
-% This may not be very relevant. Siste biten er kanskje ikke det lenger ettersom vi lager det kun til pc skjermer.
 \emph{Cascading Style Sheets} (CSS) is a language used to describe the styling of an HTML document. CSS documents describes the size, color and look of HTML elements. A new feature in CSS3, which is part of HTML5, is \emph{Media Queries}. With Media Queries it is possible to specify different styling relative to the size of the screen. This functionality is useful when creating applications that target devices with different screen sizes, such as smartphones, tablets and laptops. 
 
 \subsection{Data-Driven Documents}
@@ -117,7 +116,6 @@ Together with HTML5 and CSS3, JavaScript is great for creating web applications 
 
 One of the challenges in this project was to create different visualizations to represent the activity patterns of subject. Creating custom graphics in HTML5 can be done using both the canvas- and the svg-tag. In this project \gls{svg} is used. \gls{svg} is an image format that uses XML encoding to define shapes, lines, colors, and text. One benefit of this, compared to other image formats, is that details in \gls{svg}-images will not be lost when zooming. All popular browsers, and most mobile devices, support rendering of the \gls{svg}-images.
 
-Creating graphics using svg-tags directly is cumbersome and time consuming. \gls{d3} is an open source framework that greatly simplifies this task. \gls{d3} is written in JavaScript and designed to be used in combination with HTML5. The framework can be used both to create new \gls{svg} images from scratch or modify and edit existing images. Another feature is the ability to easily add interactivity and animation to the \gls{svg}-elements. HTML5 in combination with \gls{d3} will gives us a flexibility to create almost any type of visualization and adding interactivity and animation to it.
-%Siste setning skrevet i future tense, husker du advarte meg mot det så gjør det samme.
+Creating graphics using svg-tags directly is cumbersome and time consuming. \gls{d3} is an open source framework that greatly simplifies this task. \gls{d3} is written in JavaScript and designed to be used in combination with HTML5. The framework can be used both to create new \gls{svg} images from scratch or modify and edit existing images. Another feature is the ability to easily add interactivity and animation to the \gls{svg}-elements. HTML5 in combination with \gls{d3} gives us flexibility to create almost any type of visualization and adding interactivity and animation to it.
 
 \section{Running prototype}
