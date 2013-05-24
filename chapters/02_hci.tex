@@ -5,33 +5,6 @@
 The science of \gls{hci} studies the interaction between humans and computers. The goal is to make this interaction as smooth and seamless as possible. Research done in the \gls{hci}-field have resulted in guidelines and design methods for the creation of efficient and usable software. One important factor when focusing on usability is to include the future users the design process to get feedback on the user interface.
 % I have no sources on this, this is just common knowledge... Don't know where to find sources about it either.
 
-\begin{figure}
-  \begin{center}
-    \begin{tikzpicture}[
-        every node/.style={align=center}
-      ]
-
-      \node[state] (1) at (0, -2) {Prototyping};
-      \node[state] (2) at (-3, 0) {Design/\\redesign};
-      \node[state] (3) at (0, 2)  {Define\\requirements};
-      \node[state] (4) at (3, 0)  {Evaluate\vspace{20mm}};
-
-      \path[->]
-        (1) edge [bend right] node[left] {} (4)
-            edge [bend right] node[left] {} (2)
-        (2) edge [bend right] node[left] {} (1)
-            edge [bend right] node[left] {} (3)
-        (3) edge [bend right] node[left] {} (2)
-        (4) edge [bend right] node[left] {} (3)
-            edge node[left] {}              (2);
-    \end{tikzpicture}
-  \end{center}
-  \caption{Interaction design lifcycle model}
-  \label{fig:interactionDesignModel}
-\end{figure}
-
-Figure~\ref{fig:interactionDesignModel} shows the interaction design lifecycle model~\cite{interactionDesign}. The model shows an iterative approach to the design, starting with gathering and defining requirements. The requirements are used as basis for designing the user interface, during the design phase problems or ideas may arise that will require changes in the requirements. When the design phase is done, prototypes are created for evaluation by users or domain experts. After an evaluation with the users or domain experts, feedback on the prototype is used to revise the user interface design or the requirements. When the evaluation gives satisfactory results the product is completed, often after several iterations.
-
 \section{Information Visualization}
 Information visualization is useful when you want to display large amounts of data simultaneously. The human brain is not good at getting an overview of the information by looking at large tables of numbers or text. Visualizations utilize the strengths of human cognition. By using computer graphics to make visualizations, large amounts of information can be displayed in a way that humans can process and analyse quickly and intuitively.
 
@@ -68,14 +41,12 @@ Typically information visualizations hide the numerical data (or other detailed 
 
 When working with a visualizations where you can make changes to filter, zoom, etc. It is useful for the user to be able to undo and redo tasks. Undo will give the user the ability to go back form an undesired zoom level or filter setting quickly. Users will often times do make more actions than they can keep track of, so giving them the ability to trace their steps improves usability.
 
-% Don't know if I like this last section here. Well, at least I got some text down. :P
 When the user has used the visualization and found what he was looking for, the user should be able to extract those elements. The extracted elements should be saved in a format that can be sent to and seen by others. 
 
 
 \subsection{Visual Variables} 
 One important factor to consider when creating a visualizations are which visual variables to use. To create an intuitive visualization it is important use the different visual variables correctly. We will briefly go through some of the more common visual variables here and discuss how and how not to use them, based on Carpendales article about the subject~\cite{carpendale}.
 
-%This should be changed to a table.
 \textbf{Visual variables:}
 \begin{table}[h!]
   \begin{tabular}{|l|p{10cm}|}
@@ -112,14 +83,12 @@ Colours are selective and associative. Unless you are colour blind you can easil
 \section{Prototyping}
 A prototype is a realization of a design that stakeholders can interact with and explore. The limitation of a prototype is that it often only focuses on one product characteristic and neglects the others. A prototype can be anything from a complex piece of software to a simple storyboard or sketch. Prototypes serve as an aid by clarifying communication between team members, and efficiently exploring design ideas with stakeholders and designers. Building the prototype itself encourages reflection of the design and is recognized by designers from many disciplines as an important aspect of the design process \cite{interactionDesign}.
 
-\subsection{Low-fidelity vs High fidelity}
-Low-fidelty prototypes do not resemble the finish product very much. It often uses completely different and much cheaper materials then the final product making them cheap, simple and easily modifiable. Examples of such prototypes are storyboards, sketching, and wizard of Oz. Low-fidelity are important in early development stages because the simplicity encourages exploration and modification. The disadvantage is that these prototypes are never kept or integrated into the final product
+\subsection{Low-fidelity vs. High fidelity}
+Low-fidelty prototypes do not resemble the finish product very much. It often uses completely different and much cheaper materials then the final product making them cheap, simple and easily modifiable. Examples of such prototypes are storyboards, sketching, and wizard of Oz. Low-fidelity are important in early development stages because the simplicity encourages exploration and modification. The disadvantage is that these prototypes are never kept or integrated into the final product.
 
-High-fidelity prototypes are much closer to the final product, and therefore give a much stronger impression of the final product. The high-fidelity prototype is useful for identifying technical issues and selling ideas to people. These prototypes are often reused or developed into a final product but require more time and resources.
+High-fidelity prototypes are much closer to the final product, and therefore give a much stronger impression of the final product. The high-fidelity prototype is useful for identifying technical issues and selling ideas to people. These prototypes are often reused or developed into a final product, but require more time and resources to create.
 
-The very nature of a prototype involves making compromises. Therefore the choice of prototype lies in what kind of issues need to be resolved and questions answered. Two common compromises that must often be traded against each other are breadth of functionality vs depth of functionality. \textit{Horizontal prototyping} focuses on a wide range of functions but little details and \textit{vertical prototyping} focuses on providing a lot of detail for a few functions. 
-
-%Should I make tha table?
+The very nature of a prototype involves making compromises. Therefore the choice of prototype lies in what kind of of questions we want to answer. Two common compromises that are often traded against each other are breadth of functionality vs depth of functionality. \textit{Horizontal prototyping} focuses on a wide range of functions but little details and \textit{vertical prototyping} focuses on providing a lot of detail for a few functions. 
 
 \section{Focus groups}
 Focus group, or group interview is an informal technique that can help software developers identify the users needs and feelings about a system. The technique can be used both before interface design and long after the system has been implemented. 
