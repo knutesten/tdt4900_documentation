@@ -1,43 +1,37 @@
 \chapter{Body-worn sensor technology}
 
+\section{Personal Informatics and Quantified Self}
+Currently there are two names that stand out within the self-monitoring field: \gls{qs} \cite{quantifiedSelf}, and Personal Informatics (PI) \cite{personalInformatics}. \gls{qs} is a community of end-users who share data and exchange experiences with tools that help them collect information. \gls{pi} is a label used to classify a set of tools used for self monitoring, but hosts conferences and has a community concerned with development of relevant tools.
+
+\subsection{Quantified Self}
+In 2011 \gls{qs} had their first conference \cite{bodyHackers}, here people shared data that they had collected about themselves using different types of devices. Members of \gls{qs} collect information about everything from sleep patterns and diets to mood and stress levels. The goal is to use qualitative data to improve your own life, either through a more healthy lifestyle or by getting a better understanding of yourself. 
+
+To promote further development in tools that gather these types of information, the participants of Quantified Self have worked closely with companies and individuals that create personal informatics tools. Devices such as Nike's FuelBand and Fitbit are results of this cooperation, and both products have been well received by the community.
+
+\subsection{Personal Informatics}
+Personal informatics is the label used to classify tools that help people collect personal information for the purpose of self-monitoring and self reflection. These tools are used to help individuals gain self-knowledge about their behaviour, habits, and thoughts.
+
+The \gls{chi} conference has since 2010 \cite{chi2010} held workshops and accepted papers on Personal Informatics. The aim is to increase the understanding of how the tools affect the users as well as explore new possibilities, and overall improvement of the user experience.
+
 \section{Sensor technology}
-%FIX PLX
-This section covers the basics of the sensor based products used in the popular commercial and scientific devices. It starts off by looking at Wrist worn sensors such as the Nike Fuelband and ends with activPal.
+% REVIEW: Read and give your judgement.
+This section covers some popular commercial activity monitoring sensors currently on the market. The products that will be discussed are Nike Fuelband, Fitbit Flex and activPAL. Both Nice Fuelband and Fitbit Flex are designed for the general public while activPAL is manly used in research project.
+
 \subsection{Wrist worn body sensors}
 Since the release of the Nike+ FuelBand \cite{fuelBand} in early 2012 several new wrist-worn activity monitors have emerged. Nike FuelBand, Fitbit Flex and Jawbone Up are the only ones, so far, who are either available to the public or soon to be released. The devices are designed to be inconspicuous, durable and to quietly monitor the users activity by counting steps taken, kilometres walked, time spent sleeping or sedentary etc. All of the bracelets use a built in 3-axis accelerometer to record movement. The classification of activity level is done by individual proprietary algorithms for each of the products. 
 
 Being worn on the wrist these devices come with certain drawbacks, all the information gathering is based on movement from a single point (i.e. the users wirst). This leads to certain physical activities not being registered properly, one such example is riding a bike. The Fitbit developers have attempted to compensate for this by allowing the user to track such activity manually. The manually entered data is then added to the daily statistics. 
 
 \subsection{activPal}
-The \emph{activPAL} has the shape of a small rectangle and is worn on the thigh. When the device is active it continuously records accelerometer data using an internal accelerometer. This data can be interpreted using algorithms provided by PAL Technologies.
+The activPAL sensor has the shape of a small rectangle and is worn on the thigh. When the device is active it continuously records accelerometer data using an internal accelerometer. This data can be interpreted using algorithms provided by PAL Technologies.
 
 When the activity data has been gathered the \emph{Intelligent Activity Classification}-algorithm, provided by PAL Technologies, is used to classify the data into three different types of behaviour: sitting/laying, standing and walking. Because activPAL is worn on the thigh, the accelerometer is unable to detect the difference between sitting and lying. Number of steps is also counted when walking.
 
 Several studies have concluded that the activPAL is viable for recording and classifying activity \cite{grant2006, ryan2006, grant2008, tsavourelou}. activPAL has also been used in multiple studies for obtaining and analysing activity patterns~\cite{grant2010, lord, ryan2010}.
 
-\section{Personal Informatics and Quantified Self}
-Currently there are two names that stand out within the self-monitoring field: \gls{qs} \cite{quantifiedSelf}, and Personal Informatics (PI) \cite{personalInformatics}. \gls{qs} is a community of end-users who share data and exchange experiences with tools that help them collect information. \gls{pi} is a label used to classify a set of tools used for self monitoring, but hosts conferences and has a community concerned with development of relevant tools.
-
-\subsection{Quantified Self}
-% REVIEW: Read this section, thought it was important to mention that self-improvement is the goal not just the collection of data. RESPONSE: Switched two sentences, OK!
-In 2011 \gls{qs} had their first conference \cite{bodyHackers}, here people shared data that they had collected about themselves using different types of devices. Members of \gls{qs} collect information about everything from sleep patterns and diets to mood and stress levels. The goal is to use qualitative data to improve your own life, either through a more healthy lifestyle or by getting a better understanding of yourself. 
-
-% REVIEW: I think it is OK to mention it, we need the text don't we? RESPONSE: OK
-To promote further development in tools that gather these types of information, the participants of Quantified Self have worked closely with companies and individuals that create personal informatics tools. Devices such as Nike's FuelBand and Fitbit are results of this cooperation, and both products have been well received by the community.
-
-% REVIEW: This section should probably be a bit larger. What do you think? REPONSE: I am not sure, feel like we say what we need to, how would you make it larger?
-\subsection{Personal Informatics}
-Personal informatics is the label used to classify tools that help people collect personal information for the purpose of self-monitoring and self reflection. These tools are used to help individuals gain self-knowledge about their behaviour, habits, and thoughts.
-
-The \gls{chi} conference has since 2010 \cite{chi2010} held workshops and accepted papers on Personal Informatics. The aim is to increase the understanding of how the tools affect the users as well as explore new possibilities, and overall improvement of the user experience.
-
-\section{Medical applications (not a priority)}
-Find articles that use body worn sensors for health care
-
-% Maybe we should move this section so that is comes after the section about quantified self and personal informatics? Response: DONE
 \section{Presentation of sensor data}
-%BRAIN AIN'T WORKING TODAY! REWRITE IOR AT LEAST FIX IT PLX
-In this section we look at how commercial and market leading companies present their activity monitor data. The Nike Fuelband and Fitbit Flex are both intended for personal everyday use, while the activPal focuses on data gathering for research projects and is not efficiently designed to be worn for several weeks at a time. We will start off by looking at the Fuelband, and Fitbit, then move on to the activPal.
+% REVIEW: Changed it a bit, you should have a look before we send it to Svanæs.
+In this section we look at how the commercial activity monitoring devices presented in the previous section present their data. We will see that Nice Fuelband and Fitbit Flex, designed for the general public, have a much broader specter of visualizations and presentations of the data collected.
 
 \subsection{Nike+}
 NikeFuel \cite{nikefuel} is a unit of measurement used by all Nike activity trackers. The FuelBand does calculate steps and calories burned, but the NikeFuel is the prime focus of their product line. NikeFuel does not take into account gender, height, weight, but looks purely at activity. Meaning that a kilometer of walking will award the same amount of points to users with very different physiology. The daily progress (figure \ref{fig:tworings}) is represented through a ring that fills up when the FuelBand detects activity. A full ring means that the daily goal has been reached. Progress beyond the daily goal will be displayed with numbers and visual enchantments on the ring. 
@@ -63,7 +57,6 @@ Virtual trophies are awarded for various achievements such as gathering an x amo
 \subsection{Fitbit}
 Similar to the Nike+, Fitbit \cite{fitBit} allows the user to set daily goals, but as the Fitbit does not use the NikeFuel system. Instead it allows the user to set 3 separate goals: steps taken, floors climbed, and calories burned. The Fitbit provide an active score, but there is no emphasis on it. On the Fitbit-webpage daily activity breakdown is provided. Activity levels are separated into four categories: sedentary, lightly active, fairly active, and very active. All the goal histories can be viewed on the online profile and can be categorized into day, week, months and years. 
 
-% REVIEW: Look at the first sentence is it OK? RESPONSE: IT IS OK
 Fitbit also offers the Fitbit Premium service, which adds more functionality to the online webapp. The premium service allows the user to get more detailed and aggregated information than the basic logs do. It gives advice on sleep, activity and food based on activity level and the recommended values for people in the users height, weight, age group.
 
 \begin{figure}[h!]
@@ -82,3 +75,7 @@ The activPAL only provides one diagram, which can be seen in figure~\ref{fig:act
 		\caption{\footnotesize }
 		\label{fig:activPalActivityBreakdown}
 \end{figure}
+
+% Should we write this?
+\section{Medical applications (not a priority)}
+Find articles that use body worn sensors for health care

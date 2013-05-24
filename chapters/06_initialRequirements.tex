@@ -13,19 +13,32 @@ Research projects such as the one mentioned above is currently the only arena wh
 The first version of the requirements were created during the first meeting. Questions and issues that arose during the development phase were solved by discussion via mail or telephone.
 
 \section{Initial Requirements and User Scenario}
+After talking to the domain experts at St. Olavs Hospital two main user scenarios emerged:
+\vspace{-3mm}
+\begin{enumerate}[itemsep=0cm, parsep=0cm]
+  \item Mapping the activity level of patients
+  \item In consultation with patients
+\end{enumerate}
+
+The current practice of physiotherapists working with the elderly is to first to get an overview of the patients activity level. This information is then used to create a program to improve the activity level of the patient. The activPAL sensor can be used in addition to current techniques to gather more quantitative data to get an even better mapping of the patients level of activity. Scenario 1 is concerned with how to visualize this data so that the physiotherapists quickly can get an idea on how to proceed with the treatment.
+
+After the physiotherapists has an idea of the patients current level of activity the data is presented to the patient. This is usually a discussion about the results of the test and what the patient wants to achieve in terms increased activity. Scenario 2 deals with how the visualizations can be helpful in making the patient understand and becoming aware of the current level of activity.
+
+Using the two user scenarios above we created some simple requirements for the visualizations as a basis before starting development.
+
 \begin{table}[h!]
   \begin{center}
-  \begin{tabular}{|l|p{12cm}|}
+  \begin{tabular}{|c|p{12cm}|}
     \hline
       \textbf{Id} & \textbf{Requirement} \\ \hline
-      1 & The visualizations should give an overview of the week \\ \hline
-      2 & Show the activity level for each hour of every day \\ \hline
-      3 & Let you compare hours from multiple days \\ \hline
-      4 & Let the user  \\ \hline
-      4 & Let the user easily identify hours where more activity can be added \\ \hline
-      5 & Let the user identify patients that are active during the night \\ \hline
+    \multicolumn{2}{|l|}{The visualizations should \ldots} \\ \hline
+      1 & give an overview of the week \\ \hline
+      2 & show the activity level for each hour of every day \\ \hline
+      3 & let you compare hours from multiple days \\ \hline
+      4 & show the activity level for each minute of every day \\ \hline
+      5 & let the user identify patients that are active during the night \\ \hline
   \end{tabular}
   \end{center}
 \end{table}
  
-%//Get an overview of week days and hours in consultation with patientsdrop
+%//Get an overview of week days and hours in consultation with patientsdrop HELP ME DEAN HEEEELP ME!
