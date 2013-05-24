@@ -52,8 +52,6 @@ One approach to this visualization type is to create a continuous timeline that 
 \subsubsection{Blocks}
 Instead of having a continuous scale, a blocked approach can be used, as seen in figure \ref{fig:timelineBlocks}. The timeline would be divided into 24 blocks, each block corresponding to an hour of the day. A gradient colour scale is used to represent the amount of activity inside the hour block. This makes it easy to identify hours of the day where the patient is inactive. 
 
-%Perhaps represent the block based one instead?
-% REVIEW: Isn't that what you are doing now?
 \begin{figure}[h!]
 	\centering
 		\includegraphics[width=0.7\textwidth]{timelineBlocksSketch.png}
@@ -73,7 +71,7 @@ A timeline may need some explanation before the user understands it properly. By
 \end{figure}
 
 Another approach is to use one 24 hour clock. This makes it easier to see the transition between AM and PM, but the users will not be used to seeing a 24 hour clock. This clock will also utilize different background to differentiate between day and night more easily.
-% REVIEW: The last part here is not true.
+% REVIEW: The last part here is not true. This was the plan! THe plan failed, should we ommit it or write why hte plan failed, i vote for the latter.
 
 \subsection{Week overview}
 Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify bad days that can then be investigated further. These charts could also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart. 
