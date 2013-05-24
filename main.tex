@@ -6,6 +6,7 @@
 \usepackage{multirow}
 \usepackage{tikz}
 \usetikzlibrary{automata,positioning}
+\usepackage[acronym]{glossaries}
 
 \title{Title} % The title of your assignement; NB use \newlinetitle to start a newline
 \author{Firstname Lastname} % Your firstname and lastname
@@ -73,12 +74,8 @@
 %Glossary
 
 %% include if relevant
-\printglossary[title=List of Symbols, style=long]
-\cleardoublepage
-\glsaddall[]
-
 %% include if relevant
-\printglossary[title=List of Acronyms,type=\acronymtype] % prints just the list of acronyms
+\printglossary
 \cleardoublepage
 
 \pagenumbering{arabic}
