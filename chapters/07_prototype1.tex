@@ -2,16 +2,18 @@
 
 \section{activPal}
 
-% REVIEW: I don't know if I like this section. Maybe it should be more focused on how we created visualizations to satisfy the initial requirements. I should think about rewriting parts of this section when we have defined the initial requirements. 
+% REVIEW: I don't know if I like this section. Maybe it should be more focused on how we created visualizations to satisfy the initial requirements. I should think about rewriting parts of this section when we have defined the initial requirements.  It has been re-written, well parts have mostly been added and some sentences slightly changed. Old content is still there just written more around it
 \section{Paper sketches}
-%REVIEW: We need some text here I think. Just an introduction to the section or something. We can say something about design as being an iterative process and this was our first ideas or something...
+All the sketches described in this section were created through a set of informal brainstorming sessions between the authors where we occasionally received input from other sources. This was an iterative process that spanned over five sessions. The sketches represent our first ideas on visualizations that would fulfil the initial requirements efficiently, while providing alternatives to choose from. 
+%REVIEW: We need some text here I think. Just an introduction to the section or something. We can say something about design as being an iterative process and this was our first ideas or something... RESPONSE: OK
 
-%Were we not supposed to change the name of this subsection.
+%Were we not supposed to change the name of this subsection. We were, but nobody has a fucking clue of what it should be callled
 \subsection{Fractional charts}
-These type of charts show the sum of time spent sedentary, standing, and walking. Summing over the three classifications makes it easy to get an overview of the day as a whole. The drawback are that details are lost and it is not possible to pinpoint when each activity occurred during the day. Fractional charts can be useful for quickly identifying days with a low amount of activity, before spending time looking at more detailed visualisations. It might also serve as an alert for subjects with a low activity level.
+These type of charts show the sum of time spent sedentary, standing, and walking. Summing over the three classifications makes it easy to get an overview of the day as a whole. The drawback are that details are lost and it is not possible to pinpoint when each activity occurred during the day. Fractional charts were created to cover IR2 and are intended to give a general overview of the daily activity before spending time looking at more detailed visualizations. Additionally it can serve as an alert for patients with low activity levels, where majority of the chart would be filled with inactivity.
 
 \subsubsection{Pie chart}
-The pie chart is a standard way of showing the amount of time spent in each activity state. The overall design of the pie chart is very familiar and everyone has seen it before at some point, which means that it will be easy to understand for both users and patients. A legend shows which colour represents each type of activity. The exact percentage for each activity state is also displayed.
+The pie chart is a standard way of showing the amount of time spent in each activity state.%Det i kommentaren har blitt byttet ut med det under, hva synes du? "The overall design of the pie chart is very familiar and everyone has seen it before at some point, which means that it will be easy to understand for both users and patients." jeg liker bare ikke den "and everyone has seen it before biten"
+Due to the familiarity of the pie chart it will be easy to understand for both users and patients. A legend shows which colour represents each type of activity. The exact percentage for each activity state is also displayed.
 
 \subsubsection{Symbolic}
 % REVIEW: Changed this section. Is it OK?
@@ -20,19 +22,20 @@ A more symbolic approach is to remove the legend and instead use illustrations t
 %Dette burde kanskje flyttes til running prototype? Sammen med andre ting vi fant ut ikke funket like bra i praksis som papir.
 % REVIEW: Dessuten passer det ikke med det over.
 % REVIEW: I don't think we should have this section at all, the changes to the visualizations that should be talked about are those that were done because of feedback form the focus groups.
-The first idea was to only use the illustrations~\ref{fig:symbolicPie}, without the boxes, and scale the height to represent the ratio between each activity classification. However this idea was discarded because it became apparent that it was too hard to identify the ratio between the different illustrations. This is much easier with boxes.
+%The first idea was to only use the illustrations~\ref{fig:symbolicPie}, without the boxes, and scale the height to represent the ratio between each activity classification. However this idea was discarded because it became apparent that it was too hard to identify the ratio between the different illustrations. This is much easier with boxes.
 
 %We may have to redraw this picture compared to the explanation in this section?
 % REVIEW: Yes that probably is a good idea.
+%RESPONSE: I am unsure if we need to redraw, i think it's nice to have it there, shows that things have changed a bit. Rather changed descriptive text to "first idea"
 \begin{figure}[h!]
 	\centering
 		\includegraphics[width=0.7\textwidth]{stickSketch.png}
-		\caption{\footnotesize Rough drafts of a symbolic "pie chart"}
+		\caption{\footnotesize Our first idea for a symbolic "pie chart"}
 		\label{fig:symbolicPie}
 \end{figure}
 
 \subsubsection{Ball chart}
-An alternative is to include more detail into a pie chart style, by using balls instead of normal pie slices. The balls are colour coded so that each colour reflects an activity state, while the size of the ball represent the continuous amount of time spent in the corresponding state. Each ball represents an interval of one of the classifications, so that many balls of one colour both represents the amount of that behaviour and shows how long each period of that behaviour was. Figure~\ref{fig:ballChart} shows an example of such a graph. The benefit with this type of graph is that one can easily identify long periods of sedentary behaviour. Taking small breaks with movement can help ``split up'' those balls, which is beneficial for ones health. By adding interactivity to the chart the user can select each ball and see what time it corresponds to. Overall the chart allows for the large balls to be easily spotted and the time of day quickly identified. Because most of the balls are small it will be hard to select them unless you are using computer with a mouse.
+An alternative is to include more detail into a pie chart style, by using balls instead of normal pie slices. The balls are colour coded so that each colour reflects an activity state, while the size of the ball represent the continuous amount of time spent in the corresponding state. Each ball represents an interval of one of the classifications, so that many balls of one colour both represents the amount of that behaviour and shows how long each period of that behaviour was. Figure~\ref{fig:ballChart} shows an example of such a graph. The benefit with this type of graph is that one can easily identify long periods of sedentary behaviour. Taking small breaks with movement can help ``split up'' those balls, which is beneficial for ones health. By adding interactivity to the chart the user can select each ball and see what time it corresponds to. Overall the chart allows for the large balls to be easily spotted and the time of day quickly identified. Because most of the balls are small it will be hard to select them unless you are using a computer with a mouse.
 % REVIEW: ^ Should we add the last sentence?
 
 \begin{figure}[h!]
@@ -43,7 +46,7 @@ An alternative is to include more detail into a pie chart style, by using balls 
 \end{figure}
 
 \subsection{Timeline}
-Timeline visualisations are effective at illustrating when various activities occurred during the day. The illustration uses a long horizontal bar that has different colours for different behavioural classification. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long. By looking at multiple days, the user can detect patterns in the day where he needs to be more active.
+Timeline visualisations are effective at illustrating when various activities occurred during the day. The illustration uses a long horizontal bar that has different colours for different behavioural classification. These visualizations primarily address requirement IR3, IR5, and IR6. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long. By looking at multiple days, the user can detect patterns in the day where he needs to be more active.
 
 \subsubsection{Continuous}
 One approach to this visualization type is to create a continuous timeline that contains every little detail of activity. The continuous timeline is useful for quickly identifying periods of the day with unsatisfactory behaviour, but the detail can also be distracting and make it harder to read the graph. Functionality was also added to highlight periods of sedentary behaviour with a fourth colour. 
@@ -71,10 +74,10 @@ A timeline may need some explanation before the user understands it properly. By
 \end{figure}
 
 Another approach is to use one 24 hour clock. This makes it easier to see the transition between AM and PM, but the users will not be used to seeing a 24 hour clock. This clock will also utilize different background to differentiate between day and night more easily.
-% REVIEW: The last part here is not true. This was the plan! THe plan failed, should we ommit it or write why hte plan failed, i vote for the latter.
+% REVIEW: The last part here is not true. RESPONSE: This was the plan! THe plan failed, should we ommit it or write why the plan failed, i vote for the latter.
 
 \subsection{Week overview}
-Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify bad days that can then be investigated further. These charts could also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart. 
+Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify bad days that can then be investigated further. In other words they cover requirement IR1 and IR4. These visualizations could also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart.
 
 \subsubsection{Day classification}
 By calculating the overall activity level and classifying the days into three categories the user can easily see which days he need to be more active and which days the activity level is satisfactory. In our sketch, see figure \ref{fig:smileyWeek} the three different classifications are illustrated by smilies (smiling face for active days, and sad face for inactive days).
