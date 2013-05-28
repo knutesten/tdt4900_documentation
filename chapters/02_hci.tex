@@ -22,32 +22,9 @@ For the visualization to be effective the user has to get an overview of how the
 
 Shneiderman also identifies the importance of showing the relationships between different items, allowing the user to extract subcollections of the displayed items and storing the user action history to allow for undo/redo functionality.
 
-\subsection{Interactivity}
-One of the benefits of creating visualizations for computers is the ability to add interactivity. Shneidermann mentions 6 tasks that should be implemented when creating information visualizations:
-\vspace{-3mm}
-\begin{description}[itemsep=0cm, parsep=0cm]
-  \item[Overview] Show an overview of the entire data set
-  \item[Zoom] Let the user look closer at elements of interest
-  \item[Filter] The user should be able to filter out tasks that are not interesting
-  \item[Details-on-demand] Show details when elements are selected
-  \item[History] Let the user undo or redo actions
-  \item[Extract] Allow the user to extract a subset of the entire data set
-\end{description}
-
-The first thing the users sees when interacting with an information visualization is an overview of the data set. This can be done by zooming out and then let the user zoom in on areas of interest. Another approach is to aggregate the data in separate sections that can then be investigated further.
-
-It is rare that the user is equally interested in every part of the data set, therefore it is useful to be able to zoom in on elements for a more detailed look. It is important to make sure that the user does not loose their sense of position and get lost in the visualization.
-
-Often the some of the data in the set is not relevant and only distorts the visualization. In such cases one should be able to filter out those elements. The user should be able to filter out unwanted data using sliders, buttons etc. The update should happen real-time, to allow the user to see how the filter affects the visualization. 
-
-Typically information visualizations hide the numerical data (or other detailed data) behind the element. It is therefore paramount to give the user the ability to access this data when it is needed. The user should be able to select an element or a small group of elements and browse the details in a list or other textual representation.
-
-When working with a visualizations where you can make changes to filter, zoom, etc. It is useful for the user to be able to undo and redo tasks. Undo will give the user the ability to go back form an undesired zoom level or filter setting quickly. Users will often times do make more actions than they can keep track of, so giving them the ability to trace their steps improves usability.
-
-When the user has used the visualization and found what he was looking for, the user should be able to extract those elements. The extracted elements should be saved in a format that can be sent to and seen by others. 
-
-
 \subsection{Visual Variables} 
+// This section needs descriptive illustrations, see www.interactin-design.org (article at the bottom).
+
 One important factor to consider when creating a visualizations are which visual variables to use. To create an intuitive visualization it is important use the different visual variables correctly. We will briefly go through some of the more common visual variables here and discuss how and how not to use them, based on Carpendales article about the subject~\cite{carpendale}.
 
 \textbf{Visual variables:}
@@ -82,6 +59,30 @@ Size fulfils all of the characteristics. It is both selective and associative, h
 Value can be used both for selection and association. Humans can identify darker parts and group them with ease. It is not quantitative, it is difficult to identify that one tone of grey is twice as dark as another. One can however say that one grey tone is darker than another, and therefore you can order them. Carpendale suggest that the length of this variable is less than 7 for selection, and about 10 for distinction.
 
 Colours are selective and associative. Unless you are colour blind you can easily identify and group different colours. Colours are not quantitative, it is hard for humans to say that one colours is twice that of another. Though we have colour scales, humans do not intuitively order colours, this can easily be illustrated by a question: Which colours is greater blue or yellow? Most people will not have an answer. Carpendale suggests that you use less than 7 different colours for selection, and about 10 for distinction.
+
+\subsection{Interactivity}
+One of the benefits of creating visualizations for computers is the ability to add interactivity. Shneidermann mentions 6 tasks that should be implemented when creating information visualizations:
+\vspace{-3mm}
+\begin{description}[itemsep=0cm, parsep=0cm]
+  \item[Overview] Show an overview of the entire data set
+  \item[Zoom] Let the user look closer at elements of interest
+  \item[Filter] The user should be able to filter out tasks that are not interesting
+  \item[Details-on-demand] Show details when elements are selected
+  \item[History] Let the user undo or redo actions
+  \item[Extract] Allow the user to extract a subset of the entire data set
+\end{description}
+
+The first thing the users sees when interacting with an information visualization is an overview of the data set. This can be done by zooming out and then let the user zoom in on areas of interest. Another approach is to aggregate the data in separate sections that can then be investigated further.
+
+It is rare that the user is equally interested in every part of the data set, therefore it is useful to be able to zoom in on elements for a more detailed look. It is important to make sure that the user does not loose their sense of position and get lost in the visualization.
+
+Often the some of the data in the set is not relevant and only distorts the visualization. In such cases one should be able to filter out those elements. The user should be able to filter out unwanted data using sliders, buttons etc. The update should happen real-time, to allow the user to see how the filter affects the visualization. 
+
+Typically information visualizations hide the numerical data (or other detailed data) behind the element. It is therefore paramount to give the user the ability to access this data when it is needed. The user should be able to select an element or a small group of elements and browse the details in a list or other textual representation.
+
+When working with a visualizations where you can make changes to filter, zoom, etc. It is useful for the user to be able to undo and redo tasks. Undo will give the user the ability to go back form an undesired zoom level or filter setting quickly. Users will often times do make more actions than they can keep track of, so giving them the ability to trace their steps improves usability.
+
+When the user has used the visualization and found what he was looking for, the user should be able to extract those elements. The extracted elements should be saved in a format that can be sent to and seen by others. 
 
 \section{Prototyping}
 A prototype is a realization of a design that stakeholders can interact with and explore. The limitation of a prototype is that it often only focuses on one product characteristic and neglects the others. A prototype can be anything from a complex piece of software to a simple storyboard or sketch. Prototypes serve as an aid by clarifying communication between team members, and efficiently exploring design ideas with stakeholders and designers. Building the prototype itself encourages reflection of the design and is recognized by designers from many disciplines as an important aspect of the design process \cite{interactionDesign}.
