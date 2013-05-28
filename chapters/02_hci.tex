@@ -1,14 +1,42 @@
 \chapter{Human-computer interaction and user centered design}
 
 %Avsinttet var veldig tynt, starter ganske bra, men så plutselig hoppper du til iterasjonsprossesen. Du nevner at en factor er å putte brukeren i sentrum, heter ikke dette user centered design? Hva slags andre metodolgier er det. Dette med design prinsippene (iterasjonene) er veldig fint å ha med men burde kanskje skrive litt mer om selveste feltet først og design prinsippene. Det er greit å ha med siden vi tross alt har et kapittel som heter research design hvor vi skriver hvorfor vi akkurat valgte det vi gjorde. Du mangler kilder på alt, motherfucking sources son!
-\section{HCI Overview (working title)}
-// Warning! Work in progress, use helmet on construction site.
+\section{HCI and Human-centred design.}
+%Vi trenger en bedre tittel eller så må vi dele det opp og skrive masse svada om HCI eller noe.
 
 The science of \gls{hci} studies the interaction between humans and computers. The goal is to make this interaction as smooth and seamless as possible. Research done in the \gls{hci}-field have resulted in guidelines and design methods for the creation of efficient and usable software. One important factor when focusing on usability is to include the future users the design process to get feedback on the user interface.
 
-ISO 9241-210 provides guidance and acts as a usability standard for human-computer interaction throughout the life cycle of interactive systems. The ISO takes a human-centered design approach to interactive system development. According to the ISO the aim of human-centered design is to make systems usable and useful by focusing on the users, their needs and requirements, and by applying human factors and usability knowledge and techniques \cite{iso9241}.
+ISO 9241-210 provides guidance and acts as a usability standard for human-computer interaction throughout the life cycle of interactive systems. The ISO takes a human-centred design approach to interactive system development. According to the ISO the aim of human-centred design is to make systems usable and useful by focusing on the users, their needs and requirements, and by applying human factors and usability knowledge and techniques \cite{iso9241}.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.9\textwidth]{hcdActivities.png}
+		\caption{\footnotesize The human-cented design workflow}
+		\label{fig:hcdActivities}
+\end{figure}
+
+The standard describes 6 key principles that are listed below. These principals in combination with Figure ~\ref{fig:hcdActivities} will ensure that the design is user centred. The figure is in no way a strict linear process to follow, it merely shows the required input and expected result of each activity.
+
+\begin{enumerate}
+  \item Users are involved throughout design and development.
+  \item The design team consists of members with varied backgrounds
+  \item The design is based upon an understanding of users, tasks and environments.
+  \item The design is driven and refined by user centred evaluation.
+  \item The process iterative.
+  \item The design addresses the whole user experience.
+\end{enumerate}
+
+The first principle emphasizes user involvement throughout the entire process, and not just at the start and the end of the system design, but through the entire cycle of activities. It is important to include a wide range of views and input from experts in various fields, this is where the second principle comes it. It ensures that not everyone thinks and approaches the problem in the same way. The third principle involves understanding the user, what they want to do with the system, and the environment the system will be used in, this is sometimes referred to as the \textit{user experience trinity}. 
+
+Principle 4 and 5 address the fact that several iterations might be required so that a satisfactory design might be reached. Users might not know what they want, but know what they do not want once they have experienced it. Multiple iterations and examples may then be required to find something that is satisfactory to the user. The final principle states that the usability is not just about making things easy to use, but provide the user with a emotional and perceptive stimuli as well. They should wish to use the system and feel good about it.
+
+
+
 
 \section{Information Visualization}
+LOOK AT COMMENT IN TEX!
+
+%DENNE SEKSJONEN TRENGER FLERE BILDER FOR Å ILLUSTRERE POENGET VÅRT.SJEKK https://www.interaction-design.org/ UNDER DATA DOCUMENTS, VI KAN OGSÅ BRUKE BILDER FRA D3JS.
 Information visualization is useful when you want to display large amounts of data simultaneously. The human brain is not good at getting an overview of the information by looking at large tables of numbers or text. Visualizations utilize the strengths of human cognition. By using computer graphics to make visualizations, large amounts of information can be displayed in a way that humans can process and analyse quickly and intuitively.
 
 Many guidelines have been suggested for creation of the optimal visualization. Shneiderman summarized many of these principles in his \emph{visual-information-seeking mantra}~\cite{shneiderman}:
@@ -93,6 +121,10 @@ High-fidelity prototypes are much closer to the final product, and therefore giv
 
 The very nature of a prototype involves making compromises. Therefore the choice of prototype lies in what kind of of questions we want to answer. Two common compromises that are often traded against each other are breadth of functionality vs depth of functionality. \textit{Horizontal prototyping} focuses on a wide range of functions but little details and \textit{vertical prototyping} focuses on providing a lot of detail for a few functions. 
 
+WRITE ABOUT HILL
+
+%WRITE ABOUT HOUD AND HILLS TRIANGLE OF AWESOMNESS http://hci.stanford.edu/courses/cs247/2012/readings/WhatDoPrototypesPrototype.pdf
+
 \section{Focus groups}
 Focus group, or group interview is an informal technique that can help software developers identify the users needs and feelings about a system. The technique can be used both before interface design and long after the system has been implemented. 
 
@@ -102,16 +134,10 @@ A single session may not be representative enough or can get sidetracked, it is 
 
 Nielsen~\cite{focusGroup} discusses two pitfalls with focus groups: Because sessions are in groups the users do not test the system themselves, instead they are presented with a demo. The problem with such a demo is that the participants never have to question what to do next or consider the meaning of the screen options. The second problem is that what participants say they want, is not necessarily what they need. Also, ideas described by the moderator might be perceived differently by the participants. By providing concrete examples through prototypes of the technology, one can minimize this problem.
 
-\section{Validity (Should this be here?)}
-%According to \textit{Experimentation in Software Engineering} \cite{experimentInSE} the valdiity of a study denotes the trustworthiness of results. To what extent these are true and not biased by researches subjective point of view. 
+\section{Validity}
+According to \textit{Interaction Design: beyond human-computer interaction} validity is concerned with whether the evaluation method measures what it is intended to measure. This applies to both the method itself and the way it is executed. For example, if one wishes to examine how a product is used in the home, setting up a controlled lab experiment would hurt the validity. Wrong choice of method and execution are not the only threats to validity, bias and the Ecological Validity threaten the validity but can be impossible or hard to avoid.
 
-According to \textit{Interaction Design: beyond human-computer interaction} validity is concerned with whether the evaluation method measures what it is intended to measure. This applies to both the method itself and the way it is executed. For example, if one wishes to examine how a product is used in the home, setting up a controlled lab experiment would hurt the validity. Wrong choice of method and execution are not the only threats to validity, bias and the Hawthorne effect also threaten validity but can be impossible or hard to avoid.
+Ecological Validity is concerned with how the evaluation method and environment themselves influence and affect the results. If a subject is aware of being observed and the test is conducted outside of their natural surroundings their behaviour and answers will be influenced. Bias is when the results are distorted by the researchers and evaluators. Evaluators might fail to note certain behaviour because they deem it irrelevant, or an interviewers tone of voice may influence the answers of the interviewee. It is therefore important to be open to the possibility of bias.
 
-Ecological Validity also known as the Hawthorne effect is concerned with how the evaluation method and environment themselves influence and affect the results. If a subject is aware of being observed and the test is conducted outside of their natural surroundings their behaviour and answers will be influenced. Bias is when the results are distorted by the researchers and evaluators. Evaluators might fail to note certain behaviour because they deem it irrelevant, or an interviewers tone of voice may influence the answers of the interviewee. It is therefore important to be open to the possibility of bias.
-
-%Vet ikke om vi skal ha med det under men jeg slengte det på
-% REVIEW: Use glossary RESPONSE: DONE!
-Validity in \gls{hci} is a complex area and we have only mentioned some of the basic issues. Thimbleby reviews some of the more complex issues and suggests some practical recommendations for solving them in his \textit{Validity and Cross-Validity in HCI Publications} paper \cite{validation}. 
-% REVIEW: The simplest suggestion he makes sounds really strange. Don't use i.e. just make a new sentence. Don's say "a more complex one" RESPONSE: Changed to elaborate
-One of the simpler suggestion he makes is to use Triangulation. Triangulation involves using multiple methods or sources to achieve the same result. A more elaborate one involves creating a universal star rating system, where papers should be rated based on how easily a researcher can reproduce or build upon the original work.
+Validity in \gls{hci} is a complex area and we have only mentioned some of the basic issues. Thimbleby reviews some of the more complex issues and suggests some practical recommendations for solving them in his \textit{Validity and Cross-Validity in HCI Publications} paper \cite{validation}. One of the simpler suggestion he makes is to use Triangulation. Triangulation involves using multiple methods or sources to achieve the same result. A more elaborate one involves creating a universal star rating system, where papers should be rated based on how easily a researcher can reproduce or build upon the original work.
 
