@@ -1,0 +1,27 @@
+\chapter{CSV Document}
+\label{csvDocument}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=1\textwidth]{csv.png}
+		\caption{\footnotesize The CSV document as seen in Libre Calculator}
+		\label{fig:csvExtract}
+\end{figure}
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|l|p{10cm}|}
+    \hline
+    \textbf{Row Title} & \textbf{Description} \\ \hline
+    Time & Timestap for when the state started. \\ \hline
+    Datacount & The amount of sensor readings the event interval is based on. \\ \hline
+    Interval & Duration for the event interval presented in seconds. \\ \hline
+    ActivityCode & Represents the activity of the user either sedentary (0), standing (1), or stepping(2). \\ \hline
+    CumulativeStepCount & The total amount of steps taken since movement tracking was started. \\ \hline
+    (Not Relevant)Activityscore & This row was not needed in our work so we did not investigate the meaning behind it. \\ \hline
+   	(Not Relevant)Abs & This row was not needed in our work so we did not investigate the meaning behind it. \\ \hline
+  \end{tabular}
+  \end{center}
+  \caption{A short descriptoin of the rows in Figure~\ref{fig:csvExtract}.}
+  \label{tab:csvDescription}
+\end{table}
