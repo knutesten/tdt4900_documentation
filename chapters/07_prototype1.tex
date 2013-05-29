@@ -21,18 +21,10 @@ The pie chart is a standard way of showing the amount of time spent in each acti
 \subsubsection{Symbolic}
 A more symbolic approach is to remove the legend and instead use illustrations to convey which colour corresponds to which activity. To get more space for the illustrations the diagram uses boxes instead of pie slices to represent the distribution of each activity level. Though the box chart is not as much used as the pie chart, humans can intuitively compare sizes of different types of shapes as long as they are paces in close proximity. 
 
-%Dette burde kanskje flyttes til running prototype? Sammen med andre ting vi fant ut ikke funket like bra i praksis som papir.
-% REVIEW: Dessuten passer det ikke med det over.
-% REVIEW: I don't think we should have this section at all, the changes to the visualizations that should be talked about are those that were done because of feedback form the focus groups.
-%The first idea was to only use the illustrations~\ref{fig:symbolicPie}, without the boxes, and scale the height to represent the ratio between each activity classification. However this idea was discarded because it became apparent that it was too hard to identify the ratio between the different illustrations. This is much easier with boxes.
-
-%We may have to redraw this picture compared to the explanation in this section?
-% REVIEW: Yes that probably is a good idea.
-%RESPONSE: I am unsure if we need to redraw, i think it's nice to have it there, shows that things have changed a bit. Rather changed descriptive text to "first idea"
 \begin{figure}[h!]
 	\centering
 		\includegraphics[width=0.7\textwidth]{stickSketch.png}
-		\caption{\footnotesize Our first idea for a symbolic "pie chart"}
+		\caption{\footnotesize Our first idea for a symbolic ``pie chart''}
 		\label{fig:symbolicPie}
 \end{figure}
 
@@ -119,9 +111,8 @@ One of the challenges in this project was to create different visualizations to 
 
 Creating graphics using svg-tags directly is cumbersome and time consuming. \gls{d3} is an open source framework that greatly simplifies this task. \gls{d3} is written in JavaScript and designed to be used in combination with HTML5. The framework can be used both to create new \gls{svg} images from scratch or modify and edit existing images. Another feature is the ability to easily add interactivity and animation to the \gls{svg}-elements. HTML5 in combination with \gls{d3} gives us flexibility to create almost any type of visualization and adding interactivity and animation to it.
 
-%Her skriver du bare om hvordan ting ser ut, burde vi relatere det mer til sketchene, eller user requireents som jeg nevnte i paper sketches, slik at det blir en mer ``rød tråd'' over det hele. Det er kanskje ikke nødvendig her, men det burde i såfall gjøres under prototype 2. Ellers liker jeg oppstett på kapitellet, jeg har gått gjennom og endret litt tekst her og der samt gramatiske feil
 \section{Running prototype}
-9 of the paper prototypes were selected for implementation for the system shown to focus group 1. The diagrams were given ID, as seen in the table~\ref{tab:runProtDesc1}. Figure~\ref{fig:runProt1} shows a screen shot of the different types of diagrams. 
+Nine of the paper prototypes were selected for implementation, to be used in the first focus group. Some changes and additional functionality was added to the implemented versions of the visualizations, such as highlighting and different view modes. All diagrams were given IDs as seen in table~\ref{tab:runProtDesc1}.
 
 \begin{table}[h!]
   \begin{center}
@@ -143,7 +134,7 @@ Creating graphics using svg-tags directly is cumbersome and time consuming. \gls
   \label{tab:runProtDesc1}
 \end{table}
 
-The two diagrams U1 and U2 are week overviews. These are designed to give you a quick overview of the week. U2 experiments with adding more detail, and contains 24 small squares for each day that represent the activity of each hour. Holding the mouse cursor over a day in U1 will show the percentage of each type of activity for that day. Holding the mouse cursor over a square in U2 will show the percentage of each type of activity for the hour that square represents.
+The two diagrams U1 and U2 (see figure~\ref{fig:uFirst}) are week overviews. These are designed to give you a quick overview of the week. U2 experiments with adding more detail, and contains 24 small squares for each day that represent the activity of each hour. Holding the mouse cursor over a day in U1 will show the percentage of each type of activity for that day. Holding the mouse cursor over a square in U2 will show the percentage of each type of activity for the hour that square represents.
 
 \begin{figure}[h!]
   \centering
@@ -158,11 +149,10 @@ The two diagrams U1 and U2 are week overviews. These are designed to give you a 
     \caption{U2}
   \end{subfigure}
   \caption{Week overview charts.}
-  \label{fig:runProt1}
+  \label{fig:uFirst}
 \end{figure}
 
-%Review: Tror du har mistet now tekst det står bare ``When showing the entire week'' og så slutter det.
-Diagrams F1, F2 and F3 are the fractional charts*. These diagrams shows the fraction of each type of activity for a day. F1 and F2 are similar, F1 is a standard pie diagram while F2 uses boxes with figures describing the activity. F1 and F2 has two types of view modes: one day or the entire week. When showing the entire week. F3 is more complex, this diagram shows each interval of activity as a ball. Long intervals of activity is represented by a larger ball than small intervals of activity. This graph can therefore be used both to see the distribution of the different activity types and, more importantly, the length of continuous activity, or sedentary behaviour. This is useful when you want to identify if the patient has very long periods of sedentary behaviour, or if the patient walks continuously for a long time, or takes small brakes. Holding the mouse cursor over a bubble shows you the time the activity interval occurred as well as the length of the interval. F3 also offers a highlighting mode, when active intervals of more than 1 hour are highlighted.
+Diagrams F1, F2 and F3 (see figure~\ref{fig:fFirst}) are the fractional charts*. These diagrams shows the fraction of each type of activity for a day. F1 and F2 are similar, F1 is a standard pie diagram while F2 uses boxes with figures describing the activity. F1 and F2 has two types of view modes: one day or the entire week. F3 is more complex, this diagram shows each interval of activity as a ball. Long intervals of activity is represented by a larger ball than small intervals of activity. This graph can therefore be used both to see the distribution of the different activity types and, more importantly, the length of continuous activity, or sedentary behaviour. This is useful when you want to identify if the patient has very long periods of sedentary behaviour, or if the patient walks continuously for a long time, or takes small brakes. Holding the mouse cursor over a bubble shows you the time the activity interval occurred as well as the length of the interval. F3 also offers a highlighting mode, when active intervals of more than 1 hour are highlighted.
 
 \begin{figure}[h!]
   \centering
@@ -183,9 +173,10 @@ Diagrams F1, F2 and F3 are the fractional charts*. These diagrams shows the frac
     \caption{F3}
   \end{subfigure}
   \caption{Fractional charts*}
+  \label{fig:fFirst}
 \end{figure}
 
-T1, T2, T3 and T4 are diagrams that show timelines or clocks. These diagrams are useful to see when the patient was active during the day. T1 shows 24 squares each representing an hour of the day. The percentage of activity (walking and standing) is shown as a gradient in each square. Holding the cursor over a square gives you the percentage of each type of activity. T2 is also a timeline, but here the data is not aggregated so the timeline is continuous and shows the activity at a much more detailed level. This is useful if you need to see when in a particular hour activity was performed. It also distinguishes between standing and walking activity. T3 and T4 are also show the activity continuously but they use a clock instead of a timeline to illustrate when on they day the activity occurred. T3 uses two 12 hour clocks, while T4 uses a single 24-hour clock. Diagrams T2, T3 and T4 can toggle highlighting. When highlighting is toggled sedentary behaviour longer than 1 hour is highlighted with blue. All T-diagrams can be viewed one day at a time or the entire week all at once. 
+T1, T2, T3 and T4 (see figure~\ref{fig:tFist} are diagrams that show timelines or clocks. These diagrams are useful to see when the patient was active during the day. T1 shows 24 squares each representing an hour of the day. The percentage of activity (walking and standing) is shown as a gradient in each square. Holding the cursor over a square gives you the percentage of each type of activity. T2 is also a timeline, but here the data is not aggregated so the timeline is continuous and shows the activity at a much more detailed level. This is useful if you need to see when in a particular hour activity was performed. It also distinguishes between standing and walking activity. T3 and T4 are also show the activity continuously but they use a clock instead of a timeline to illustrate when on they day the activity occurred. T3 uses two 12 hour clocks, while T4 uses a single 24-hour clock. Diagrams T2, T3 and T4 can toggle highlighting. When highlighting is toggled sedentary behaviour longer than 1 hour is highlighted with blue. All T-diagrams can be viewed one day at a time or the entire week all at once. 
 
 \begin{figure}[!h]
   \centering
@@ -221,4 +212,5 @@ T1, T2, T3 and T4 are diagrams that show timelines or clocks. These diagrams are
     \includegraphics[width=\textwidth]{t4First.png}
     \caption{T4}
   \end{subfigure}
+  \label{fig:tFirst}
 \end{figure}  
