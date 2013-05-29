@@ -1,22 +1,21 @@
 \documentclass{MScthesisITEM}
 
-% this package is just to generate text for demo-purposes
-\usepackage{blindtext}
 %Packages added by Dean
 \usepackage{multirow}
 \usepackage{tikz}
 \usetikzlibrary{automata,positioning}
+% Uncomment the following in case you want subfigures; note that there will be a warning for the caption package
+ \let\subcaption\undefined
+ \let\subfloat\undefined
+ \usepackage[bf]{caption}
+ \usepackage{subcaption}
+ \captionsetup{compatibility=false}
+
 
 \title{Title} % The title of your assignement; NB use \newlinetitle to start a newline
 \author{Firstname Lastname} % Your firstname and lastname
 \professor{Firstname Lastname, Affiliation} % Affiliation = ITEM for instance
 \supervisor{Firstname Lastname, Affiliation}
-
-%% Uncomment the following in case you want subfigures; note that there will be a warning for the caption package
-% \let\subcaption\undefined
-% \let\subfloat\undefined
-% \usepackage[bf]{caption}
-% \usepackage{subcaption}
 
 \DeclareGraphicsExtensions{.pdf,.jpg}
 \graphicspath{{./figs/}}
