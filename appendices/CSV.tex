@@ -9,19 +9,18 @@
 \end{figure}
 
 \begin{table}[h!]
-  \begin{center}
-  \begin{tabular}{|l|p{10cm}|}
+  \centering
+  \begin{tabular}{|l|p{8.4cm}|}
     \hline
     \textbf{Row Title} & \textbf{Description} \\ \hline
-    Time & Timestap for when the state started. \\ \hline
-    Datacount & The amount of sensor readings the event interval is based on. \\ \hline
+    Time & Time when the state started. \\ \hline
+    DataCount & The amount of sensor readings the event interval is based on (not used in this project). \\ \hline
     Interval & Duration for the event interval presented in seconds. \\ \hline
-    ActivityCode & Represents the activity of the user either sedentary (0), standing (1), or stepping(2). \\ \hline
-    CumulativeStepCount & The total amount of steps taken since movement tracking was started. \\ \hline
-    (Not Relevant)Activityscore & This row was not needed in our work so we did not investigate the meaning behind it. \\ \hline
-   	(Not Relevant)Abs & This row was not needed in our work so we did not investigate the meaning behind it. \\ \hline
+    ActivityCode & Represents the activity of the user either sedentary (0), standing (1), or walking (2). \\ \hline
+    CumulativeStepCount & The total amount of steps taken since movement tracking was started (not used in this project). \\ \hline
+    Activity Score & Activity score rating (not used in this project) \\ \hline
+    Abs(sumX) & Acceleration intensity (not used in this project). \\ \hline
   \end{tabular}
-  \end{center}
-  \caption{A short descriptoin of the rows in Figure~\ref{fig:csvExtract}.}
+  \caption{A short description of the rows in figure~\ref{fig:csvExtract}.}
   \label{tab:csvDescription}
 \end{table}
