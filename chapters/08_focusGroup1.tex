@@ -16,11 +16,89 @@ We started with introductions, explaining our work and a general outline for the
 
 \section
 \section{Results}
-Scenarios:
-Use for self or other physiotherapists
-In communication with other health care personnel (hjemmetjenesten)
-In consultation with the patient
-In consultation with next of kin 
+% I am a little uncertain how to introduce this section, should we use the good old "this section contains bla bla"?
+
+// add something about the fact that they don't have colour printers
+// add something about the gradient being hard to see on the projector
+// create an other results subsection or something
+
+\subsection{Scenarios}
+The first part of the focus group was used for discussing how the technology could be used in practice. After going through the video and analysing the discussion we created four scenarios where visualizations would be a helpful tool: 
+\vspace{-6mm}
+\begin{enumerate}[itemsep=0cm, parsep=0cm]
+\item When going analysing patients current activity level either individually or in cooperation with other physiotherapists.
+\item In communication with other health care personnel.
+\item In consultation with the patient.
+\item In consultation with next of kin.
+\end{enumerate}
+
+\subsection{Visualizations}
+A large portion of the focus group was reviewing the visualizations from prototype 1. Each visualization was reviewed one at a time, and the participants gave positive and negative feedback. We will now go through the most important parts of the feedback for each visualization group.
+
+\subsubsection{Week Overviews}
+U1 was generally well received as a good way to get an overview of the week. There was some confusion as to how the days were classified, and it was suggested that you should be able to set custom goals to be used in the classification. One of the participants stated that the use of sad smilies would be judgemental toward the current activity level of the patient. Because a lot of the patients that receive help from physiotherapists have a low level of activity it was a fear that all days would be classified as sad smilies reducing the motivation of the patient. Using colours instead of smilies was suggested.
+
+U2 was not well received. The participants did not not like the way the 24 hours were separated on four rows. This gave the days a calendar feel, which was confusing for participants. U2 contained too much information and it was hard to get a feel for the overall activity of the day because the hours were split on four rows. The participants also had a hard time comparing different days because the day-boxes were too far apart.
+
+In general the participants liked the idea of a week overview. Classifying the days should be made clearer by adding customizable goals. Smilies should be removed because they can be judgemental toward the current activity level of the patient. The week overview should not show more detail than classifying the days.
+
+\subsubsection{Fractional Charts}
+F1 was seen as easy to understand because of the familiarity of pie charts. Several of the participants did not like the fact that nighttime was added because the patients are supposed to be inactive in the night the chart gave a unnecessary bad impression of the day as a whole. It was also perceived as hard to separate good and bad days because the percentage of activity always remains very small compared to inactivity. They liked the ability to see the entire week once at a time.
+
+F2 was not as well liked as F1. Though the participants like the figures that illustrated the different types of activity, they did not like the box approach for visualizing the percentages. The participants thought it was easier to see the distribution using the pie chart compared to the box chart. One of the participants suggested adding the illustrations to the pie chart. Also here the participants wanted to remove nighttime.
+
+The participants were positive F3, the ball chart. They liked the fact that the visualizations showed the length of the intervals. Also here some participants wanted nighttime to be removed, while others felt that it was interesting to see if the patient was waking during the night. The participants agreed that this type of visualization is too complex to be show to patients, however it could be showed to other health care personnel. The highlighting functionality was perceived as redundant, since it was already easy to the largest periods of inactivity.
+
+The participants felt the F2, box chart, was hard to understand. They liked the illustrations of the F2 and wanted to add them to F1, the pie chart. There should be an option to see the entire week simultaneously. F3 was a good way to get an overview of the length of intervals of activity. Highlighting was not needed for F3.
+
+\subsubsection{Timeline and Clock Charts}
+T1, blocked timeline, was very well received by the participants, especially in week view. The participants praised the ability to easily see the patients habits. It was also stated that nighttime no longer got a negative impact on the visualization because it could easily identified and ignored. One of the participants liked to have the ability to see if the patient was awake during the night (in the example data you could see the 10 minutes of activity at 4 AM). The participants stated that it was very easy to get a quick and detailed overview of the entire week, and it was easy to see which hours where more activity could be added. The participants suggested using different type of colours to make the gradient clearer.
+
+T2 was not well received. The participants felt that the red colour, representing inactivity, was way to dominating. The periods of activity were hidden by all the red. They also stated that it was hard to see periods of walking activity, because they were hidden by all the green and yellow (standing activity). When asked about the need for more detail than on an hour basis the participants answered that it was not useful with more detail than the 24 hour blocks of T1.
+
+T3 displayed two clocks instead of a timeline. The participants did not like this visualization. They felt it was hard to identify when different events were occurring. They also stated that it was hard to compare multiple days because the circles could not be placed directly below each other like the timelines.
+
+T4 was better received than T3. Some of the participants felt it was confusing that the clock had 24 hours. It was also expressed concern that the red portions representing inactivity stood out too much, making it hard to see the periods of activity. Also it was seen as hard to compare multiple days.
+
+The participants like T1 because it was easy to get an overview both the day and the week. The participants felt that there was little with more detail than on an hour basis. T2, T3 and T4 was seen as too hard to read, both because it was to detailed and because the active periods were hidden by periods of inactivity.
+
+\subsection{Requirements}
+Analysing the discussion and feedback on the visualizations, we revised the initial requirements and created a new set of requirements to be presented for the second focus group. The new requirements were divided into functional requirements and user experience requirements:
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|p{12cm}|}
+    \hline
+      \textbf{Id} & \textbf{Requirement} \\ \hline
+    \multicolumn{2}{|l|}{The visualizations should \ldots} \\ \hline
+      F1-1 & give the user an overview of the week where the days are classified by national or personal goals \\ \hline
+      F1-2 & show the activity level for each hour of the day \\ \hline
+      F1-3 & make it simple to identify periods of inactivity \\ \hline
+      F1-4 & make it possible to compare multiple days \\ \hline
+      F1-5 & make it easy to identify hours of the day where activity can be added \\ \hline
+      F1-6 & show the activity level compared to national or personal goals \\ \hline
+      F1-7 & let the user identify patients that are active during the night \\ \hline
+      F1-8 & let you compare two separate weeks to see the patients progress \\ \hline
+      F1-9 & should be printable in grayscale \\ \hline
+  \end{tabular}
+  \end{center}
+  \caption{Functional requirements from the first focus group}
+\end{table}
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|p{12cm}|}
+    \hline
+      \textbf{Id} & \textbf{Requirement} \\ \hline
+    \multicolumn{2}{|l|}{The visualizations should \ldots} \\ \hline
+      F1-10 & not be judgemental towards the patients activity level \\ \hline
+      F1-11 & should be honest about the patients activity level \\ \hline
+      F1-12 & should motivate the patient to be more active \\ \hline
+      F1-13 & should be intuitive and easy to understand and explain to the user \\ \hline
+  \end{tabular}
+  \end{center}
+  \caption{User experience requirements from the first focus group}
+\end{table}
 
 \section{Interpretation}
 
