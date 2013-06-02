@@ -29,9 +29,9 @@ Feedback from the first focus group was used to improve the visualizations, tabl
 
 New functionality added includes a new diagram T5, ability to set goals (default is national goals) and a small diagram, goal circles, that shows how active the patient was compared to the goals. The new diagram (see figure~\ref{fig:t5}), T5, is similar to the visualization used by activPAL, but it does not show a bar for the amount of sedentary behaviour. The day is aggregated to 24 hour-blocks, the activity level for each hour is represented by stacked bars. This means that an hour with no activity, other than seating, will show no bar. 
 
-Goal circles is a small diagram appended to T1 and T5, see figure~\ref{fig:t1} and ~\ref{fig:t5}. Goal circles are used to indicate how much activity the patient accumulated compared to the goals set. A full circle means the patient reached his goal that day. Exceeding the goal will produce more circles. For example, if the goal was walking for 1 hour each day, a full circle would indicate that the patient walked exactly 1 hour, a half circle would indicate the patient walked 0.5 hours, and two circles would mean 2 hours of walking etc.
+Goal circles are small diagrams appended to T1 and T5, see figure~\ref{fig:t1} and ~\ref{fig:t5}. Goal circles are used to indicate how much activity the patient accumulated compared to the goals set. A full circle means the patient reached his goal that day. Exceeding the goal will produce additional circles. For example, if the goal was walking for 1 hour each day, a full circle would indicate that the patient walked exactly 1 hour, a half circle would indicate the patient walked 0.5 hours, and two circles would mean 2 hours of walking.
 
-Table~\ref{tab:runProtDesc2} shows an overview of the visualizations used in the second version of the system. A functionality added to all the visualizations was the ability to switch between colours, including grayscale. U2 was discarded by the first focus group. U1, see figure~\ref{fig:uSecond}, is the only week overview for the second version. The smilies were replaced with coloured squares because the sad face would be demotivating for the patients. U1 was also changed to classify the days compared to goals. The goals can be set manually, the default values are the national goals. Reaching both goals will classify the day to the green square, 1 goal to the yellow square, and no goals to the red square.
+Table~\ref{tab:runProtDesc2} shows an overview of the visualizations used in the second version of the system. A functionality added to all the visualizations was the ability to switch between colours, including grayscale. U2 was discarded by the first focus group. U1, see figure~\ref{fig:uSecond}, is the only week overview available on the second prototype. The smilies were replaced with coloured squares because the sad face would be demotivating for the patients. U1 was also changed to classify the days compared to goals. The goals can be set manually, the default values are the national goals. Reaching both goals will classify the day to the green square, one goal to the yellow square, and no goals to the red square.
 
 \begin{table}[h!]
   \centering
@@ -39,7 +39,7 @@ Table~\ref{tab:runProtDesc2} shows an overview of the visualizations used in the
     \hline
     \textbf{ID} & \textbf{Description} \\ \hline
     U1 & Classifies each day of the week into either of three categories: Both goals reached, one goal reached and no goals reached. \\ \hline
-    F1 & Pie chart showing the amount of activity for each day. \\ \hline
+    F1 & Pie chart showing the amount of activity for each day (Excluding what is assumed to be sleep during nighttime). \\ \hline
     F3 & Bubble chart. Divides the pie slices of F1 into bubbles, each bubble representing one interval of activity (e.g. 2 hours of non-stop sedentary behaviour). \\ \hline
     T1 & Timeline of 24 squares, each square represents 1 hour of activity. The amount of activity in that hour is displayed using a gradient. \\ \hline
     T4 & One 24-hour clock showing the activity type using colour coding. \\ \hline
