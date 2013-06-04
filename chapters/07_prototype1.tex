@@ -8,6 +8,7 @@ It is possible to display raw accelerometer data or provide event based data whe
 For the purpose of our thesis the event based \gls{csv} was the most suited basis for the type of information we would need for our visualizations. Before feeding the data to our visualizations the applications parsed the data into a suitable format, this primarily consisted of merging all the events into hours and days. activPAL is not a key part of our prototype, we chose this sensor because it had been proven trustworthy in other research, and was easy to acquire. Other sensor can be used as long as the data given as input to the visualizations has a certain structure.
 
 \section{Paper sketches}
+\label{sec:paperSketches}
 All the sketches described in this section were created through a set of informal brainstorming sessions between the authors where we occasionally received input from other sources. This was an iterative process that spanned over five sessions. The sketches represent our first ideas on visualizations that would fulfil the initial requirements efficiently, while providing alternatives to choose from. 
 
 %Were we not supposed to change the name of this subsection. We were, but nobody has a fucking clue of what it should be callled
@@ -111,6 +112,7 @@ One of the challenges in this project was to create different visualizations to 
 Creating graphics using svg-tags directly is cumbersome and time consuming. \gls{d3} is an open source framework that greatly simplifies this task. \gls{d3} is written in JavaScript and designed to be used in combination with HTML5. The framework can be used both to create new \gls{svg} images from scratch or modify and edit existing images. Another feature is the ability to easily add interactivity and animation to the \gls{svg}-elements. HTML5 in combination with \gls{d3} gives us flexibility to create almost any type of visualization and adding interactivity and animation to it.
 
 \section{Running prototype}
+\label{sec:runningPrototype1}
 Nine of the paper prototypes were selected for implementation, to be used in the first focus group. Some changes and additional functionality was added to the implemented versions of the visualizations, such as highlighting and different view modes. All diagrams were given IDs as seen in table~\ref{tab:runProtDesc1}.
 
 \begin{table}[h!]
