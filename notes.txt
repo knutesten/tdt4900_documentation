@@ -1,0 +1,77 @@
+THINGS TO FIX
+
+Introduction 
+  Rename Related work -> Context of the study.
+  Add a picture of the Nike+ bracelet and picture of presentation of data.
+
+HCI
+  Change order, interactivity and visual variables.
+  Add pictures describing visual variables etc. (www.interactin-design.org).
+  Hawthorn effect must be removed because Dean has been a fool.
+  
+
+
+  From the patients takes contact with the health care 
+
+  patient trajectory 
+
+  Clarify the patients path through the health care system.
+
+  Clarify that the physiotherapist are special because they go home to the patient.
+
+  Not AMU but IMU
+
+  Article Houde and Hill what prototypes prototype
+
+
+TINGS TO FIX 2
+
+QUOTES?
+
+SHOW ALL THE PICTURES IN PAPER PROTOTYPE SECTION!  
+
+PROTOTYPE 1 -- DONE --
+  We need to be more explicit about the process for creating the sketches. Something we did by ourself with feedback from supervisor. Based on initial requirements. No user input here. It is important to show that we started the implementation and didn't show the users the paper sketches.
+
+Rename: PAPER SKETCHES -> PAPER SKETCHES FOR PROTOTYPE 1 -- IGNORED --
+
+INITIAL REQUIREMENTS -- REVIEW -- 
+  New section METHOD:
+    We have to say we did an interview a domain expert to get started. And took notes. Try to formulate the questions that we had when interviewing. 
+
+INTRODUCTION?
+  Step 3 from HU is not really relevant for our project. 
+  Welfare technology
+
+PHYSIOTHERAPY IN NORWAY -- DONE -- 
+  Mention that to create an activity plan is just one of many treatments.
+  Not welfare technology
+
+   
+MEDICAL TECHNOLOGY -> PHYSICAL THERAPY CHAPTER -- DONE --
+  Software is considered medical equipment.
+
+RESEARCH DESIGN (priority) -- DEAN --
+  Reference to the research questions. To get an answer to these questions we did this shit.
+  Questionnaire has to be mentioned here.
+
+IN FOCUS GROUP SECTION WE NEED TO BE CLEAR ABOUT WHAT HAS HAPPENED (BE VERY CLEAR CLEAR CLEAR)
+  Examples!
+
+PROTOTYPE 2 
+  Each change in change log etc. should have a reference to the requirements created after focus group 1
+
+APPENDIX
+  Add full size pictures of the visualizations
+
+DISCUSSION (priority)
+  Answer the research questions.
+  How has it helped to involve the user. Show the difference between the first prototype and the second. Show that it is very important to involve the user. 
+  Personal reflections can be added here.
+
+PAPER SKETCHES -- DONE --
+  Fractional charts -> Aggregated charts
+  Timeline          -> Timeline
+  Week overview     -> Overview charts
+
+DOCUMENT THE PROCESS BITCHES
