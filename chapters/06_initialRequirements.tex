@@ -1,10 +1,19 @@
 \chapter{Initial requirements}
 
-% I don't even know what to think about this section. Please review and add stuff if you get some ideas. I didn't really participate much in this process. Section should probably be a little longer... HELP ME DEAN HEEEELP ME!
+% REVIEW ME, PLEASE!
+% REVIEW: I think you might be right about the fact that we need a method chapter about interviews, but should that be placed here or in HCI or another chapter?
 \section{Requirement gathering}
-The initial requirements were gathered with the help of a physiotherapist working on a research project at St. Olavs Hospital. Here the activPAL sensor is used to track the activity of patients being rehabilitated after hip-fractures. The only visualization utilized is the one offered by the activPAL software.
+The initial requirements were gathered with the help of a domain expert working on a research project at St. Olavs Hospital. Here the activPAL sensor is used to track the activity of patients being rehabilitated after hip-fractures.
 
-Research projects such as the one mentioned above are currently the only arena where physiotherapists use \gls{pi} technology to track the activity level of their patients. We therefore expected the requirements to be changed considerably after the focus group sessions. The initial requirements were created during the first meeting. Questions and issues that arose during the development phase were solved via mail or telephone.
+Because of the lack of information we had on the current usage of sensor technology in physiotherapy and how this technology works, we conducted an unstructured interview with the domain expert. In the interview we discussed four subjects: how sensor technology like the activePAL is used in physiotherapy and research today, what types of visualizations are used, technical aspects of using the activPAL, and initial requirements. 
+
+Currently there is little or no use of sensor technology in physiotherapy. There are some physiotherapists involved in the research projects using these types of sensors, but they do not use them in their normal practice. 
+
+The only visualization utilized by the domain expert  and physiotherapists using the activPAL sensor are the visualizations that are offered by the software that comes with the sensor, as seen in section~\ref{sec:activPALViz}.
+
+From a technical aspect it is not hard to use the data gathered by activPAL. The data can easily be exported in the common CSV format. CSV is a machine-readable format, which means that can easily be read and parsed by other computer programs. activPAL offers options for exporting both event data (see appendix~\ref{csvDocument}), or raw acceleration data.
+
+After getting an overview, of the current situation and the technical possibilities of the activPAL sensor, we created the initial requirements found in the next section.
 
 \section{Initial Requirements and User Scenario}
 After talking to the domain experts at St. Olavs Hospital two main user scenarios emerged:

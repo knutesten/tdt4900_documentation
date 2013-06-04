@@ -7,12 +7,36 @@ It is possible to display raw accelerometer data or provide event based data whe
 
 For the purpose of our thesis the event based \gls{csv} was the most suited basis for the type of information we would need for our visualizations. Before feeding the data to our visualizations the applications parsed the data into a suitable format, this primarily consisted of merging all the events into hours and days. activPAL is not a key part of our prototype, we chose this sensor because it had been proven trustworthy in other research, and was easy to acquire. Other sensor can be used as long as the data given as input to the visualizations has a certain structure.
 
-\section{Paper sketches}
-All the sketches described in this section were created through a set of informal brainstorming sessions between the authors where we occasionally received input from other sources. This was an iterative process that spanned over five sessions. The sketches represent our first ideas on visualizations that would fulfil the initial requirements efficiently, while providing alternatives to choose from. 
+% REVIEW THIS BITCHES!
+\section{Paper Sketches}
+// Brainstorming? 
 
-%Were we not supposed to change the name of this subsection. We were, but nobody has a fucking clue of what it should be callled
-\subsection{Fractional charts}
-These type of charts show the sum of time spent sedentary, standing, and walking. Summing over the three classifications makes it easy to get an overview of the day as a whole. The drawback are that details are lost and it is not possible to pinpoint when each activity occurred during the day. Fractional charts were created to cover IR2 and are intended to give a general overview of the daily activity before spending time looking at more detailed visualizations. Additionally it can serve as an alert for patients with low activity levels, where majority of the chart would be filled with inactivity.
+Before the starting the implementation of the system we created a set of paper sketches of the visualizations that we planned to implement. These were our first ideas on the visualizations that would fulfil the initial requirements efficiently, while providing several alternative to choose from. Due to lack of time and some problems finding physiotherapists in the earlier stages of development we were not able to get any feedback on the paper sketches from the users. The paper sketches were therefore only reviewed by our supervisor before the actual implementation was started.
+
+\subsection{Overview charts}
+Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify bad days that can then be investigated further. In other words they cover requirement IR1 and IR4. These visualizations could also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart.
+
+\subsubsection{Day classification}
+By calculating the overall activity level and classifying the days into three categories the user can easily see which days he need to be more active and which days the activity level is satisfactory. In our sketch, see figure \ref{fig:smileyWeek} the three different classifications are illustrated by smilies (smiling face for active days, and sad face for inactive days).
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.7\textwidth]{smileyWeekSketch.png}
+		\caption{\footnotesize Overview chart with each day classified into one of three categories.}
+		\label{fig:smileyWeek}
+\end{figure}
+
+A more complex version of the above chart, see figure \ref{fig:detailedWeek} is to show a square for each day, while still using the same classification into sad and happy smilies. Each day square will then contain 24 smaller squares that represent each hour of the day. The small hour square are coloured with a gradient to show the activity level for that hour. With this chart you can get an overview of the week as a whole, and identify what hours of the inactive days had the most sedentary behaviour. 
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.6\textwidth]{detailedWeekSketch.png}
+		\caption{\footnotesize Some explanation here.}
+		\label{fig:detailedWeek}
+\end{figure}
+
+\subsection{Aggregated charts}
+These type of charts show the sum of time spent sedentary, standing, and walking. Summing over the three classifications makes it easy to get an overview of the day as a whole. The drawback are that details are lost and it is not possible to pinpoint when each activity occurred during the day. Aggregated charts were created to cover IR2 and are intended to give a general overview of the daily activity before spending time looking at more detailed visualizations. Additionally it can serve as an alert for patients with low activity levels, where majority of the chart would be filled with inactivity.
 
 \subsubsection{Pie chart}
 The pie chart is a standard way of showing the amount of time spent in each activity state. Due to the familiarity of the pie chart it will be easy to understand for both users and patients. A legend shows which colour represents each type of activity. The exact percentage for each activity state is also displayed.
@@ -37,7 +61,7 @@ An alternative is to include more detail into a pie chart style, by using balls 
 		\label{fig:ballChart}
 \end{figure}
 
-\subsection{Timeline}
+\subsection{Timeline charts}
 Timeline visualisations are effective at illustrating when various activities occurred during the day. The illustration uses a long horizontal bar that has different colours for different behavioural classification. These visualizations primarily address requirement IR3, IR5, and IR6. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long. By looking at multiple days, the user can detect patterns in the day where he needs to be more active.
 
 \subsubsection{Continuous}
@@ -65,28 +89,6 @@ A timeline may need some explanation before the user understands it properly. By
 
 Another approach is to use one 24 hour clock. This makes it easier to see the transition between AM and PM, but 24 hour clocks are not natural, so it might be problematic for the user to understand.
 
-\subsection{Week overview}
-Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify bad days that can then be investigated further. In other words they cover requirement IR1 and IR4. These visualizations could also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart.
-
-\subsubsection{Day classification}
-By calculating the overall activity level and classifying the days into three categories the user can easily see which days he need to be more active and which days the activity level is satisfactory. In our sketch, see figure \ref{fig:smileyWeek} the three different classifications are illustrated by smilies (smiling face for active days, and sad face for inactive days).
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[width=0.7\textwidth]{smileyWeekSketch.png}
-		\caption{\footnotesize Week overview with each day classified into one of three categories.}
-		\label{fig:smileyWeek}
-\end{figure}
-
-A more complex version of the above chart, see figure \ref{fig:detailedWeek} is to show a square for each day, while still using the same classification into sad and happy smilies. Each day square will then contain 24 smaller squares that represent each hour of the day. The small hour square are coloured with a gradient to show the activity level for that hour. With this chart you can get an overview of the week as a whole, and identify what hours of the inactive days had the most sedentary behaviour. 
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[width=0.6\textwidth]{detailedWeekSketch.png}
-		\caption{\footnotesize Some explanation here.}
-		\label{fig:detailedWeek}
-\end{figure}
-
 \section{Programming framework}
 The task was to create custom visualizations form data gathered the activPAL sensor. The choice of programming tools fell on HTML5 and an open source JavaScript framework called D3.js.
 
@@ -111,7 +113,7 @@ One of the challenges in this project was to create different visualizations to 
 Creating graphics using svg-tags directly is cumbersome and time consuming. \gls{d3} is an open source framework that greatly simplifies this task. \gls{d3} is written in JavaScript and designed to be used in combination with HTML5. The framework can be used both to create new \gls{svg} images from scratch or modify and edit existing images. Another feature is the ability to easily add interactivity and animation to the \gls{svg}-elements. HTML5 in combination with \gls{d3} gives us flexibility to create almost any type of visualization and adding interactivity and animation to it.
 
 \section{Running prototype}
-Nine of the paper prototypes were selected for implementation, to be used in the first focus group. Some changes and additional functionality was added to the implemented versions of the visualizations, such as highlighting and different view modes. All diagrams were given IDs as seen in table~\ref{tab:runProtDesc1}.
+Nine of the paper sketches were selected for implementation, to be used in the first focus group. Some changes and additional functionality was added to the implemented versions of the visualizations, such as highlighting and different view modes. All diagrams were given IDs as seen in table~\ref{tab:runProtDesc1}.
 
 \begin{table}[h!]
   \begin{center}
@@ -133,7 +135,7 @@ Nine of the paper prototypes were selected for implementation, to be used in the
   \label{tab:runProtDesc1}
 \end{table}
 
-The two diagrams U1 and U2 (see figure~\ref{fig:uFirst}) are week overviews. These are designed to give you a quick overview of the week. U2 experiments with adding more detail, and contains 24 small squares for each day that represent the activity of each hour. Holding the mouse cursor over a day in U1 will show the percentage of each type of activity for that day. Holding the mouse cursor over a square in U2 will show the percentage of each type of activity for the hour that square represents.
+The two diagrams U1 and U2 (see figure~\ref{fig:uFirst}) are overview charts. These are designed to give you a quick overview of the week. U2 experiments with adding more detail, and contains 24 small squares for each day that represent the activity of each hour. Holding the mouse cursor over a day in U1 will show the percentage of each type of activity for that day. Holding the mouse cursor over a square in U2 will show the percentage of each type of activity for the hour that square represents.
 
 \begin{figure}[h!]
   \centering
@@ -147,11 +149,11 @@ The two diagrams U1 and U2 (see figure~\ref{fig:uFirst}) are week overviews. The
     \includegraphics[width=\textwidth]{u2First.png}
     \caption{U2}
   \end{subfigure}
-  \caption{Week overview charts.}
+  \caption{Overview charts.}
   \label{fig:uFirst}
 \end{figure}
 
-Diagrams F1, F2 and F3 (see figure~\ref{fig:fFirst}) are the fractional charts*. These diagrams shows the fraction of each type of activity for a day. F1 and F2 are similar, F1 is a standard pie diagram while F2 uses boxes with figures describing the activity. F1 and F2 has two types of view modes: one day or the entire week. F3 is more complex, this diagram shows each interval of activity as a ball. Long intervals of activity is represented by a larger ball than small intervals of activity. This graph can therefore be used both to see the distribution of the different activity types and, more importantly, the length of continuous activity, or sedentary behaviour. This is useful when you want to identify if the patient has very long periods of sedentary behaviour, or if the patient walks continuously for a long time, or takes small brakes. Holding the mouse cursor over a bubble shows you the time the activity interval occurred as well as the length of the interval. F3 also offers a highlighting mode, when active intervals of more than 1 hour are highlighted.
+Diagrams F1, F2 and F3 (see figure~\ref{fig:fFirst}) are the aggregated charts. These diagrams shows the fraction of each type of activity for a day. F1 and F2 are similar, F1 is a standard pie diagram while F2 uses boxes with figures describing the activity. F1 and F2 has two types of view modes: one day or the entire week. F3 is more complex, this diagram shows each interval of activity as a ball. Long intervals of activity is represented by a larger ball than small intervals of activity. This graph can therefore be used both to see the distribution of the different activity types and, more importantly, the length of continuous activity, or sedentary behaviour. This is useful when you want to identify if the patient has very long periods of sedentary behaviour, or if the patient walks continuously for a long time, or takes small brakes. Holding the mouse cursor over a bubble shows you the time the activity interval occurred as well as the length of the interval. F3 also offers a highlighting mode, when active intervals of more than 1 hour are highlighted.
 
 \begin{figure}[h!]
   \centering
@@ -171,11 +173,11 @@ Diagrams F1, F2 and F3 (see figure~\ref{fig:fFirst}) are the fractional charts*.
     \includegraphics[width=\textwidth]{f3First.png}
     \caption{F3}
   \end{subfigure}
-  \caption{Fractional charts*}
+  \caption{Aggregated charts}
   \label{fig:fFirst}
 \end{figure}
 
-T1, T2, T3 and T4 (see figure~\ref{fig:tFirst} are diagrams that show timelines or clocks. These diagrams are useful to see when the patient was active during the day. T1 shows 24 squares each representing an hour of the day. The percentage of activity (walking and standing) is shown as a gradient in each square. Holding the cursor over a square gives you the percentage of each type of activity. T2 is also a timeline, but here the data is not aggregated so the timeline is continuous and shows the activity at a much more detailed level. This is useful if you need to see when in a particular hour activity was performed. It also distinguishes between standing and walking activity. T3 and T4 are also show the activity continuously but they use a clock instead of a timeline to illustrate when on they day the activity occurred. T3 uses two 12 hour clocks, while T4 uses a single 24-hour clock. Diagrams T2, T3 and T4 can toggle highlighting. When highlighting is toggled sedentary behaviour longer than 1 hour is highlighted with blue. All T-diagrams can be viewed one day at a time or the entire week all at once. 
+T1, T2, T3 and T4 (see figure~\ref{fig:tFirst} are diagrams that show timelines or clocks. These diagrams are useful to see when the patient was active during the day. T1 shows 24 squares each representing an hour of the day. The percentage of activity (walking and standing) is shown as a gradient in each square. Holding the cursor over a square gives you the percentage of each type of activity. T2 is also a timeline, but here the data is not aggregated so the timeline is continuous and shows the activity at a much more detailed level. This is useful if you need to see when in a particular hour activity was performed. It also distinguishes between standing and walking activity. T3 and T4 are also show the activity continuously but they use a clock instead of a rectangle to illustrate when on they day the activity occurred. T3 uses two 12 hour clocks, while T4 uses a single 24-hour clock. Diagrams T2, T3 and T4 can toggle highlighting. When highlighting is toggled sedentary behaviour longer than 1 hour is highlighted with blue. All T-diagrams can be viewed one day at a time or the entire week all at once. 
 
 \begin{figure}[!h]
   \centering
