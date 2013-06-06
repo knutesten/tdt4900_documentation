@@ -1,57 +1,50 @@
 \chapter{Discussion}
 
+
+\begin{description}[parsep=0pt, itemsep=0pt]
+\item[Research Question 1:] What are the relevant use cases for visual presentation of the \gls{imu} data in physical therapy, from the physiotherapist's perspective?
+
+\item[Research Question 2:] What are the functional and user experience requirements for visualizations of \gls{imu} data in scenarios identified by the physiotherapists?
+
+\item[Research Question 3:] What are the preferred visualizations by the physiotherapists for the scenarios and requirements?
+\end{description}
+
 \section{Use Cases: Scenarios and User Group}
-\begin{enumerate}
-  % Most important colleagues are occupational therapists and other physiotherapists.
-  \item Review the current activity level either alone or with colleagues.
-  % Most importantly nursing homes, but also home care personnel.
-  \item In communication with health care personnel caring for the patient.
-  % Siri estimated that around 50 percent of the patients would cognitively capable of understanding the visualizations
-  \item In consultation with the patient.
-  \item In consultation with next of kin.
-  % A project is ongoing where physiotherapists teaches home care personnel how to train patients. Can also be used against other physiotherapists and students.
-  \item Educational purposes.
+Our fist research question states:
+\begin{quote}
+What are the relevant use cases for visual presentation of the \gls{imu} data in physical therapy, form the physiotherapist's perspective?
+\end{quote}
+
+\begin{enumerate}[itemsep=0cm, parsep=0cm]
+\item When analysing patients activity level, either individually or in cooperation with occupational therapists or other physiotherapists.
+\item In communication with nursing homes and home care personnel.
+\item In consultation with the patient.
+\item In consultation with next of kin.
+\item For educational purposes.
 \end{enumerate}
 
-% This should be moved to the results of focus group 1
-Use for self or other physiotherapists
-In communication with other health care personnel (hjemmetjenesten)
-In consultation with the patient
-In consultation with next of kin 
-
 \section{Requirements}
-ADD Section here about how the initial requirements had to be changed etc.
+The second research question states:
+\begin{quote}
+What are the functional and user experience requirements for visualizations of \gls{imu} data in scenarios identified by the physiotherapists?
+\end{quote}
 
-Notes:
-  Show periods of inactivity
-  Chose personal goals
+Requirements gathering is an important par to any software development project. Because the initial requirements were created in cooperation with a domain expert and not the participants of the focus groups we saw a lot of changes to the requirements after the first focus group. The requirements are supposed to give instructions as to what types of visualizations should be created, and with all the feedback and changes to the visualizations after focus group 1 is not surprising that the requirements also changed a lot. 
 
-  user experience table
-  lett å forstå
-  virke motiverende
-  ikke lyge 
+Looking at initial requirements in table~\ref{tab:initReq}, requirements IR-4 and IR-5 were removed after talking to the physiotherapists in focus group 1. The visualizations the continuous activity pattern of the users was not seen as a necessary requirement for the system. The other initial requirements were modified and rephrased, but still remain in the F1-version of the requirements, see table~\ref{tab:f1Req}. Requirements F1-4 and F1-5 are direct results of comments from the participants during the first focus group. Here they stated that one of the most useful features of the system we are creating was the ability to see when during the day the patient is leas active, so that exercises and activity now could be planned for specific hours of the day where they would know the patient otherwise was inactive. Having this type of detailed information can help the physiotherapists create an even more specific treatment plan for the patient, and possibly increasing the quality and effectiveness of the treatment. One functionality that was requested during the first focus group was the ability to set goals. The physiotherapists had a hard time identifying whether the patients data represented an active or an inactive person without comparing the data to some fixed goal. To satisfy this request F1-6 was a new requirement added after focus group 1. IR-1 was also changed to F1-1 to make the classification in the overview chars go along with the addition of goals. % What should I use here instead of "go along with"?
+Another interesting addition was F1-9, which states that the visualizations should be have printable greyscale versions. It was surprising to hear about how few technological aids were available to the physiotherapists working for Trondheim Kommune (municipality of Trondheim). Only having access to grayscale printouts removes a lot of the system functionality, for example interactivity, for the scenarios were the physiotherapist does not have access to the office computer.
 
-\begin{table}[h!]
-  \begin{center}
-  \begin{tabular}{|l|p{12cm}|}
-    \hline
-      \textbf{Id} & \textbf{Requirement} \\ \hline
-      1  & The user should be able to print the visualizations in black/white versions \\ \hline
-      2  & The visualizations should give an overview of the week that classifies each day into national or personal goals \\ \hline
-      3  & Not be judgemental towards the patients current activity level \\ \hline
-      4  & Classify days into national or personal goals \\ \hline
-      5  & Show the activity level for each hour of every day \\ \hline
-      6  & Let you compare hours from multiple days \\ \hline
-      7  & Let the user easily identify hours where more activity can be added \\ \hline
-      8  & Let the user identify patients that are active during the night \\ \hline
-      9  & Let the user compare two different weeks to show progress of patients \\ \hline
-      10 & Show the daily activity level compared to national goals \\ \hline
-      11 & Show the daily activity level compared to personal goals \\ \hline 
-      12 & Show periods of inactivity.
-  \end{tabular}
-  \end{center}
-\end{table}
- 
+// Include initial requirements
+
+// Include focus group 1 requirements
+
+Section about the changes from focus group 1 to 2
+
+// Figure showing which visualizations meed which requirements (should ux requirements be added here?)
+
+Talking with the physiotherapists also gave us the ability to explore \gls{ux} requirements for the system, see table~\ref{tab:f1ReqUx}. Usability is important for any system, but especially one that should be used in medical settings. % I have no idea if this is correct.
+The \gls{ux} requirements we created are important things to keep in mind when creating the requirements that may not be intuitive without understanding how the physiotherapists work. One of the first comments we got when going through the visualizations in the first focus group was that the visualization had a negative attitude. Using smilies to represent the classifications could demotivate and be judgemental toward the patients. These are issues we did not consider when first creating prototype 1. The physiotherapists also stressed that though the visualizations should not be judgemental it was just as important that they did not lie. They should give the patient an honest representation of their activity level, but without making the patient feel hopeless. Many patients are prone to give up before they have started, and it is paramount that the visualizations does not contribute to the patients feeling of hopelessness. Motivating patients is another important \gls{ux} requirements. One of the physiotherapists pointed out that the patients like to see qualitative data to show that they are improving. Often progress can be slow hard to notice from day to day. This can in many cases make patients less motivated in their exercise. Seeing qualitative proof that you are constantly improving can be a powerful motivative tool, as it give the patient a reward for following the exercise plan. One of the physiotherapists also stated that patients tend to trust more in statistics and diagrams than they do in the qualitative judgement of the physiotherapists alone. Using visualizations in their work can therefore help them persuade patients who are otherwise distrustful or feel that the treatment plan is ineffective or pointless. For the patients to be motivated by the visualizations, they need to be able to understand them, and this is covered by the F2-15 requirement. 
+
+The requirements we created in this report are meant to be seen as general guidelines for what physiotherapists look for in information visualizations. 
+
 \section{Visualization}
-
-

@@ -24,6 +24,9 @@ HCI
   Article Houde and Hill what prototypes prototype
 
 
+--------------------------------------------------------
+
+
 TINGS TO FIX 2
 
 QUOTES?
@@ -39,15 +42,10 @@ INITIAL REQUIREMENTS -- REVIEW --
   New section METHOD:
     We have to say we did an interview a domain expert to get started. And took notes. Try to formulate the questions that we had when interviewing. 
 
-INTRODUCTION?
-  Step 3 from HU is not really relevant for our project. 
-  Welfare technology
-
 PHYSIOTHERAPY IN NORWAY -- DONE -- 
   Mention that to create an activity plan is just one of many treatments.
   Not welfare technology
 
-   
 MEDICAL TECHNOLOGY -> PHYSICAL THERAPY CHAPTER -- DONE --
   Software is considered medical equipment.
 
@@ -55,11 +53,17 @@ RESEARCH DESIGN (priority) -- DEAN --
   Reference to the research questions. To get an answer to these questions we did this shit.
   Questionnaire has to be mentioned here.
 
-IN FOCUS GROUP SECTION WE NEED TO BE CLEAR ABOUT WHAT HAS HAPPENED (BE VERY CLEAR CLEAR CLEAR)
-  Examples!
+IN FOCUS GROUP SECTION WE NEED TO BE CLEAR ABOUT WHAT HAS HAPPENED (BE VERY CLEAR CLEAR CLEAR) -- DONE --
+  Examples
 
-PROTOTYPE 2 
-  Each change in change log etc. should have a reference to the requirements created after focus group 1
+PAPER SKETCHES -- DONE --
+  Fractional charts -> Aggregated charts
+  Timeline          -> Timeline
+  Week overview     -> Overview charts
+
+INTRODUCTION?
+  Step 3 from HU is not really relevant for our project. 
+  Welfare technology
 
 APPENDIX
   Add full size pictures of the visualizations
@@ -69,9 +73,10 @@ DISCUSSION (priority)
   How has it helped to involve the user. Show the difference between the first prototype and the second. Show that it is very important to involve the user. 
   Personal reflections can be added here.
 
-PAPER SKETCHES -- DONE --
-  Fractional charts -> Aggregated charts
-  Timeline          -> Timeline
-  Week overview     -> Overview charts
-
 DOCUMENT THE PROCESS BITCHES
+
+
+PROTOTYPE 2 
+  Each change in change log etc. should have a reference to the requirements created after focus group 1
+
+
