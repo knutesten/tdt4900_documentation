@@ -1,9 +1,11 @@
 \chapter{Research Design}
 
-
 \section{Overall plan}
 %I would like to include the name or section where this method is used, but I am not sure where to exactly put it. I guess I can put it into the sections that justify and talk about the method.
-This section provides and overview of how our chosen research methods relate to each other and how they to the research questions we have posed. Table ~\ref{tab:designPlan} gives a quick summary of our methods, their purpose and how they relate to our research questions. The order in the table reflects in what order they appear in the report and were conducted.
+% REVIEW: I don't understand this first sentence: "how they to the research". And are you saying the smae thing in sentence 2 as you are saying in sentence 1?
+This section provides and overview of how our chosen research methods relate to each other and how they to the research questions we have posed. Table ~\ref{tab:designPlan} gives a quick summary of our methods, their purpose and how they relate to our research questions. 
+% REVIEW: This sentence sounds strange. Maybe: "The order in the table is the same order as the reserach methods were used in our project."
+The order in the table reflects in what order they appear in the report and were conducted.
 
 \begin{table}[h!]
   \centering
@@ -11,30 +13,39 @@ This section provides and overview of how our chosen research methods relate to 
     \hline
     \textbf{RQ} & \textbf{Method} & \textbf{Description} \\ \hline
     1,2 & Interview & An interview was performed with a domain expert which would allows us to establish initial requirements. \\ \hline
+    % REVIEW: I have not written about brainstorming yet, so we should probably do that if you mention it here.
     2 & Brainstorming & Based on the initial requirements the authors performed brainstorming sessions among themselves and sketches were created. \\ \hline
     2 & Prototype & The paper sketches were used as a starting point to create a high fidelity prototype that would be presented to first focus group. \\ \hline
     1,2,3 & Focus group & The first running prototype was presented to the focus group and would enable us to refine it further. \\ \hline
     1,2 & Prototype & Based on the feedback received from the first focus group the prototype was iterated. \\ \hline
+    % REVIEW: Did we really not use these for anything?
     None & Questionnaire & Before the final focus group a quick questionnaire was answered by the users. \\ \hline
     1,2,3 & Focus Group & The new iteration of the prototype was presented and the requirements were refined. \\ \hline
+    % REVIEW: What about the interview in the last focus group, should we mention that here as well?
   \end{tabular}
   \caption{The overall design plan}
   \label{tab:designPlan}
 \end{table}
 
- More detailed information about how the methods were executed and their result can be found in the subsequent chapters of this report, namely in Chapter 6 to 10. The following sections of this Chapter explain the rationale and choice of method in further detail.
+More detailed information about how the methods were executed and their result can be found in the subsequent chapters of this report, namely in Chapter 6 to 10. The following sections of this Chapter explain the rationale and choice of method in further detail.
  
 \section{Interview}
- Initially we had no domain knowledge or experience with how visualizations could be used to present sensor data. So when the time came to outline initial requirements and scenarios we realised that we needed assistance. While attempting to acquire a set of activPal sensor from St. Olav's Hospital we came in contact with a (what is she!?) who had extensive knowledge about activPal and visualization of sensor data. We considered performing a field study, a focus group or an interview. In the end we chose to interview the domain expert. We believed that a field study and focus group would not be fruitful enough to justify the amount of time it would take. We lacked a grasp of basic knowledge and terminology in the field that could be covered by a simple interview, without being confused or influenced by the multitude of opinions that would appear in a focus group or field study. The procedure and results of this interview can be found in Chapter~\ref{ch:initialRequirements} 
+Initially we had no domain knowledge or experience with how visualizations should be used to present sensor data. So when the time came to outline initial requirements and scenarios we realised that we needed assistance. While attempting to acquire a set of activPAL sensor from St. Olav's Hospital we came in contact with a (what is she!?) who had extensive knowledge about activPAL and visualization of sensor data. 
+% REVIEW: Is this true though? Does she have extensive knowledge about visualizing sensor data?
+We considered performing a field study, a focus group or an interview. In the end we chose to interview the domain expert. We believed that a field study and focus group would not be fruitful enough to justify the amount of time it would take. We lacked a grasp of basic knowledge and terminology in the field that could be covered by a simple interview, without being confused or influenced by the multitude of opinions that would appear in a focus group or field study. The procedure and results of this interview can be found in chapter~\ref{ch:initialRequirements} 
  
 \section{Brainstorming}
 Jumping straight to a high fidelity prototype would be unwise, therefore we decided that we should conduct brainstorming sessions. The purpose was to create rough designs of possible visualizations that would fulfill the initial requirements, in addition to discussing any technical difficulties that might occur during implementation. In order to verify that the ideas were sound and receive some outside input we had our advisor provide us with feedback on the visualizations. We tried contacting the domain expert but the individual was not available on such short notice, and we did not wish to wait for too long. The result of the brainstorming can be found in Section~\ref{sec:paperSketches}
 
 \section{Prototype}
-Once we were happy with our paper sketches we decided to start implementing a running prototype. We did not want to spend more time on low fidelity prototypes that would be be thrown away at the end and would most likely never be shown to a broader set of users. A running prototype showing real data and more polished visualizations would have a much bigger impact on the focus group then rough paper sketches would. In addition there was a fair amount of technical aspects we were unsure of because we had not created such an application before, so starting development early was important. The first version of the prototype can be seen in Section~\ref{sec:runningPrototype1} and the second iteration can be found in Section~\ref{sec:runningPrototype2}.
+Once we were happy with our paper sketches we decided to start implementing a running prototype. We did not want to spend more time on low fidelity prototypes that would be be thrown away at the end and would most likely never be shown to a broader set of users. A running prototype showing real data and more polished visualizations would have a much bigger impact on the focus group then rough paper sketches would. In addition there was a fair amount of technical aspects we were unsure of because we had not created such an application before, so starting development early was important. The first version of the prototype can be seen in section~\ref{sec:runningPrototype1} and the second iteration can be found in section~\ref{sec:runningPrototype2}.
 
 \section{Focus group}
-Initially we were uncertain if a focus group should be conducted or usability tests should be run. In the end we decided that the main priority and focus were the visualizations themselves, and the navigation was not of a major concern. A focus group would provide us with the necessary feedback, while taking less time and having the benefit of letting the users discuss the prototype with each other. Detailed information on how the first focus group was conducted can be found in Chapter~\ref{ch:focusGroup1} while the second is covered in Chapter~\ref{ch:focusGroup2}.
+Initially we were uncertain if a focus group should be conducted or usability tests should be run. In the end we decided that the main priority and focus were the visualizations themselves, and the navigation was not of a major concern. A focus group would provide us with the necessary feedback, while taking less time and having the benefit of letting the users discuss the prototype with each other. Detailed information on how the first focus group was conducted can be found in chapter~\ref{ch:focusGroup1} while the second is covered in chapter~\ref{ch:focusGroup2}.
 
 \section{Questionnaire}
-A questionnaire would be created after the first focus group and presented before the second. The purpose is to gain more background information on the participants and gain an understanding of their attitude towards technology and change in their working environment. It was decided that it would be best to present the questionnaire after the first focus group and before the second, this would allow us to create simple background questions we felt were not answered clearly during the first focus group, but were not important enough to spend time discussing them in the focus group or through an interview.
+A questionnaire would be created after the first focus group and presented before the second. The purpose was to gain more background information on the participants and gain an understanding of their attitude towards technology and change in their working environment.
+% REVIEW: Is new technology considered to be change in the environment? Isn't environment more like where they work?
+It was decided that it would be best to present the questionnaire after the first focus group and before the second, this would allow us to create simple background questions we felt were not answered clearly during the first focus group, but were not important enough to spend time discussing them in the focus group or through an interview.
+
+% REVIEW: We have not mentioned the last interview anywhere.
