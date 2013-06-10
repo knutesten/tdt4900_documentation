@@ -31,20 +31,118 @@ What are the functional and user experience requirements for visualizations of \
 
 Requirements gathering is an important par to any software development project. Because the initial requirements were created in cooperation with a domain expert and not the participants of the focus groups we saw a lot of changes to the requirements after the first focus group. The requirements are supposed to give instructions as to what types of visualizations should be created, and with all the feedback and changes to the visualizations after focus group 1 is not surprising that the requirements also changed a lot. 
 
-Looking at initial requirements in table~\ref{tab:initReq}, requirements IR-4 and IR-5 were removed after talking to the physiotherapists in focus group 1. The visualizations the continuous activity pattern of the users was not seen as a necessary requirement for the system. The other initial requirements were modified and rephrased, but still remain in the F1-version of the requirements, see table~\ref{tab:f1Req}. Requirements F1-4 and F1-5 are direct results of comments from the participants during the first focus group. Here they stated that one of the most useful features of the system we are creating was the ability to see when during the day the patient is leas active, so that exercises and activity now could be planned for specific hours of the day where they would know the patient otherwise was inactive. Having this type of detailed information can help the physiotherapists create an even more specific treatment plan for the patient, and possibly increasing the quality and effectiveness of the treatment. One functionality that was requested during the first focus group was the ability to set goals. The physiotherapists had a hard time identifying whether the patients data represented an active or an inactive person without comparing the data to some fixed goal. To satisfy this request F1-6 was a new requirement added after focus group 1. IR-1 was also changed to F1-1 to make the classification in the overview chars go along with the addition of goals. % What should I use here instead of "go along with"?
-Another interesting addition was F1-9, which states that the visualizations should be have printable greyscale versions. It was surprising to hear about how few technological aids were available to the physiotherapists working for Trondheim Kommune (municipality of Trondheim). Only having access to grayscale printouts removes a lot of the system functionality, for example interactivity, for the scenarios were the physiotherapist does not have access to the office computer.
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|p{12cm}|}
+    \hline
+      \textbf{Id} & \textbf{Requirement} \\ \hline
+    \multicolumn{2}{|l|}{The visualizations should \ldots} \\ \hline
+      IR-1 & give an overview of the week \\ \hline
+      IR-2 & give a summary of the daily activity \\ \hline
+      IR-3 & show the activity level for each hour of every day \\ \hline
+      IR-4 & let you compare hours from multiple days \\ \hline
+      IR-5 & show the activity level for each minute of every day \\ \hline
+      IR-6 & let you compare minutes from multiple days \\ \hline
+      IR-7 & let the user identify patients that are active during the night \\ \hline
+  \end{tabular}
+  \end{center}
+  \caption{Initial requirements.}
+  \label{tab:initReq}
+\end{table}
 
-// Include initial requirements
+Looking at initial requirements in table~\ref{tab:initReq}, requirements IR-4 and IR-5 were removed after talking to the physiotherapists in focus group 1. Visualizations showing the continuous activity pattern of users was seen as too detailed to be useful.The participants also felt that it was too hard to see the activity, because it was hidden by the inactive and standing periods. The other initial requirements were modified and rephrased, but still remain in the F1-version of the requirements, see table~\ref{tab:f1Req}. 
 
-// Include focus group 1 requirements
+Requirement F1-5 is a direct results of comments from the participants during the first focus group. They stated that one of the most useful features of the system is the ability to see when during the day the patient are inactive. This can be used to plan activity and exercises to specific hours of the day when the physiotherapists knows the patient will most likely be inactive. Having this type of detailed information can help the physiotherapists create an even more specific treatment plan for the patient, and possibly increasing the quality and effectiveness of the treatment. A functionality that was requested during the first focus group was the ability to set goals. The physiotherapists had a hard time identifying whether the patients data represented an active or an inactive person without comparing the data to some fixed goal. To satisfy this request F1-6 was a new requirement added after focus group 1. IR-1 was also changed to F1-1 to make the classification in the overview chars go along with the addition of goals. % What should I use here instead of "go along with"?
 
-Section about the changes from focus group 1 to 2
+Another interesting addition was F1-9, which states that the visualizations should be have printable greyscale versions. It was surprising to hear about how few technological aids were available to the physiotherapists working for Trondheim Kommune (municipality of Trondheim). For scenarios where the physiotherapists only have access to grayscale printouts important system functionality, such as interactivity, will be lost.
 
-// Figure showing which visualizations meed which requirements (should ux requirements be added here?)
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|p{12cm}|}
+    \hline
+      \textbf{Id} & \textbf{Requirement} \\ \hline
+    \multicolumn{2}{|l|}{The visualizations should \ldots} \\ \hline
+      F1-1 & give the user an overview of the week where the days are classified by national or personal goals \\ \hline
+      F1-2 & show the activity level for each hour of the day \\ \hline
+      F1-3 & make it simple to identify periods of inactivity \\ \hline
+      F1-4 & make it possible to compare multiple days \\ \hline
+      F1-5 & make it easy to identify hours of the day where activity can be added \\ \hline
+      F1-6 & show the activity level compared to national or personal goals \\ \hline
+      F1-7 & let the user identify patients that are active during the night \\ \hline
+      F1-8 & let you compare two separate weeks to see the patients progress \\ \hline
+      F1-9 & be printable in grayscale \\ \hline
+  \end{tabular}
+  \end{center}
+  \caption{Functional requirements from the first focus group}
+  \label{tab:f1Req}
+\end{table}
 
-Talking with the physiotherapists also gave us the ability to explore \gls{ux} requirements for the system, see table~\ref{tab:f1ReqUx}. Usability is important for any system, but especially one that should be used in medical settings. % I have no idea if this is correct.
+Two requirements were added after the second focus group, F2-10 and F2-11, see table~\ref{tab:f2Req}. F2-10 is a clarification of the first requirement. The participants felt that there was no requirement specifying the need for aggregated charts, and F2-10 was therefore added. Another functionality that was requested was the ability to toggle nighttime on and off. In the first focus group many of the participants felt that including nighttime, especially in the aggregated charts, made the inactive part of the chart too large. Nighttime was therefore removed for some of these graphs in the second prototype. However, the participants were now uncertain as to what period of the night had been removed. It was therefore suggested that that the user should be able to toggle nighttime on and off, so that in cases where it would be helpful to see the entire dataset this option would still be available. The participants also wanted the ability to define the time interval that should be considered  nighttime. For patients living in institutions nighttime is similar for all the patients, but for patients living at home nighttime might differ from patient to patient.
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|p{12cm}|}
+    \hline
+      \textbf{Id} & \textbf{Requirement} \\ \hline
+    \multicolumn{2}{|l|}{The visualizations should \ldots} \\ \hline
+      F2-1 & give the user an overview of the week where the days are classified by national recommendations or personal goals \\ \hline
+      F2-2 & show the activity level for each hour of the day \\ \hline
+      F2-3 & make it easy to identify the length of activity intervals \\ \hline
+      F2-4 & make it possible to compare multiple days \\ \hline
+      F2-5 & make it easy to identify hours of the day where activity can be added \\ \hline
+      F2-6 & show the activity level compared to national or personal goals \\ \hline
+      F2-7 & let the user identify patients that are active during the night \\ \hline
+      F2-8 & let you compare two separate weeks to see the patients progress \\ \hline
+      F2-9 & should be printable in grayscale \\ \hline
+      F2-10 & show the activity distribution for a day (sedentary, standing, walking) \\ \hline
+      F2-11 & allow the users to toggle if nighttime should be included or not \\ \hline
+  \end{tabular}
+  \end{center}
+  \caption{Functional requirements from the second focus group}
+  \label{tab:f2Req}
+\end{table}
+
+% Can I say satisfied?
+Table~\ref{tab:reqSat} which requirements are satisfied by each visualization. Each row represent a visualization and each column represents a functional requirement. A -- means that the requirement is not satisfied by the visualization and a + means that it is satisfied. As we can see there are two requirements, F2-8 and F2-11, that are not covered by any of the visualizations. F2-8 says that you should be able to compare two different weeks to see if there has been progress. Comparing different weeks is important for the system to function as a motivative tool. This requirement was suggested after focus group 1, but was not implemented due to lack of time. F2-11 states that the visualizations should let you toggle nighttime on and off. This requirement was suggested in focus group 2 and was therefore not implemented for prototype 2.covered by any of the visualizations. F2-8 says that you should be able to compare two different weeks to see if there has been progress. Comparing different weeks is important for the system to function as a motivative tool. This requirement was suggested after focus group 1, but was not implemented due to lack of time. F2-11 states that the visualizations should let you toggle nighttime on and off. This requirement was suggested in focus group 2 and was therefore not implemented for prototype 2.
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    & F2-1 & F2-2 & F2-3 & F2-4 & F2-5 & F2-6 & F2-7 & F2-8 & F2-9 & F2-10 & F2-11 \\ \hline
+    U1 & + & -- & -- & + & -- & -- & -- & -- & + & -- & -- \\ \hline
+    F1 & -- & -- & -- & + & -- & -- & -- & -- & + & + & -- \\ \hline
+    F3 & -- & -- & + & -- & + & -- & -- & -- & -- & + & -- \\ \hline
+    T1 & -- & + & -- & + & + & + & + & -- & -- & -- & -- \\ \hline
+    T3 & -- & + & -- & + & + & + & + & -- & + & -- & -- \\ \hline
+  \end{tabular}
+  \caption{Table showing which requirements each visualization satisfies.}
+  \label{tab:reqSat}
+\end{table}
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|p{12cm}|}
+    \hline
+      \textbf{Id} & \textbf{Requirement} \\ \hline
+    \multicolumn{2}{|l|}{The visualizations should \ldots} \\ \hline
+      F2-11 & not be judgemental towards the patients activity level \\ \hline
+      F2-12 & should be honest about the patients activity level \\ \hline
+      F2-13 & should motivate the patient to be more active \\ \hline
+      F2-14 & should be intuitive and easy to understand for the user and third parties \\ \hline
+      F2-15 & be easy to explain to cognitively capable patients \\ \hline
+      
+  \end{tabular}
+  \end{center}
+  \caption{User experience requirements from the second focus group}
+  \label{f2ReqUx}
+\end{table}
+
+
+
+Talking with the physiotherapists also gave us the ability to explore \gls{ux} requirements for the system, see table~\ref{tab:f2ReqUx}. Usability is important for any system, but especially one that should be used in medical settings. % I have no idea if this is correct.
 The \gls{ux} requirements we created are important things to keep in mind when creating the requirements that may not be intuitive without understanding how the physiotherapists work. One of the first comments we got when going through the visualizations in the first focus group was that the visualization had a negative attitude. Using smilies to represent the classifications could demotivate and be judgemental toward the patients. These are issues we did not consider when first creating prototype 1. The physiotherapists also stressed that though the visualizations should not be judgemental it was just as important that they did not lie. They should give the patient an honest representation of their activity level, but without making the patient feel hopeless. Many patients are prone to give up before they have started, and it is paramount that the visualizations does not contribute to the patients feeling of hopelessness. Motivating patients is another important \gls{ux} requirements. One of the physiotherapists pointed out that the patients like to see qualitative data to show that they are improving. Often progress can be slow hard to notice from day to day. This can in many cases make patients less motivated in their exercise. Seeing qualitative proof that you are constantly improving can be a powerful motivative tool, as it give the patient a reward for following the exercise plan. One of the physiotherapists also stated that patients tend to trust more in statistics and diagrams than they do in the qualitative judgement of the physiotherapists alone. Using visualizations in their work can therefore help them persuade patients who are otherwise distrustful or feel that the treatment plan is ineffective or pointless. For the patients to be motivated by the visualizations, they need to be able to understand them, and this is covered by the F2-15 requirement. 
-
+% Should we add a section about this?
 The requirements we created in this report are meant to be seen as general guidelines for what physiotherapists look for in information visualizations. 
 
 \section{Visualization}
