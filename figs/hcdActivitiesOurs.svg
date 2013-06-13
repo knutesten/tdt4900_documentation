@@ -9,12 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="951.92773"
-   height="673.61981"
+   width="1112.6003"
+   height="777.27161"
    id="svg2987"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="hcdActivitiesOurs.svg">
+   sodipodi:docname="hcdActivitiesOurs.svg"
+   inkscape:export-filename="C:\Users\Dean\workspace\tdt4900_documentation\figs\hcdActivitiesOurs.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs2989">
     <marker
@@ -118,8 +121,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.86831672"
-     inkscape:cx="654.76821"
-     inkscape:cy="308.03016"
+     inkscape:cx="662.77193"
+     inkscape:cy="339.46255"
      inkscape:current-layer="layer1"
      id="namedview2991"
      showgrid="false"
@@ -149,7 +152,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-7.0395121,-3.3709357)">
+     transform="translate(0.96420465,45.098799)">
     <rect
        style="fill:none;stroke:#130b20;stroke-width:2.69343543;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect2996"
@@ -160,20 +163,20 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="237.14952"
-       y="46.820126"
+       x="502.02982"
+       y="-13.065857"
        id="text3766"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3768"
-         x="237.14952"
-         y="46.820126"
-         style="font-size:20px">Plan the human-centered</tspan><tspan
+         x="502.02982"
+         y="-13.065857"
+         style="font-size:20px;fill:#808080">Plan the human-centered</tspan><tspan
          sodipodi:role="line"
-         x="237.14952"
-         y="71.820129"
+         x="502.02982"
+         y="11.934143"
          id="tspan3770"
-         style="font-size:20px">design process</tspan></text>
+         style="font-size:20px;fill:#808080">design process</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -188,39 +191,41 @@
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="747.77521"
-       y="127.96907"
+       x="740.8653"
+       y="222.40466"
        id="text3776"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3778"
-         x="747.77521"
-         y="127.96907">Understand and specify </tspan><tspan
+         x="740.8653"
+         y="222.40466"
+         style="fill:#808080">Understand and specify </tspan><tspan
          sodipodi:role="line"
-         x="747.77521"
-         y="152.96907"
-         id="tspan3780">the context of use</tspan></text>
+         x="740.8653"
+         y="247.40466"
+         id="tspan3780"
+         style="fill:#808080">the context of use</tspan></text>
     <rect
-       style="fill:none;stroke:#130b20;stroke-width:2.87983847;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#130b20;stroke-width:3.16245699;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3782"
-       width="226.50725"
-       height="65.267525"
-       x="506.46063"
-       y="214.7121" />
+       width="226.22462"
+       height="78.804749"
+       x="506.60193"
+       y="214.85341" />
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="1056.1412"
-       y="322.34134"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;font-family:Sans"
+       x="950.18909"
+       y="454.78149"
        id="text3784"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="1056.1412"
-         y="322.34134"
+         x="950.18909"
+         y="454.78149"
          id="tspan3788">Specify the user </tspan><tspan
          sodipodi:role="line"
-         x="1056.1412"
-         y="347.34134"
+         x="950.18909"
+         y="479.78149"
          id="tspan3792">requirements</tspan></text>
     <rect
        style="fill:none;stroke:#130b20;stroke-width:3.61380911;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -231,18 +236,18 @@
        y="420.2933" />
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="452.41284"
-       y="699.30151"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;font-family:Sans"
+       x="439.74466"
+       y="685.48169"
        id="text3796"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3798"
-         x="452.41284"
-         y="699.30151">Produce design solutions</tspan><tspan
+         x="439.74466"
+         y="685.48169">Produce design solutions</tspan><tspan
          sodipodi:role="line"
-         x="452.41284"
-         y="724.30151"
+         x="439.74466"
+         y="710.48169"
          id="tspan3800">to meet user requirements</tspan></text>
     <rect
        style="fill:none;stroke:#130b20;stroke-width:2.93461061;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -253,18 +258,18 @@
        y="595.8515" />
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="71.309044"
-       y="544.05164"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;font-family:Sans"
+       x="16.029675"
+       y="459.98093"
        id="text3804"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3806"
-         x="71.309044"
-         y="544.05164">Evaluate the designs</tspan><tspan
+         x="16.029675"
+         y="459.98093">Evaluate the designs</tspan><tspan
          sodipodi:role="line"
-         x="71.309044"
-         y="569.05164"
+         x="16.029675"
+         y="484.98093"
          id="tspan3808">against requirements</tspan></text>
     <rect
        style="fill:none;stroke:#130b20;stroke-width:2.86805868;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -276,18 +281,20 @@
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="325.61865"
-       y="124.0371"
+       x="66.496613"
+       y="77.970963"
        id="text3814"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="325.61865"
-         y="124.0371"
-         id="tspan3822">Designed solution</tspan><tspan
+         x="66.496613"
+         y="77.970963"
+         id="tspan3822"
+         style="fill:#808080">Designed solution</tspan><tspan
          sodipodi:role="line"
-         x="325.61865"
-         y="149.03711"
-         id="tspan3826">meets user requirements.</tspan></text>
+         x="66.496613"
+         y="102.97096"
+         id="tspan3826"
+         style="fill:#808080">meets user requirements.</tspan></text>
     <path
        sodipodi:type="arc"
        style="fill:none;stroke:#130b20;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -366,21 +373,21 @@
          id="tspan10909"
          x="310.94644"
          y="342.16742"
-         style="fill:#000000;fill-opacity:1;stroke:none">Iterate, where appropriate</tspan></text>
+         style="fill:#808080;fill-opacity:1;stroke:none">Iterate, where appropriate</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot3042"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
-       transform="translate(-181.83166,1.0676288)"><flowRegion
+       transform="translate(-231.35276,13.190778)"><flowRegion
          id="flowRegion3044"><rect
            id="rect3046"
-           width="124.37859"
-           height="52.976059"
+           width="202.69102"
+           height="25.336374"
            x="749.72644"
            y="30.997152"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
          id="flowPara3048"
-         style="font-size:20px;font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri Oblique">Described in chapter 5.</flowPara></flowRoot>    <text
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri">Described in chapter 5.</flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="661.04913"
@@ -395,39 +402,39 @@
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
-       x="554.07489"
-       y="237.0591"
+       x="538.07489"
+       y="235.0591"
        id="text3058"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3060"
-         x="554.07489"
-         y="237.0591"
-         style="font-style:oblique;-inkscape-font-specification:Calibri Oblique">First interview</tspan><tspan
+         x="538.07489"
+         y="235.0591"
+         style="font-style:normal;-inkscape-font-specification:Calibri">(1) First interview</tspan><tspan
          sodipodi:role="line"
-         x="554.07489"
-         y="262.05908"
-         style="font-style:oblique;-inkscape-font-specification:Calibri Oblique"
-         id="tspan3098">Focus group 1</tspan></text>
+         x="538.07489"
+         y="260.05908"
+         style="font-style:normal;-inkscape-font-specification:Calibri"
+         id="tspan3065">(3) Focus group 1 </tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
-       x="759.06927"
-       y="437.44681"
+       x="775.06927"
+       y="439.44681"
        id="text3062"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3064"
-         x="759.06927"
-         y="437.44681">First interview results</tspan><tspan
+         x="775.06927"
+         y="439.44681">(1) First interview </tspan><tspan
          sodipodi:role="line"
-         x="759.06927"
-         y="462.44681"
-         id="tspan3100">Focus group 1 results</tspan><tspan
+         x="775.06927"
+         y="464.44681"
+         id="tspan3100">(3) Focus group 1</tspan><tspan
          sodipodi:role="line"
-         x="759.06927"
-         y="487.44681"
-         id="tspan3106">Focus group 2</tspan></text>
+         x="775.06927"
+         y="489.44681"
+         id="tspan3106">(5) Focus group 2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
@@ -443,35 +450,33 @@
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
-       x="262.577"
-       y="422.55936"
+       x="243.61652"
+       y="435.9303"
        id="text3086"
-       sodipodi:linespacing="125%"
-       transform="translate(7.0395121,3.3709357)"><tspan
+       sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3088"
-         x="262.577"
-         y="422.55936">Focus Group 1</tspan><tspan
+         x="243.61652"
+         y="435.9303">(3) Focus Group 1</tspan><tspan
          sodipodi:role="line"
-         x="262.577"
-         y="447.55936"
-         id="tspan3104">Focus Group 2</tspan></text>
+         x="243.61652"
+         y="460.9303"
+         id="tspan3104">(5) Focus Group 2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
-       x="505.5759"
-       y="607.97559"
+       x="494.61542"
+       y="619.3465"
        id="text3090"
-       sodipodi:linespacing="125%"
-       transform="translate(7.0395121,3.3709357)"><tspan
+       sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3092"
-         x="505.5759"
-         y="607.97559">Prototype 1</tspan><tspan
+         x="494.61542"
+         y="619.3465">(2) Prototype 1</tspan><tspan
          sodipodi:role="line"
-         x="505.5759"
-         y="632.97559"
-         id="tspan3102">Prototype 2</tspan></text>
+         x="494.61542"
+         y="644.3465"
+         id="tspan3102">(4) Prototype 2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
@@ -484,5 +489,28 @@
          id="tspan3096"
          x="550.49036"
          y="249.81133" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="99.042206"
+       y="171.49889"
+       id="text3067"
+       sodipodi:linespacing="125%"
+       transform="translate(7.0395121,3.3709357)"><tspan
+         sodipodi:role="line"
+         id="tspan3069"
+         x="99.042206"
+         y="171.49889" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+       x="117.59825"
+       y="174.86981"
+       id="text3071"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3073"
+         x="117.59825"
+         y="174.86981">Thesis result</tspan></text>
   </g>
 </svg>
