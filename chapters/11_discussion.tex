@@ -13,13 +13,18 @@ Initially we designed the first prototype for two scenarios:
   \item In consultation with patients
 \end{enumerate}
 These are the most obvious scenarios for the system. After the first and second focus group three more scenarios emerged, as well as the initial ones being heavily modified:
-\begin{enumerate}[itemsep=0cm, parsep=0cm]
-\item When analysing patients activity level, either individually or in cooperation with occupational therapists or other physiotherapists.
-\item In consultation with the patient.
-\item In communication with nursing homes and home care personnel.
-\item In consultation with next of kin.
-\item For educational purposes.
-\end{enumerate}
+
+\begin{table}[h!]
+  \begin{tabular}{|c|p{10cm}|}
+    \hline
+    \textbf{Id} & \textbf{Scenario} \\ \hline
+    S1 & When analysing patients activity level, either individually or in cooperation with occupational therapists or other physiotherapists. \\ \hline
+    S2 & In consultation with the patient. \\ \hline
+    S3 & In communication with nursing homes and home care personnel. \\ \hline
+    S4 & In consultation with next of kin. \\ \hline
+    S5 & For educational purposes. \\ \hline
+  \end{tabular}
+\end{table}
 
 The first scenario was changed to include the cooperation with other physiotherapists or occupational therapists. During the second focus group the participants informed us that if they were to discuss a patient with colleagues it would usually be with an occupational therapist or in rare cases another physiotherapist. Normally the physiotherapists would not consult their colleagues about specific patients. 
 
@@ -161,3 +166,29 @@ The aggregated charts summed up the day to show the distribution of different ty
 Timeline charts shows the activity during the day continuously or in aggregated blocks. Four timeline charts were crated for the first prototype: T1, T2, T3 and T4. T2, T3 and T4 were showed the activity during the day continuously and you could see the activity of the patient minute for minute. These visualizations were discarded because the physiotherapists felt that this type of detail was unnecessary and only made the visualizations harder to read and less useful. T1 uses 24 blocks where the activity of each hour were aggregated and displayed using a gradient. T1 was the best liked graph, as it was easy to get an overview of the day as a whole, as well as the entire week by stacking many days on top of each other. This meant that the physiotherapists could easily get an overview of the overall activity pattern of the patient. This made it easy to find inactive hours where more one could motivate to more activity or doing exercises. The chart is also helpful to look for patients that are active during the night. During the focus group one of the physiotherapists told us that a common problem for elderly patients is that they can not sleep and therefore are too active during the night, leading to less activity during the day. Such patterns can easily be detected using T1, as an example we were able to see from the example data that the patient would walk for a few minutes every night at 4 am, probably to go to the toilet. Though the T1 is not very hard to understand, it is more challenging than U1 and F1, therefore it could most likely only be displayed to the most cognitively capable patients. Another issue with T1 is that the gradient colours it uses does not translate well when printed. T5 was crated for the second prototype and is similar to T1 in the fact that it also uses 24 hour blocks, but instead of using gradient to display the distribution of activity a stacked bars are used. This visualization is also similar to the chart used in the activPAL software, but in T5 seated or lying activity is not displayed with bars, this increases the readability of the graph. Because T5 was not as well liked as T1 by the participants of the second focus group. They liked T1 better because it was easier to stack the days on top of each other when you used a gradient instead of bars to represent the amount of activity. One benefit of T5 over T1 is that is works much better when printed because it does not use colour gradient, but bars to show the amount of activity.
 
 For the second prototype personal and national goals were added. This change was heavily requested by the physiotherapists after the first focus group. To show how the patient's activity compared to the goals that had been set a visualization called goal circles was created. The visualization uses circles to display how far the patient is from reaching the goal or how far beyond the patient is of the current goal. The goal circles were appended to each day of T1 and T5. The participants of the second focus group did not like this, and felt that the goal circles should have been its own visualization, used only to see if the patient were reaching the goals set. The goal circles are also intuitive and easy to understand, and they could be shown to some patients. An issue with the goal circles is that they do not display the currently set goals, all graphs using the goals should display what the current goals are set to. Goals is an important motivational factor when patients are trying to become more active. Seeing that you are progressing toward a goal and that you reach the goal more often during the week can be helpful to increase the motivation of patients.
+
+Table~\ref{tab:scenSet}, see below, shows which visualizations satisfy each requirement. The fist scenario is physiotherapists using the visualizations to analyse the patients activity level. In such cases all the visualizations can be utilized to get the best overview of the patients activity situation. For the most part T1 and T5 would be used as these give the best overview of the week and it is easy to identify where more activity can be added. 
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+       & S1 & S2 & S3 & S4 & S5 \\ \hline
+    U1 & +  & +  & -- & +  & +  \\ \hline
+    F1 & +  & +  & +  & +  & +  \\ \hline
+    F3 & +  & -- & +  & -- & +  \\ \hline
+    T1 & +  & -- & +  & -- & +  \\ \hline
+    T5 & +  & +  & +  & +  & +  \\ \hline
+  \end{tabular}
+  \caption{Table showing which scenarios each visualization satisfies.}
+  \label{tab:scenSet}
+\end{table}
+
+The second scenario is using the visualizations in consultation with the patient. For many of the patients it will not be possible to show any of the visualizations, but for those that are cognitively capable most of the visualizations can be used. F3 was excluded because it can be hard to explain, and it does not contain information that is critical to convey to the patient. T1 will not work on paper printouts, but could be used if the physiotherapists have access to laptops or touch pads.
+
+
+The third scenario is concerned with communication with nursing homes and home care personnel. All visualizations can be used for this purpose, but U1 will probably not be effective in conveying much information of interest and was therefore excluded. F3 and T1 will can be helpful tools when discussing the activity level of patients with other health care personnel.
+
+Consulting the next of kin is the fourth scenario. Most visualizations can be used for this purpose. F3 was excluded because it will probably be more confusing than helpful in explaining the patients current activity level. T1 was also excluded as it will does not work well for printouts.
+
+For educational purposes, scenario 5, all the visualizations can be used. Each visualization serves different functions and to get a complete overview of the patients activity level it can be useful to look at multiple visualizations. T1 and F1 are probably the best for this purpose. F3 can be used in situations where it is helpful to see the length of different type of activity.
