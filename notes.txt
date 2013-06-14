@@ -83,22 +83,22 @@ PROTOTYPE 2
 
 THINGS TO FIX 3
 
-Give new IDs to the requirements, F is confusing.
+-- SORT OF DONE -- Each change in change log etc. should have a reference to the requirements created after focus group 1
 
-Some of the requirements IDs are duplicates. FIX!
+-- DONE -- Give new IDs to the requirements, F is confusing.
 
-References to the discussion and other chapters in conclusion.
+-- DONE -- Some of the requirements IDs are duplicates. FIX!
 
-Show pictures of the visualizations in the discussion and conclusion chapters (at least conclusion).
+-- DONE -- References to the discussion and other chapters in conclusion.
 
-Validity chapter: discuss the external validity and generalization.
+-- COMMENTED -- Show pictures of the visualizations in the discussion and conclusion chapters (at least conclusion).
 
-Add table showing the relationship between 
+-- DEAN -- Validity chapter: discuss the external validity and generalization.
 
-Refer the prototypes to the Hill-triangle.
+-- POSTPONED -- Add table showing the relationship between requirements and scenarios. 
+
+-- DEAN -- Refer the prototypes to the Hill-triangle.
 
 IMU --> accelerometer or some shit like that. You know. Man. Fuck the POLICE.
 
 Add pictures to the information visualization section so that it makes sense.
-
-Each change in change log etc. should have a reference to the requirements created after focus group 1

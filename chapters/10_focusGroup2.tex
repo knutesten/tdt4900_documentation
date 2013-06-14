@@ -61,36 +61,38 @@ Different colour choices were discussed with the participants. Because the proje
 Because physiotherapists working for Trondheim Kommune do not have access to a colour printer, grayscale printouts were showed to the participants. The participants found it hard to use T1 effectively when printed, because the printer did not handle grayscale gradients well. In this situation the participants preferred T5 over T1 since bars were used instead of colour for displaying the activity level. U1 and F1 was found to work well on printouts, however F3 was less useful when printed because the functionality to hold over a ball for more information about the interval is lost.
 
 \subsection{Scenarios}
-The scenarios created after focus group 1 were reviewed in the second focus group. After discussing the scenarios with the participants we created a new version:
+The scenarios created after focus group 1 were reviewed in the second focus group. After discussing the scenarios with the participants we created a new version, as seen in the table~\ref{tab:scen2}:
 
 \begin{table}[h!]
   \begin{tabular}{|c|c|}
     \hline
     \textbf{Id} & \textbf{Scenario} \\ \hline
-    S1 & When analysing patients activity level, either individually or in cooperation with occupational therapists or other physiotherapists. \\ \hline
-    S2 & In consultation with the patient. \\ \hline
-    S3 & In communication with nursing homes and home care personnel. \\ \hline
-    S4 & In consultation with next of kin. \\ \hline
-    S5 & For educational purposes. \\ \hline
+    S2-1 & When analysing patients activity level, either individually or in cooperation with occupational therapists or other physiotherapists. \\ \hline
+    S2-2 & In consultation with the patient. \\ \hline
+    S2-3 & In communication with nursing homes and home care personnel. \\ \hline
+    S2-4 & In consultation with next of kin. \\ \hline
+    S2-5 & For educational purposes. \\ \hline
   \end{tabular}
+  \caption{Table showing the scenarios after the second focus group.}
+  \label{tab:scen2}
 \end{table}
 
-Scenario 1 was changed to include occupational therapists. Occupational therapists are the colleagues that are most often consulted according to the physiotherapists. 
+S1-1 was changed to include occupational therapists. Occupational therapists are the colleagues that are most often consulted according to the physiotherapists. 
 
-Scenario 2 was not changed. It is important to note that the physiotherapists estimated that maybe half of the patients would be cognitively capable of understanding the visualizations.
+S1-2 was not changed. It is important to note that the physiotherapists estimated that maybe half of the patients would be cognitively capable of understanding the visualizations.
 
-Scenario 3 was changed to include nursing homes as the most important partner to communicate with. Patients in nursing homes are in general much less active than those that live at home and there is therefore a greater need to inform the personnel about how inactive some of their patients are.
+S1-3 was changed to include nursing homes as the most important partner to communicate with. Patients in nursing homes are in general much less active than those that live at home and there is therefore a greater need to inform the personnel about how inactive some of their patients are.
 
-Scenario 4 was not changed.
+S1-4 was not changed.
 
-Scenario 5 was a new scenario added on the request of the focus group. An increasing part of their work consists of tutoring home care personnel about exercises that patients can perform to increase their activity. The participants felt using visualizations in this setting would be useful. 
+S2-5 was a new scenario added on the request of the focus group. An increasing part of their work consists of tutoring home care personnel about exercises that patients can perform to increase their activity. The participants felt using visualizations in this setting would be useful. 
 
 \subsection{Requirements}
-One requirement which all of the participants wished to clarify was F1-1. They were specific about the fact that it should not be national goals, but national recommendations, this was rectified in the new requirements. Two of the participants mentioned that an overview of the week was good, but receiving a summary of the daily activity was equally important. This was provided by the pie chart but was never explicitly stated as a requirement, F2-10 was added to reflect this.
+One requirement which all of the participants wished to clarify was R1-1. They were specific about the fact that it should not be national goals, but national recommendations, this was rectified in the new requirements. Two of the participants mentioned that an overview of the week was good, but receiving a summary of the daily activity was equally important. This was provided by the pie chart but was never explicitly stated as a requirement, R2-15 was added to reflect this.
 
-Being able to include or exclude certain hours of the night was also discussed due it being brought up during several visualizations, F2-11 has been added as a response to this. There was disagreement on what counted as ``night'', and if a certain time interval should be set by the user or a pre-set value should be used. 
+Being able to include or exclude certain hours of the night was also discussed due it being brought up during several visualizations, R2-16 has been added as a response to this. There was disagreement on what counted as ``night'', and if a certain time interval should be set by the user or a pre-set value should be used. 
 
-F2-3 was changed to include the interval of any type of activity, not just inactivity. One of the things the participants felt was useful with visualizations F3 was the ability to detect how short the intervals of activity were, no other visualizations gave them this ability.
+R2-3 was changed to include the interval of any type of activity, not just inactivity. One of the things the participants felt was useful with visualizations F3 was the ability to detect how short the intervals of activity were, no other visualizations gave them this ability.
 
 \begin{table}[h!]
   \begin{center}
@@ -98,23 +100,23 @@ F2-3 was changed to include the interval of any type of activity, not just inact
     \hline
       \textbf{Id} & \textbf{Requirement} \\ \hline
     \multicolumn{2}{|l|}{The visualizations should \ldots} \\ \hline
-      F2-1 & give the user an overview of the week where the days are classified by national recommendations or personal goals \\ \hline
-      F2-2 & show the activity level for each hour of the day \\ \hline
-      F2-3 & make it easy to identify the length of activity intervals \\ \hline
-      F2-4 & make it possible to compare multiple days \\ \hline
-      F2-5 & make it easy to identify hours of the day where activity can be added \\ \hline
-      F2-6 & show the activity level compared to national or personal goals \\ \hline
-      F2-7 & let the user identify patients that are active during the night \\ \hline
-      F2-8 & let you compare two separate weeks to see the patients progress \\ \hline
-      F2-9 & should be printable in grayscale \\ \hline
-      F2-10 & show the activity distribution for a day (sedentary, standing, walking) \\ \hline
-      F2-11 & allow the users to toggle if nighttime should be included or not \\ \hline
+      R2-1 & give the user an overview of the week where the days are classified by national recommendations or personal goals \\ \hline
+      R2-2 & show the activity level for each hour of the day \\ \hline
+      R2-3 & make it easy to identify the length of activity intervals \\ \hline
+      R2-4 & make it possible to compare multiple days \\ \hline
+      R2-5 & make it easy to identify hours of the day where activity can be added \\ \hline
+      R2-6 & show the activity level compared to national or personal goals \\ \hline
+      R2-7 & let the user identify patients that are active during the night \\ \hline
+      R2-8 & let you compare two separate weeks to see the patients progress \\ \hline
+      R2-9 & should be printable in grayscale \\ \hline
+      R2-15 & show the activity distribution for a day (sedentary, standing, walking) \\ \hline
+      R2-16 & allow the users to toggle if nighttime should be included or not \\ \hline
   \end{tabular}
   \end{center}
   \caption{Functional requirements from the second focus group}
 \end{table}
 
-When the participants were presented with the user experience requirements they were initially a bit confused of what exactly these requirements entailed. Some time was used to explain the meaning of UX requirements to the participants. F1-12 should be clarified to include not just the user, but other non medical partners as well, this is now reflected in F2-14. According to the participants some patients are simply not well enough cognitively to understand the visualizations no matter how simple they are. Therefore F1-15 has been changed accordingly.
+When the participants were presented with the user experience requirements they were initially a bit confused of what exactly these requirements entailed. Some time was used to explain the meaning of UX requirements to the participants. R1-13 was clarified to include not just the user, but other non medical partners as well, this is now reflected in R2-13. According to the participants some patients are simply not well enough cognitively to understand the visualizations no matter how simple they are. Therefore R1-14 has been changed accordingly.
 
 \begin{table}[h!]
   \begin{center}
@@ -122,11 +124,11 @@ When the participants were presented with the user experience requirements they 
     \hline
       \textbf{Id} & \textbf{Requirement} \\ \hline
     \multicolumn{2}{|l|}{The visualizations should \ldots} \\ \hline
-      F2-11 & not be judgemental towards the patients activity level \\ \hline
-      F2-12 & should be honest about the patients activity level \\ \hline
-      F2-13 & should motivate the patient to be more active \\ \hline
-      F2-14 & should be intuitive and easy to understand for the user and third parties \\ \hline
-      F2-15 & be easy to explain to cognitively capable patients \\ \hline
+      R2-10 & not be judgemental towards the patients activity level \\ \hline
+      R2-11 & should be honest about the patients activity level \\ \hline
+      R2-12 & should motivate the patient to be more active \\ \hline
+      R2-13 & should be intuitive and easy to understand for the user and third parties \\ \hline
+      R2-14 & be easy to explain to cognitively capable patients \\ \hline
       
   \end{tabular}
   \end{center}

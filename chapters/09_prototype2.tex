@@ -7,22 +7,22 @@ Feedback from the first focus group was used to improve the visualizations, tabl
 
 \begin{table}[h!]
   \centering
-  \begin{tabular}{|l|l|p{10.15cm}|}
-      \multicolumn{3}{c}{\textbf{Change log}} \\ \hline
-      \textbf{Nr} & \textbf{ID} & \textbf{Description} \\ \hline
-      1  & U1 & Replaced smiley faces with coloured squares. \\ \hline
-      2  & U1 & Classify using national/personal goals for sitting and walking.\\ \hline 
-      3  & U2 & Removed. \\ \hline
-      4  & F1 & Added pictures to illustrate which activity each slice represents. \\ \hline
-      5  & F2 & Removed. \\ \hline 
-      6  & F3 & Changed sitting from red to white. \\ \hline
-      7  & F3 & Removed nighttime from the dataset. \\ \hline
-      9  & T1 & Added goal circles for each timeline. \\ \hline
-      10 & T2 & Removed. \\ \hline
-      11 & T3 & Removed. \\ \hline
-      12 & T4 & Changed sitting colour to white. \\ \hline
-      13 & T4 & Reduced inner radius of hour-ticks \\ \hline
-      14 & All & Added option to switch between different colours including grayscale. \\ \hline
+  \begin{tabular}{|l|l|l|p{8cm}|}
+      \multicolumn{4}{c}{\textbf{Change log}} \\ \hline
+      \textbf{Nr} & \textbf{ID} & \textbf{Req.} & \textbf{Description} \\ \hline
+      1  & U1  & R1-10  & Replaced smiley faces with coloured squares. \\ \hline
+      2  & U1  & R1-1  & Classify using national/personal goals for sitting and walking.\\ \hline 
+      3  & U2  &   & Removed. \\ \hline
+      4  & F1  & R1-13,R1-14 & Added pictures to illustrate which activity each slice represents. \\ \hline
+      5  & F2  &   & Removed. \\ \hline 
+      6  & F3  & R1-10 & Changed sitting from red to white. \\ \hline
+      7  & F3  &   & Removed nighttime from the dataset. \\ \hline
+      9  & T1  & R1-6 & Added goal circles for each timeline. \\ \hline
+      10 & T2  &   & Removed. \\ \hline
+      11 & T3  &   & Removed. \\ \hline
+      12 & T4  & R1-10 & Changed sitting colour to white. \\ \hline
+      13 & T4  &   & Reduced inner radius of hour-ticks \\ \hline
+      14 & All & R1-9 & Added option to switch between different colours including grayscale. \\ \hline
   \end{tabular}
   \caption{Change log. Changes made to the system after the first focus group.}
   \label{fig:changeLog}
@@ -30,7 +30,7 @@ Feedback from the first focus group was used to improve the visualizations, tabl
 
 New functionality added includes a new diagram T5, ability to set goals (default is national goals) and a small diagram, goal circles, that shows how active the patient was compared to the goals. The new diagram (see figure~\ref{fig:t5}), T5, is similar to the visualization used by activPAL, but it does not show a bar for the amount of sedentary behaviour. The day is aggregated to 24 hour-blocks, the activity level for each hour is represented by stacked bars. This means that an hour with no activity, other than seating, will show no bar. 
 
-Goal circles are small diagrams appended to T1 and T5, see figure~\ref{fig:t1} and ~\ref{fig:t5}. Goal circles are used to indicate how much activity the patient accumulated compared to the goals set. A full circle means the patient reached his goal that day. Exceeding the goal will produce additional circles. For example, if the goal was walking for 1 hour each day, a full circle would indicate that the patient walked exactly 1 hour, a half circle would indicate the patient walked 0.5 hours, and two circles would mean 2 hours of walking.
+Goal circles are small diagrams appended to T1 and T5, see figure~\ref{fig:t1} and~\ref{fig:t5}. Goal circles are used to indicate how much activity the patient accumulated compared to the goals set. A full circle means the patient reached his goal that day. Exceeding the goal will produce additional circles. For example, if the goal was walking for 1 hour each day, a full circle would indicate that the patient walked exactly 1 hour, a half circle would indicate the patient walked 0.5 hours, and two circles would mean 2 hours of walking.
 
 Table~\ref{tab:runProtDesc2} shows an overview of the visualizations used in the second version of the system. A functionality added to all the visualizations was the ability to switch between colours, including grayscale. U2 was discarded by the first focus group. U1, see figure~\ref{fig:uSecond}, is the only overview chart available in the second prototype. The smilies were replaced with coloured squares because the sad face would be demotivating for the patients. U1 was also changed to classify the days compared to goals. The goals can be set manually, the default values are the national goals. Reaching both goals will classify the day to the green square, one goal to the yellow square, and no goals to the red square.
 
@@ -99,7 +99,7 @@ T2 and T3 was discarded and removed. T1 was not changed other than the goal circ
     \caption{T5}
     \label{fig:t5}
   \end{subfigure}
-  \caption{Timeline charts used for the second focus group}
+  \caption{Timeline charts used for the second focus group.}
 \end{figure}
 
 
