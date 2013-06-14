@@ -68,15 +68,37 @@ INTRODUCTION?
 APPENDIX
   Add full size pictures of the visualizations
 
-DISCUSSION (priority)
+DISCUSSION (priority) -- DONE --
   Answer the research questions.
   How has it helped to involve the user. Show the difference between the first prototype and the second. Show that it is very important to involve the user. 
   Personal reflections can be added here.
 
-DOCUMENT THE PROCESS BITCHES
-
+DOCUMENT THE PROCESS BITCHES -- DONE -- 
 
 PROTOTYPE 2 
   Each change in change log etc. should have a reference to the requirements created after focus group 1
 
 
+---------------------------------------------------------
+
+THINGS TO FIX 3
+
+Give new IDs to the requirements, F is confusing.
+
+Some of the requirements IDs are duplicates. FIX!
+
+References to the discussion and other chapters in conclusion.
+
+Show pictures of the visualizations in the discussion and conclusion chapters (at least conclusion).
+
+Validity chapter: discuss the external validity and generalization.
+
+Add table showing the relationship between 
+
+Refer the prototypes to the Hill-triangle.
+
+IMU --> accelerometer or some shit like that. You know. Man. Fuck the POLICE.
+
+Add pictures to the information visualization section so that it makes sense.
+
+Each change in change log etc. should have a reference to the requirements created after focus group 1
