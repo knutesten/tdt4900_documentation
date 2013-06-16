@@ -99,6 +99,6 @@ THINGS TO FIX 3
 
 -- DEAN -- Refer the prototypes to the Hill-triangle.
 
-IMU --> accelerometer or some shit like that. You know. Man. Fuck the POLICE.
+-- NEEDS DISCUSSION -- IMU --> accelerometer or some shit like that. You know. Man. Fuck the POLICE.
 
-Add pictures to the information visualization section so that it makes sense.
+-- DONE -- Add pictures to the information visualization section so that it makes sense.
