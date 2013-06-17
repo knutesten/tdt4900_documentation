@@ -1,106 +1,63 @@
-THINGS TO FIX
-
-Introduction 
-  Rename Related work -> Context of the study.
-  Add a picture of the Nike+ bracelet and picture of presentation of data.
-
-HCI
-  Change order, interactivity and visual variables.
-  Add pictures describing visual variables etc. (www.interactin-design.org).
-  Hawthorn effect must be removed because Dean has been a fool.
-  
-
-
-  From the patients takes contact with the health care 
-
-  patient trajectory 
-
-  Clarify the patients path through the health care system.
-
-  Clarify that the physiotherapist are special because they go home to the patient.
-
-  Not AMU but IMU
-
-  Article Houde and Hill what prototypes prototype
-
-
---------------------------------------------------------
-
-
-TINGS TO FIX 2
-
-QUOTES?
-
-SHOW ALL THE PICTURES IN PAPER PROTOTYPE SECTION!  
-
-PROTOTYPE 1 -- DONE --
-  We need to be more explicit about the process for creating the sketches. Something we did by ourself with feedback from supervisor. Based on initial requirements. No user input here. It is important to show that we started the implementation and didn't show the users the paper sketches.
-
-Rename: PAPER SKETCHES -> PAPER SKETCHES FOR PROTOTYPE 1 -- IGNORED --
-
-INITIAL REQUIREMENTS -- REVIEW -- 
-  New section METHOD:
-    We have to say we did an interview a domain expert to get started. And took notes. Try to formulate the questions that we had when interviewing. 
-
-PHYSIOTHERAPY IN NORWAY -- DONE -- 
-  Mention that to create an activity plan is just one of many treatments.
-  Not welfare technology
-
-MEDICAL TECHNOLOGY -> PHYSICAL THERAPY CHAPTER -- DONE --
-  Software is considered medical equipment.
-
-RESEARCH DESIGN (priority) -- DEAN --
-  Reference to the research questions. To get an answer to these questions we did this shit.
-  Questionnaire has to be mentioned here.
-
-IN FOCUS GROUP SECTION WE NEED TO BE CLEAR ABOUT WHAT HAS HAPPENED (BE VERY CLEAR CLEAR CLEAR) -- DONE --
-  Examples
-
-PAPER SKETCHES -- DONE --
-  Fractional charts -> Aggregated charts
-  Timeline          -> Timeline
-  Week overview     -> Overview charts
-
-INTRODUCTION?
-  Step 3 from HU is not really relevant for our project. 
-  Welfare technology
-
-APPENDIX
-  Add full size pictures of the visualizations
-
-DISCUSSION (priority) -- DONE --
-  Answer the research questions.
-  How has it helped to involve the user. Show the difference between the first prototype and the second. Show that it is very important to involve the user. 
-  Personal reflections can be added here.
-
-DOCUMENT THE PROCESS BITCHES -- DONE -- 
-
-PROTOTYPE 2 
-  Each change in change log etc. should have a reference to the requirements created after focus group 1
-
-
----------------------------------------------------------
-
-THINGS TO FIX 3
+THINGS TO FIX 4
 
 -- SORT OF DONE -- Each change in change log etc. should have a reference to the requirements created after focus group 1
 
--- DONE -- Give new IDs to the requirements, F is confusing.
-
--- DONE -- Some of the requirements IDs are duplicates. FIX!
-
--- DONE -- References to the discussion and other chapters in conclusion.
-
 -- COMMENTED -- Show pictures of the visualizations in the discussion and conclusion chapters (at least conclusion).
-
--- DEAN -- Validity chapter: discuss the external validity and generalization.
-
--- POSTPONED -- Add table showing the relationship between requirements and scenarios. 
 
 -- DEAN -- Refer the prototypes to the Hill-triangle.
 
--- NEEDS DISCUSSION -- IMU --> accelerometer or some shit like that. You know. Man. Fuck the POLICE.
-
--- DONE -- Add pictures to the information visualization section so that it makes sense.
+-- POSTPONED -- Add table showing the relationship between requirements and scenarios. 
 
 Add reference for user experience trinity
+
+IMU -> Acceleration
+
+After A: An example of such information is sensor data from the patient. Has been shown to be nice to have :P. Connect the last part of introduction to the research questions. Give example of typical situation. A typical situation would be the patient bla bla and the physiotherapist using the data bla bal. 
+
+In introduction to chapters: Instead of relevant for the report, say relevant to answer the research questions. 
+
+Do not say in the report that you are using the book.
+
+Remove threats to validity as its own subsection. Just let the text flow as a river in the forest.
+
+Open with Personal Informatics, then mention Quantified Self. 
+
+Make it clear that activPAL is designed for research as oppose to self-help.
+
+Change order of chapter 3 and 4. Fix reference to activPAL.
+
+In research design you have to remind the reader of the research questions and describe why we are using the method we are using.
+
+In activPAL section, mention the shit from medical equipment then remove the medial equipment section.
+
+In discussion say that the software will easily comply to the medical equipment rules, but you still have to get the permit before the technology can be used.
+
+Move the ISO-picture to 5.2
+
+Make it clear that the last paragraphs in requirement gathering is part of the results of the interview.
+
+Refer to the requirements in the paper sketch section. Tell the reader what the different requirement ids represent so they don't have to go back to initial requirements.
+
+Mention IR-7 in timeline charts section of paper sketches.
+
+Remove comment about the paper sketches being reviewed by supervisor
+
+Remove the part about not finding physiotherapists to review the sketches.
+
+^ 5.3 Brainstorming has to be changed accordingly 
+
+Mention that it was a point to show the focus groups an application using real sensor data.
+
+Prototype 1 table showing the visualizations should have a column of requirements they satisfy 
+
+Focus group 1, mention the questionnaire
+
+Fix research question to say scenario instead of use case
+
+Remove use case from all the thing
+
+Create a section in conclusion that talks about the different ways to show the visualizations: Laptop, tablet, printouts.
+
+Flow: Introduction to research question
+
+Flow: Research question to research design
