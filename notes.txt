@@ -102,3 +102,5 @@ THINGS TO FIX 3
 -- NEEDS DISCUSSION -- IMU --> accelerometer or some shit like that. You know. Man. Fuck the POLICE.
 
 -- DONE -- Add pictures to the information visualization section so that it makes sense.
+
+Add reference for user experience trinity
