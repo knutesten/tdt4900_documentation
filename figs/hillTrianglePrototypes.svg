@@ -27,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,9 +55,9 @@
      inkscape:window-height="705"
      id="namedview2987"
      showgrid="false"
-     inkscape:zoom="1.8444444"
-     inkscape:cx="100.65097"
-     inkscape:cy="151.70798"
+     inkscape:zoom="1.3042191"
+     inkscape:cx="120.09471"
+     inkscape:cy="133.62599"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -102,7 +102,7 @@
      sodipodi:start="6.2642433"
      sodipodi:end="12.547374"
      sodipodi:open="true"
-     transform="matrix(3.1859386,0,0,2.6748945,-276.71655,167.21817)" />
+     transform="matrix(3.5137415,0,0,2.9501158,-351.35454,139.22661)" />
   <path
      sodipodi:type="arc"
      style="fill:#000000;stroke:none"
@@ -164,19 +164,19 @@
      sodipodi:start="6.2642433"
      sodipodi:end="12.547374"
      sodipodi:open="true"
-     transform="matrix(0.70089741,0,0,0.69145405,400.42739,142.48856)" />
+     transform="matrix(0.77301311,0,0,0.76259812,395.46109,111.95255)" />
   <text
      xml:space="preserve"
-     style="font-size:13.92319298px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
-     x="353.5607"
-     y="248.00801"
+     style="font-size:15.35575771px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+     x="344.08432"
+     y="228.02138"
      id="text3863"
      sodipodi:linespacing="125%"
      transform="scale(1.0068054,0.9932406)"><tspan
        sodipodi:role="line"
        id="tspan3865"
-       x="353.5607"
-       y="248.00801">PS</tspan></text>
+       x="344.08432"
+       y="228.02138">PS</tspan></text>
   <path
      sodipodi:type="arc"
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.57700002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -266,4 +266,17 @@
        x="5.727819"
        y="118.07381"
        id="tspan3930" /></text>
+  <path
+     sodipodi:type="arc"
+     style="fill:#000000;stroke:none"
+     id="path3811-1-7-1"
+     sodipodi:cx="201.41362"
+     sodipodi:cy="29.241108"
+     sodipodi:rx="1.2938776"
+     sodipodi:ry="1.3897204"
+     d="m 202.70727,29.214785 a 1.2938776,1.3897204 0 1 1 -1e-5,-7.5e-5"
+     sodipodi:start="6.2642433"
+     sodipodi:end="12.547374"
+     sodipodi:open="true"
+     transform="matrix(3.1859386,0,0,2.6748945,-271.39021,192.80895)" />
 </svg>
