@@ -1,8 +1,6 @@
 \chapter{Prototype 1}
 \label{ch:prototype1}
 
-\section{Purpose}
-
 \section{activPAL}
 As mentioned in section~\ref{sensorActivPal} the activPAL classifies the accelerometer data into 3 different types of behaviour, this data can then be viewed through activPALs proprietary software. There is an alternative to export the data in a \gls{csv} format, and there are several options as how the data should be presented or aggregated. 
 
@@ -12,10 +10,10 @@ For the purpose of our thesis the event based \gls{csv} was the most suited basi
 
 \section{Paper Sketches}
 \label{sec:paperSketches}
-Before the starting the implementation of the system we created a set of paper sketches of the visualizations that we, planned to implement. These were our first ideas on the visualizations that would fulfil the initial requirements efficiently, while providing several alternative to choose from. Due to lack of time and some problems finding physiotherapists in the earlier stages of development we were not able to get any feedback on the paper sketches from the users. The paper sketches were therefore only reviewed by our supervisor before the actual implementation was started.
+Before starting the implementation of the system we created a set of paper sketches of the visualizations that we, planned to implement. These were our first ideas on the visualizations that would fulfil the initial requirements efficiently, while providing several alternatives to choose from.
 
 \subsection{Overview charts}
-Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify bad days that can then be investigated further. In other words they cover requirement IR1 and IR4. These visualizations could also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart.
+Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify bad days that can then be investigated further. In other words they address the weekly overview requirement (IR1) and let you compare hours from multiple days (IR4). These visualizations could also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart.
 
 \subsubsection{Day classification}
 By calculating the overall activity level and classifying the days into three categories the user can easily see which days he need to be more active and which days the activity level is satisfactory. In our sketch, see figure \ref{fig:smileyWeek} the three different classifications are illustrated by smilies (smiling face for active days, and sad face for inactive days).
@@ -37,7 +35,7 @@ A more complex version of the above chart, see figure \ref{fig:detailedWeek} is 
 \end{figure}
 
 \subsection{Aggregated charts}
-These type of charts show the sum of time spent sedentary, standing, and walking. Summing over the three classifications makes it easy to get an overview of the day as a whole. The drawback are that details are lost and it is not possible to pinpoint when each activity occurred during the day. Aggregated charts were created to cover IR2 and are intended to give a general overview of the daily activity before spending time looking at more detailed visualizations. Additionally it can serve as an alert for patients with low activity levels, where majority of the chart would be filled with inactivity.
+These type of charts show the sum of time spent sedentary, standing, and walking. Summing over the three classifications makes it easy to get an overview of the day as a whole. The drawback are that details are lost and it is not possible to pinpoint when each activity occurred during the day. Aggregated charts were created to cover the summary of daily activity requirement(IR2) and are intended to give a general overview of the daily activity before spending time looking at more detailed visualizations. Additionally it can serve as an alert for patients with low activity levels, where majority of the chart would be filled with inactivity.
 
 \subsubsection{Pie chart}
 The pie chart is a standard way of showing the amount of time spent in each activity state. Due to the familiarity of the pie chart it will be easy to understand for both users and patients. A legend shows which colour represents each type of activity. The exact percentage for each activity state is also displayed.
@@ -63,7 +61,7 @@ An alternative is to include more detail into a pie chart style, by using balls 
 \end{figure}
 
 \subsection{Timeline charts}
-Timeline visualisations are effective at illustrating when various activities occurred during the day. The illustration uses a long horizontal bar that has different colours for different behavioural classification. These visualizations primarily address requirement IR3, IR5, and IR6. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long. By looking at multiple days, the user can detect patterns in the day where he needs to be more active.
+Timeline visualisations are effective at illustrating when various activities occurred during the day. The illustration uses a long horizontal bar that has different colours for different behavioural classification. These visualizations primarily address requirements IR3, IR5, IR6, and IR7 which address the need to show and compare minutes and hours during the day. Such a bar can be used to identify points during the day where the subject is in a sedentary position for too long. By looking at multiple days, the user can detect patterns in the day where he needs to be more active.
 
 \subsubsection{Continuous}
 One approach to this visualization type is to create a continuous timeline that contains every little detail of activity. The continuous timeline is useful for quickly identifying periods of the day with unsatisfactory behaviour, but the detail can also be distracting and make it harder to read the graph.
@@ -119,18 +117,18 @@ Nine of the paper sketches were selected for implementation, to be used in the f
 
 \begin{table}[h!]
   \begin{center}
-  \begin{tabular}{|c|p{10cm}|}
+  \begin{tabular}{|c|c|p{10cm}|}
     \hline
-    \textbf{ID} & \textbf{Description} \\ \hline
-    U1 & Classifies each day of the week into either of three categories: High, medium and low activity. \\ \hline
-    U2 & Classifies each day of the week as in U1. Also shows 24 squares for each day, each square representing one hour. The activity level for each hour is displayed using a gradient. \\ \hline
-    F1 & Pie chart showing the amount of activity for each day. \\ \hline
-    F2 & Same as F1, but with boxes instead of pie slices and descriptive figures inside each box. \\ \hline
-    F3 & Bubble chart. Divides the pie slices of F1 into bubbles, each bubble representing one interval of activity (e.g. 2 hours of non-stop sedentary behaviour). \\ \hline
-    T1 & Timeline of 24 squares, each square represents 1 hour of activity. The amount of activity in that hour is displayed using a gradient. \\ \hline
-    T2 & Rectangle shaped timeline, showing the type using colour coding. \\ \hline
-    T3 & Two 12-hour clocks showing the activity type using colour coding. \\ \hline
-    T4 & One 24-hour clock showing the activity type using colour coding. \\ \hline
+    \textbf{IR} & \textbf{ID} & \textbf{Description}\\ \hline
+    U1 & 1 & Classifies each day of the week into either of three categories: High, medium and low activity. \\ \hline
+    U2 & 1,3,4,7 & Classifies each day of the week as in U1. Also shows 24 squares for each day, each square representing one hour. The activity level for each hour is displayed using a gradient. \\ \hline
+    F1 & 2 & Pie chart showing the amount of activity for each day. \\ \hline
+    F2 & 2 & Same as F1, but with boxes instead of pie slices and descriptive figures inside each box.  \\ \hline
+    F3 & 2,7 & Bubble chart. Divides the pie slices of F1 into bubbles, each bubble representing one interval of activity (e.g. 2 hours of non-stop sedentary behaviour). \\ \hline
+    T1 & 3,4,7 & Timeline of 24 squares, each square represents 1 hour of activity. The amount of activity in that hour is displayed using a gradient. \\ \hline
+    T2 & 5,6,7 & Rectangle shaped timeline, showing the type using colour coding.  \\ \hline
+    T3 & 5,6,7 & Two 12-hour clocks showing the activity type using colour coding. \\ \hline
+    T4 & 5,6,7 & One 24-hour clock showing the activity type using colour coding. \\ \hline
   \end{tabular}
   \end{center}
   \caption{Diagrams implemented for the first focus group.}
