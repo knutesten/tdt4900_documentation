@@ -1,22 +1,32 @@
 \chapter{Initial Requirements}
 \label{ch:initialRequirements}
 %Review me!
-This chapter presents the interview we conducted which would lead to the creation of our initial scenarios and requirements for our research questions. The first section introduces the participants and the topics that were discussed. The subsequent sections present the interview results, scenarios, and initial requirements.
+The interview we conducted to create our initial scenarios and requirements for the research questions is covered in this chapter. The first section introduces the participants and the topics that were discussed. The subsequent sections present the interview results, scenarios, and initial requirements.
 
 \section{Participant and Process}
 \label{sec:reqGathering}
-The initial requirements were gathered with the help of a female domain expert with a Master of Science in Human Movement Science. She is working on a research project at St. Olavs Hospital for her PhD, where the activPAL sensor is used to track the activity of patients being rehabilitated after hip-fractures.
+The initial requirements were gathered with the help of a domain expert with a Master of Science in Human Movement Science. She is working on a research project at St. Olavs Hospital for her PhD, where the activPAL sensor is used to track the activity of patients being rehabilitated after hip-fractures.
 
-Because of the lack of information we had on the current usage of sensor technology in physiotherapy and how this technology works, we conducted an unstructured interview with the domain expert. In the interview we discussed four topics: how sensor technology like the activePAL is used in physiotherapy and research today, what types of visualizations are used, technical aspects of using the activPAL, and initial requirements. 
+Because of the lack of information we had on the current usage of sensor technology in physiotherapy and how this technology works, we conducted an unstructured interview with the domain expert. In the interview we discussed four topics: 
+
+\begin{enumerate}
+  \item How sensor technology like the activePAL is used in physiotherapy and research today.
+  \item What types of visualizations are used.
+  \item Technical aspects of using the activPAL.
+  \item Initial requirements for the visualization
+\end{enumerate}
 
 \section{Results}
-Currently there is little or no use of sensor technology in physiotherapy. There are some physiotherapists involved in the research projects using these types of sensors, but they do not use them in their normal practice. 
+Based on the response provided by the domain expert the first three topics have been summarized below, while the initial requirements and presented in the next section.
 
-The only visualization utilized by the domain expert and physiotherapists using the activPAL sensor are the visualizations that are offered by the software that comes with the sensor, as seen in section~\ref{sec:activPALViz}.
+\begin{itemize}
+\item Currently there is little or no use of sensor technology in physiotherapy. There are some physiotherapists involved in the research projects using these types of sensors, but they do not use them in their normal practice. 
 
-From a technical aspect it is not hard to use the data gathered by activPAL. The data can easily be exported in the common CSV format. CSV is a machine-readable format, which means that can easily be read and parsed by other computer programs. activPAL offers options for exporting both event data (see appendix~\ref{csvDocument}), or raw acceleration data.
+\item The only visualization utilized by the domain expert and physiotherapists using the activPAL sensor are the visualizations that are offered by the software that comes with the sensor, as presented in Section~\ref{sec:activPALViz}.
 
-After getting an overview, of the current situation and the technical possibilities of the activPAL sensor, we created the initial requirements found in the next subsection.
+\item From a technical aspect it is not hard to use the data gathered by activPAL. The data can easily be exported in the common CSV format. CSV is a machine-readable format, which means that it can easily be read and parsed by other software. activPAL offers options for exporting both event data (see appendix~\ref{csvDocument}), or raw acceleration data.
+
+\end{itemize}
 
 \subsection{Initial Requirements and User Scenario}
 After talking to the domain experts at St. Olavs Hospital, two main user scenarios emerged:
@@ -32,11 +42,11 @@ After talking to the domain experts at St. Olavs Hospital, two main user scenari
   \caption{Table of the initial scenarios.}
 \end{table}
 
-The current practice of physiotherapists working with the elderly is to first get an overview of the patient's activity level. This information is then used to create a program to improve the activity level of the patient. The activPAL sensor can be used in addition to current techniques to gather more quantitative data to get an even better mapping of the patients level of activity. Scenario 1 is concerned with how to visualize this data so that the physiotherapists quickly can get an idea on how to proceed with the treatment.
+The current practice of physiotherapists working with the elderly is to first get an overview of the patient's activity level. This information is then used to create a program to improve the activity level of the patient. The activPAL sensor can be used to collect data so that an even better mapping of the patients activity level can be achieved. IS-1 is concerned with how to visualize this data so that the physiotherapists quickly can get an idea of how to proceed with the treatment.
 
-After the physiotherapists has an idea of the patients current level of activity the data is presented to the patient. This is usually a discussion about the results of the test and what the patient wants to achieve in terms increased activity. Scenario 2 deals with how the visualizations can be helpful in making the patient understand and becoming aware of the current level of activity.
+After the physiotherapists has an idea of the patients current level of activity the data is presented to the patient. This is usually a discussion about the results of the test and what the patient wants to achieve in terms increased activity. IS-2 addresses that visualizations can be helpful in making the patient understand and become more aware of their current level of activity.
 
-Using the two user scenarios above we created some simple requirements for the visualizations as a basis before starting development.
+Using the two user scenarios above we created some simple requirements for the visualizations as a basis before starting development, as seen in Table~\ref{tab:initialRequirements1}.
 
 \begin{table}[h!]
   \begin{center}
@@ -53,5 +63,6 @@ Using the two user scenarios above we created some simple requirements for the v
       IR-7 & let the user identify patients that are active during the night \\ \hline
   \end{tabular}
   \end{center}
-  \caption{Table of the initial requirements.} 
+  \caption{Table of the initial requirements.}
+  \label{tab:initialRequirements1}
 \end{table}
