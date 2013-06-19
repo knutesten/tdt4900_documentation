@@ -144,7 +144,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -415,7 +415,12 @@
          x="538.07489"
          y="260.05908"
          style="font-style:normal;-inkscape-font-specification:Calibri"
-         id="tspan3065">(3) Focus group 1 </tspan></text>
+         id="tspan3360">(3) Focus group 1</tspan><tspan
+         sodipodi:role="line"
+         x="538.07489"
+         y="285.05908"
+         style="font-style:normal;-inkscape-font-specification:Calibri"
+         id="tspan3364">(6) Second interview </tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
@@ -457,11 +462,11 @@
          sodipodi:role="line"
          id="tspan3088"
          x="243.61652"
-         y="435.9303">(3) Focus Group 1</tspan><tspan
+         y="435.9303">(3) Focus group 1</tspan><tspan
          sodipodi:role="line"
          x="243.61652"
          y="460.9303"
-         id="tspan3104">(5) Focus Group 2</tspan></text>
+         id="tspan3104">(5) Focus group 2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
