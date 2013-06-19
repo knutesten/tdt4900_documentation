@@ -78,4 +78,6 @@ Use the visual variables theory in paper sketches section, and create a new sect
 
 Reflect on the process as a whole and tell the sensor that we feel the work has given results and that we quickly converged on a few good visualizations. Mention that it has been a design process, but that we also have results such as functionality. 
 
+Check brake break.
+
 
