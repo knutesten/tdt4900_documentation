@@ -14,7 +14,7 @@ For the purpose of our thesis the event based \gls{csv} was the most suited form
 \label{sec:paperSketches}
 Before starting the implementation of the system we created a set of paper sketches of the visualizations that we planned to implement. These were our first ideas on the visualizations that would fulfil the initial requirements efficiently, while providing several alternatives to choose from.
 
-\subsection{Overview charts}
+\subsection{Overview Charts}
 Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify bad days that can then be investigated further. In other words these visualizations address the weekly overview requirement IR-1. They can also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart.
 
 The overview charts mainly focus on two type of visual variables (as described in Section~\ref{sec:visualVarables}): Position and size. If we look at Figure~\ref{fig:smileyWeek}, we see that the vertical position of elements is used to illustrate how the day was classified. The close proximity of the elements in each horizontal level, makes us intuitively associate days that are on the same level as being part of a group. The size of each group makes it easy to see which classification has the most amount of days. Since size has a quantitative characteristic we can easily see that the top classification has twice as many days as the middle one, and four times as many as the bottom one.
@@ -38,7 +38,7 @@ A more complex version of the above chart, see Figure~\ref{fig:detailedWeek} is 
 		\label{fig:detailedWeek}
 \end{figure}
 
-\subsection{Aggregated charts}
+\subsection{Aggregated Charts}
 These type of charts show the sum of time spent sedentary, standing, and walking. Summing over the three classifications makes it easy to get an overview of the day as a whole. The drawback is that details are lost and it is not possible to pinpoint when each activity occurred during the day. Aggregated charts were created to cover the summary of daily activity requirement, IR-2. Aggregated charts can be used to get a general overview of the daily activity before spending time looking at more detailed visualizations. Additionally it can serve as an alert for patients with low activity levels, where the majority of the chart would be filled with inactivity.
 
 Aggregated charts make use of two visual variables: Size and colour. The quantitative characteristic of size is used to determine the amount of each type of activity. For example for a pie chart, looking at the size of the pie slices we can quickly see how the different activity types compare to each other. The selective characteristics of colour is used to separate the different types of activity from each other. Since there are only three different type of activity, it is easy to distinguish between the different colours. 
@@ -66,7 +66,7 @@ An alternative to the previous aggregated charts is to include more detail into 
 		\label{fig:ballChart}
 \end{figure}
 
-\subsection{Timeline charts}
+\subsection{Timeline Charts}
 Timeline visualisations are effective at illustrating when various activities occurred during the day. Timelines use a long horizontal bar that has different colours for different behavioural classification. These visualizations primarily address requirements IR-3, IR-4, IR-5 and IR-6, which state the need to show and compare minutes and hours during the day. Timeline charts can also be used to identify patients that are active during the night, which is requirement IR-7.
 
 The timelines we sketched all make use of the visual variable position. The position either on a rectangle or on a circle, represents what time of the day activity occurred. Continuous timelines, as seen in Figure~\ref{fig:clocks12}, make use of the selective characteristic of colours to show what type of activity occurred at any point of the day. The blocked timeline, as seen in Figure~\ref{fig:timelineBlocks}, makes use of the visual variable value to convey the amount of activity for each respective hour of the day. Since value can be ordered, it is easy to see which hours have activity, and that one hour has more activity than another. Value is not qualitative however, so finding one hour with twice as much activity as another is difficult.
@@ -96,7 +96,7 @@ A timeline may need some explanation before the user understands it properly. By
 
 Another approach is to use one 24 hour clock. This makes it easier to see the transition between AM and PM, but 24 hour clocks are not natural, so it might be problematic for the user to understand.
 
-\section{Programming framework}
+\section{Programming Framework}
 The task was to create custom visualizations from data gathered by the activPAL sensor. The choice of programming tools fell on HTML5 and an open source JavaScript framework called D3js.
 
 \subsection{HTML5}
@@ -120,7 +120,7 @@ One of the challenges in this project was to create different visualizations to 
 Creating graphics using svg-tags directly is cumbersome and time consuming. \gls{d3} is an open source framework that greatly simplifies this task. \gls{d3} is written in JavaScript and designed to be used in combination with HTML5. The framework can be used both to create new \gls{svg} images from scratch or modify and edit existing images. Another feature is the ability to easily add interactivity and animation to the \gls{svg}-elements. HTML5 in combination with \gls{d3} gives us flexibility to create almost any type of visualization and adding interactivity and animation to it.
 
 % REVIEW
-\section{Running prototype}
+\section{Running Prototype}
 \label{sec:runningPrototype1}
 Nine of the paper sketches were selected for implementation, so they could be presented to the first focus group. Some changes were made and additional functionality was added to the implemented versions of the visualizations, such as highlighting and different view modes. All diagrams were given IDs as seen in Table~\ref{tab:runProtDesc1}.
 
