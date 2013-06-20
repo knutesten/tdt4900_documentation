@@ -64,14 +64,23 @@ In this section we look at how the commercial activity monitoring devices presen
 \subsection{Nike+}
 NikeFuel \cite{nikefuel} is a unit of measurement used by all Nike's activity trackers. The FuelBand does calculate steps and calories burned, but the NikeFuel is the prime focus of their product line. NikeFuel does not take into account gender, height, weight, but looks purely at activity. Meaning that a kilometer of walking will award the same amount of points to users with very different physiology. The daily progress (Figure \ref{fig:tworings}) is represented through a ring that fills up when the FuelBand detects activity. A full ring means that the daily goal has been reached. Progress beyond the daily goal will be displayed with numbers and visual enchantments on the ring. 
 
+
 \begin{figure}[h!]
-	\centering
-		\includegraphics[width=0.9\textwidth]{tworings.png}
-		\caption{\footnotesize \textbf{(a):} User having one third of his daily NikeFuel goal. \textbf{(b):} User beating his daily limit by 150\%, rewarding him with special effects on the ring and a trophy. (Images taken from \cite{fuelbandDcRain} and \cite{fuelbandTechSpce}).}
-		\label{fig:tworings}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \centering
+    \includegraphics[width=0.5\textwidth]{nikering.png}
+    \caption{\footnotesize User having one third of his daily NikeFuel goal~\cite{fuelbandDcRain}.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{ringfire.png}
+    \caption{\footnotesize User beating his daily limit by 150\%, rewarding him with special effects on the ring~\cite{fuelbandTechSpce}.}
+  \end{subfigure} 
+  \caption{}
+  \label{fig:tworings}
 \end{figure}
 
-A online profile provides detailed information about the users activity, showing steps, calories burned, active time, distance travelled and average fuel, as seen in Figure~\ref{fig:activityBreakdown}. Charts can be displayed for weeks, months or years. This allows the user to track their progress and look at how often they achieve or exceed their goals~\cite{fuelbandTechSpce}. 
+An online profile provides detailed information about the users activity, showing steps, calories burned, active time, distance travelled and average fuel, as seen in Figure~\ref{fig:activityBreakdown}. Charts can be displayed for weeks, months or years. This allows the user to track their progress and look at how often they achieve or exceed their goals~\cite{fuelbandTechSpce}. 
 
 \begin{figure}[h!]
 	\centering
