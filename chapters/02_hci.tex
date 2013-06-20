@@ -5,17 +5,10 @@ This chapter contains guidelines, best practices and theoretical information on 
 \section{HCI and Human-Centred Design.}
 The science of \gls{hci} studies the interaction between humans and computers. The goal is to make this interaction as smooth and seamless as possible. Research done in the \gls{hci}-field has resulted in guidelines and design methods for the creation of efficient and usable software. An example of such a set of guidelines is ISO 9241-210 \cite{iso9241}.
 
-\begin{figure}[h!]
-	\centering
-		\includegraphics[width=0.9\textwidth]{hcdActivities.png}
-		\caption[ISO 9241-210 workflow]{The human-centred design workflow}
-		\label{fig:hcdActivities}
-\end{figure}
-
 ISO 9241-210 provides guidance and acts as a usability standard for \gls{hci} through the entire life cycle of an interactive system. The ISO takes a human-centred design approach to interactive system development. According to the ISO the aim of human-centred design is to make systems usable and useful by focusing on the users, their needs and requirements, and by applying human factors and usability knowledge and techniques.  
 
 The standard describes six key principles, as listed below: 
-\begin{enumerate}
+\begin{enumerate}[noitemsep]
   \item Users are involved throughout design and development.
   \item The design team consists of members with varied backgrounds
   \item The design is based upon an understanding of users, tasks and environments.
@@ -28,6 +21,13 @@ These principals in combination with Figure~\ref{fig:hcdActivities} will ensure 
 
 The first principle emphasizes user involvement throughout the entire process, and not just at the start and the end of the system design, but through the entire cycle of activities. It is important to include a wide range of views and input from experts in various fields, this is where the second principle comes in. It ensures that everyone does not think and approach the problem in the same way. The third principle involves understanding the user, what they want to do with the system, and the environment the system will be used in.
 
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.9\textwidth]{hcdActivities.png}
+		\caption[ISO 9241-210 workflow]{The human-centred design workflow}
+		\label{fig:hcdActivities}
+\end{figure}
+
 Principle four and five address the fact that several iterations might be required for a satisfactory design to be reached. Users might not know what they want, but they do know what they do not want once they have experienced it. Multiple iterations and examples may then be required to find something that is satisfactory to the user. The final principle states that the usability is not just about making things easy to use, but provide the user with an emotional and perceptive stimuli as well. They should wish to use the system and feel good about it.
 
 \section{Information Visualization}
@@ -35,7 +35,7 @@ Information visualization is useful when displaying large amounts of data simult
 
 Many guidelines have been suggested for creation of the optimal visualization. Shneiderman summarized many of these principles in his \emph{visual-information-seeking mantra}~\cite{shneiderman}:
 
-\vspace{-13pt}
+\vspace{-7pt}
 \begin{quote}
 \textit{Overview first, zoom and filter, then details on demand.}
 \end{quote}
@@ -48,6 +48,7 @@ Shneiderman also identifies the importance of showing the relationships between 
 \label{sec:visualVariables}
 One important factor to consider when creating visualizations are which visual variables to use. To create an intuitive visualization it is important use the different visual variables correctly. We will briefly go through some of the more common visual variables here and discuss how and how not to use them, based on Carpendales article about the subject~\cite{carpendale}. The tables below explain the different types of visual variables and their characteristics, examples are shown in Figure~\ref{fig:visVar} and~\ref{fig:charVisVar}.
 
+\clearpage
 \textbf{Visual variables:}
 \begin{table}[h!]
   \begin{tabular}{|l|p{10cm}|}
@@ -97,8 +98,8 @@ Colours are selective and associative. Unless the user is colour blind, the user
 
 \subsection{Interactivity}
 One of the benefits of creating visualizations for computers is the ability to add interactivity. Shneidermann mentions 6 tasks that should be implemented when creating information visualizations:
-\vspace{-3mm}
-\begin{description}[itemsep=0cm, parsep=0cm]
+
+\begin{description}[itemsep=3pt, parsep=0cm]
   \item[Overview] Show an overview of the entire data set.
   \item[Zoom] Let the user look closer at elements of interest.
   \item[Filter] The user should be able to filter out tasks that are not interesting.
@@ -136,9 +137,9 @@ The advantage with interviews is that they are flexible and easy to alter prior 
 
 \section{Brainstorming}
 \label{sec:brainstorming}
-Brainstorming is a generic technique used to generate, develop and refine ideas. It is widely used in interactive design to generate alternative designs and provide better ideas for certain problems~\cite{interactionDesign}. Sharp et al.~\cite{interactionDesign} mention two key success factors: Participants should know the user goals that the system is intended to support, and that no ideas should be criticized or debated, everything is initially accepted.
+Brainstorming is a generic technique used to generate, develop and refine ideas. It is widely used in interactive design to generate alternative designs and provide better ideas for certain problems~\cite{interactionDesign}. In addition to the list below, Sharp et al.~\cite{interactionDesign} mention two key success factors: Participants should know the user goals that the system is intended to support, and that no ideas should be criticized or debated, everything is initially accepted.
 
-\begin{enumerate}
+\begin{enumerate}[itemsep=3pt, parsep=0cm]
   \item Participants should ideally be from a wide range of disciplines and have a broad range of experience.
   \item Do not exclude unconventional ideas, these can often be turned into useful requirements.
   \item Build one idea on top of another. Suggest jumping back to an earlier idea if the vigour diminishes. Use a random word from the dictionary and related it to the product if stuck.
@@ -162,14 +163,14 @@ Two common compromises that are often traded against each other are breadth of f
 In the article \textit{What do Prototypes Prototype}~\cite{prototypesPrototype}, Houde and Hill discuss how prototypes need to be designed to test or rather prototype a certain design aspect of the final product. The model shown in Figure~\ref{fig:hillTriangle} represents a space which corresponds to important design aspects of an interactive system. Each corner of the triangle represents a set of questions which are essential to the design of a system. \textit{Look and feel} covers questions that concern what the user feels, sees and hears when using the system, in other words the sensory experience. \textit{Role}, as the name states, refers to questions about what role the system has in the users life, what function does it serve and how is it useful to the user. \textit{Implementation} addressed the technical aspects of the system, what techniques and components should be used for it to perform the intended function. The triangle is intentionally skewed to emphasize that no set of questions is more important than the other.
 %WRITE ABOUT HOUD AND HILLS TRIANGLE OF AWESOMNESS http://hci.stanford.edu/courses/cs247/2012/readings/WhatDoPrototypesPrototype.pdf
 
+The purpose of the model is to help designers separate design issues into the three aforementioned set of questions, which often require very different approaches to prototyping. Look and feel requires the user experience to be created or simulated, implementation requires a running system to be built, and role involves researching the use context for the system. Categorizing the important design questions will help decide what kind of prototype should be built to answer and help focus the exploration.
+
 \begin{figure}[h!]
 	\centering
 		\includegraphics[width=0.6\textwidth]{hillTriangle.png}
 		\caption[Prototype triangle]{The prototype triangle described by Houde and Hill~\cite{prototypesPrototype}}
 		\label{fig:hillTriangle}
 \end{figure}
-
-The purpose of the model is to help designers separate design issues into the three aforementioned set of questions, which often require very different approaches to prototyping. Look and feel requires the user experience to be created or simulated, implementation requires a running system to be built, and role involves researching the use context for the system. Categorizing the important design questions will help decide what kind of prototype should be built to answer and help focus the exploration.
 
 \section{Focus Groups}
 \label{sec:focusGroup}
@@ -182,9 +183,9 @@ A single session may not be representative enough or can get sidetracked, it is 
 Nielsen discusses two pitfalls with focus groups. The first states that because sessions are in groups the users do not test the system themselves, instead they are presented with a demo. The problem with such a demo is that the participants never have to question what to do next or consider the meaning of the screen options. The second problem is that what participants say they want, is not necessarily what they need. The second pitfall is that ideas described by the moderator might be perceived differently by the participants. By providing concrete examples through prototypes of the technology, one can minimize this problem.
 
 \section{Questionnaire}
-Questionnaires are a research tool that consist of a series of questions with the goal to attain information from the respondent. It is a well established technique for collecting demographic data and user opinion. Questionnaires are similar to interviews in the fact that they can contain both closed and open ended questions. Clear unambiguous questions and allowing efficient data collection is important, especially if a large quantity of questionnaires have been issued. Questionnaires can be used on their own or as an addition to other methods in order to gain background information, or deepen understanding of a particular topic. Below is a short and general guideline provided by Sharp et al.~\cite{interactionDesign} on things to watch out for when creating questionnaires.
+Questionnaires are a research tool that consist of a series of questions with the goal to attain information from the respondent. It is a well established technique for collecting demographic data and user opinion. Questionnaires are similar to interviews in the fact that they can contain both closed and open ended questions. Clear unambiguous questions and allowing efficient data collection is important, especially if a large quantity of questionnaires have been issued. Questionnaires can be used on their own or as an addition to other methods in order to gain background information, or deepen understanding of a particular topic. Below is a short and general guideline provided by Sharp et al.~\cite{interactionDesign} on things to watch out for when creating questionnaires:
 
-\begin{itemize}
+\begin{itemize}[itemsep=3pt,parsep=0pt]
   \item The order in which questions appear is important, it can influence the impact of a question.
   \item Consider having alternate versions of the questionnaire to suit different populations.
   \item Clear instructions on how the questionnaire should be answered is essential. Clear wording and good typography is important.
@@ -196,14 +197,15 @@ The advantage with questionnaires is that they provide a relatively simple and s
 \section{Validity of Research Methods}
 \label{subsec:threatsValidity}
 Validity addresses how trustworthy a study or parts of the study are, and to what extent the results are valid. Wohlin et al.~\cite{experimentInSE} provide a well structured overview of various types of validity:
+\begin{description}
+  \item[Construct validity] is concerned with whether the method measures what it is suppose to measure. For example if an interview is conducted and the interviewee interprets the questions differently from the interviewer, there is a threat to validity.
 
-\textit{Construct validity} is concerned with whether the method measures what it is suppose to measure. For example if an interview is conducted and the interviewee interprets the questions differently from the interviewer, there is a threat to validity.
+  \item[Internal validity] is of concern when casual relationships are examined. If a researcher is investigating if a factor A affects a factor B, there is a risk that a factor C is also affecting B. If the researchers are not aware of factor C and/or how it affects B, there is a threat to internal validity.
 
-\textit{Internal validity} is of concern when casual relationships are examined. If a researcher is investigating if a factor A affects a factor B, there is a risk that a factor C is also affecting B. If the researchers are not aware of factor C and/or how it affects B, there is a threat to internal validity.
+  \item[External validity] focuses on finding out to what extent it is possible to generalize the findings, and if they are of interesting to other people outside the investigative case. Generalizing qualitative methods is hard, and requires finding common characteristics and having findings that can be generalized for situations that meet a certain criteria, i.e. defining a theory.
 
-\textit{External validity} focuses on finding out to what extent it is possible to generalize the findings, and if they are of interesting to other people outside the investigative case. Generalizing qualitative methods is hard, and requires finding common characteristics and having findings that can be generalized for situations that meet a certain criteria, i.e. defining a theory.
-
-\textit{Reliability} looks at to what extent the data and analysis are depended on the specific research. Good reliability means that if the same study is conducted by a different researcher at a later time, the results should be the same. A questionnaire or interview with unclear questions, or a research report which lack important information on how the research was conducted are examples of threats to reliability.
+  \item[Reliability] looks at to what extent the data and analysis are depended on the specific research. Good reliability means that if the same study is conducted by a different researcher at a later time, the results should be the same. A questionnaire or interview with unclear questions, or a research report which lack important information on how the research was conducted are examples of threats to reliability.
+\end{description}
 
 %\emph{Ecological Validity} is concerned with how the evaluation method and environment themselves influence and affect the results. If a subject is aware of being observed and the test is conducted outside of their natural surroundings their behaviour and answers will be influenced. 
 
