@@ -8,7 +8,8 @@ Our first research question states:
 \textit{What are the relevant scenarios for visual presentation of accelerometer data in physical therapy, from the physiotherapist's perspective?}
 \end{quote}
 
-Initially we designed the first prototype for two scenarios:
+Initially we designed the first prototype for two scenarios as seen in Table~\ref{tab:intialRequirementsD}.
+
 \begin{table}[h!]
   \begin{tabular}{|c|p{10cm}|}
     \hline
@@ -17,6 +18,7 @@ Initially we designed the first prototype for two scenarios:
     IS-2 & In consultation with patients \\ \hline
   \end{tabular}
   \caption[Initial scenarios.]{Table showing the initial scenarios.}
+  \label{tab:intialRequirementsD}
 \end{table}
 
 These are the most obvious scenarios for the system. After the first and second focus group three more scenarios emerged, as well as the initial ones being heavily modified. The new and reviewed scenarios can be found in Table~\ref{tab:scenariosFinal1}.
@@ -80,6 +82,8 @@ Requirement R1-5 is a direct results of comments from the participants during th
 
 Another interesting addition was R1-9, which states that the visualizations should have printable greyscale versions. It was surprising to hear about how few technological aids were available to the physiotherapists working for Trondheim Kommune (municipality of Trondheim). For scenarios where the physiotherapists only have access to grayscale printouts, important system functionality such as interactivity, will be lost.
 
+\clearpage
+
 \begin{table}[h!]
   \begin{center}
   \begin{tabular}{|c|p{12cm}|}
@@ -101,7 +105,7 @@ Another interesting addition was R1-9, which states that the visualizations shou
   \label{tab:f1Req}
 \end{table}
 
-Two requirements were added after the second focus group, F2-15 and R2-16, see Table~\ref{tab:f2Req}. R2-15 is a clarification of the first requirement. The participants felt that there was no requirement specifying the need for aggregated charts, and R2-15 was therefore added. Another functionality that was requested was the ability to toggle nighttime on and off. In the first focus group many of the participants felt that including nighttime, especially in the aggregated charts, made the inactive part of the chart too large. Nighttime was therefore removed for some of these graphs in the second prototype. However, the participants were now uncertain as to what period of the night had been removed. It was therefore suggested that that the user should be able to toggle nighttime on and off, so that in cases where it would be helpful to see the entire dataset this option would still be available. The participants also wanted the ability to define the time interval that should be considered  nighttime. For patients living in institutions nighttime is similar for all the patients, but for patients living at home nighttime might differ from patient to patient.
+Two requirements were added after the second focus group, R2-15 and R2-16, see Table~\ref{tab:f2Req}. R2-15 is a clarification of the first requirement. The participants felt that there was no requirement specifying the need for aggregated charts, and R2-15 was therefore added. Another functionality that was requested was the ability to toggle nighttime on and off. In the first focus group many of the participants felt that including nighttime, especially in the aggregated charts, made the inactive part of the chart too large. Nighttime was therefore removed for some of these graphs in the second prototype. However, the participants were now uncertain as to what period of the night had been removed. It was therefore suggested that that the user should be able to toggle nighttime on and off, so that in cases where it would be helpful to see the entire dataset this option would still be available. The participants also wanted the ability to define the time interval that should be considered  nighttime. For patients living in institutions nighttime is similar for all the patients, but for patients living at home nighttime might differ from patient to patient.
 
 \begin{table}[h!]
   \begin{center}
@@ -143,7 +147,9 @@ Two requirements were added after the second focus group, F2-15 and R2-16, see T
   \label{tab:f2ReqUx}
 \end{table}
 
-Talking with the physiotherapists also gave us the ability to explore \gls{ux} requirements for the system, see Table~\ref{tab:f2ReqUx}. The \gls{ux} requirements we created are important to keep in mind when creating visualizations, these requirements may not be intuitive without understanding how the physiotherapists work. One of the first responses we got when going through the visualizations in the first focus group, was that the visualization had a negative attitude. For example using smilies to represent the classifications could demotivate and be judgemental towards the patient. These are issues we did not consider when first creating prototype 1. The physiotherapists also stressed that though the visualizations should not be judgemental it was just as important that they did not lie. They should give the patient an honest representation of their activity level, but without making the patient feel hopeless. Many patients are prone to give up before they have even started, and it is paramount that the visualizations do not contribute in discouraging the patient.
+Talking with the physiotherapists also gave us the ability to explore \gls{ux} requirements for the system, see Table~\ref{tab:f2ReqUx}. The \gls{ux} requirements we created are important to keep in mind when creating visualizations, these requirements may not be intuitive without understanding how the physiotherapists work. One of the first responses we got when going through the visualizations in the first focus group, was that the visualization had a negative attitude. For example using smilies to represent the classifications could demotivate and be judgemental towards the patient. 
+
+These are issues we did not consider when first creating prototype 1. The physiotherapists also stressed that though the visualizations should not be judgemental it was just as important that they did not lie. They should give the patient an honest representation of their activity level, but without making the patient feel hopeless. Many patients are prone to give up before they have even started, and it is paramount that the visualizations do not contribute in discouraging the patient.
 
 Motivating patients is another important \gls{ux} requirements. One of the physiotherapists pointed out that patients like to see quantitative data to show that they are improving. Progress can be slow and hard to notice from day to day. This can in many cases discourage patients from doing their exercises. Seeing quantitative proof that one is constantly improving, can be a powerful motivational tool, as it gives the patient a reward for following the exercise plan. One of the physiotherapists also stated that patients tend to trust more in statistics and diagrams than they do in the qualitative judgement from the physiotherapists alone. Using visualizations in their work can therefore help them persuade patients who are otherwise distrustful or feel that the treatment plan is ineffective or pointless. For the patients to be motivated by the visualizations, they need to be able to understand them, and this is covered by the R2-12 requirement. 
 
@@ -157,7 +163,7 @@ During the creation of the first paper sketches we created three groups of visua
 
 \begin{figure}[h!]
   \centering
-  \begin{subfigure}[b]{0.49\textwidth}
+  \begin{subfigure}[b]{0.39\textwidth}
     \centering
     \includegraphics[width=0.5\textwidth]{u1First.png}
     \caption{U1 in prototype 1.}
@@ -171,13 +177,15 @@ During the creation of the first paper sketches we created three groups of visua
   \label{fig:uComparison}
 \end{figure}
 
-The aggregated charts sum up the day to show the distribution of different types of activity. Initially there were three types of aggregated charts: F1, F2 and F3. F1 and F2 were combined for the second prototype to become a standard pie chart with three slices, one for each activity type. The pie chart also contains illustrations that show what type of activity each slice corresponds to. Pie charts are easy to understand because most people will have seen them before, know what they mean and know how to read them. F1 can therefore also be shown to the patient when explaining their current level of activity. F3 is a bubble chart, most people will not have seen this type of chart before and it is not as intuitive as F1. The physiotherapists like the chart because it can be used to see intervals of activity, for example the longest walk a patient took during a day. This type of graph would most likely not be shown to the patients as most of them would not understand it. F3 could be used in communication with nursing homes and home care personnel, for example if the patient needs to be walking for longer periods of time not just in small intervals. 
+The aggregated charts sum up the day to show the distribution of different types of activity. Initially there were three types of aggregated charts: F1, F2 and F3. F1 and F2 were combined for the second prototype to become a standard pie chart with three slices, one for each activity type. The pie chart also contains illustrations that show what type of activity each slice corresponds to. Pie charts are easy to understand because most people will have seen them before, know what they mean and know how to read them. F1 can therefore also be shown to the patient when explaining their current level of activity. 
+
+F3 is a bubble chart, most people will not have seen this type of chart before and it is not as intuitive as F1. The physiotherapists like the chart because it can be used to see intervals of activity, for example the longest walk a patient took during a day. This type of graph would most likely not be shown to the patients as most of them would not understand it. F3 could be used in communication with nursing homes and home care personnel, for example if the patient needs to be walking for longer periods of time not just in small intervals. 
 
 \begin{figure}[h!]
   \centering
   \begin{subfigure}[b]{1\textwidth}
     \centering
-    \includegraphics[width=0.5\textwidth]{f1First.png}
+    \includegraphics[width=0.6\textwidth]{f1First.png}
     \caption{F1 in prototype 1.}
   \end{subfigure}
   \\
@@ -209,7 +217,7 @@ Timeline charts show the activity during the day continuously or in aggregated b
   \label{fig:tComparison}
 \end{figure} 
 
-Though the T1 is not very hard to understand,  but it requires high cognitive capability than U1 and F1, therefore it could most likely only be displayed to the more cognitively capable patients. Another issue with T1 is that the gradient colours it uses do not translate well when printed. T5 was created for the second prototype and like T1 divides the day into 24 blocks, but instead of using gradient to display the distribution of activity stacked bars are used. This visualization is also similar to the chart used in the activPAL software, but in T5 seated or lying activity is not displayed with bars, this increases the readability of the graph. Despite this T1 was still the favourite because it is easier to stack days on top of each other when using gradient colouring instead of stack bars to represent activity within an hour. One benefit of T5 compared to T1 is that is works much better when printed, as it does not rely on a colour scale.
+T1 is not very hard to understand, but requires higher cognitive capabilities than U1 and F1, therefore it could most likely only be displayed to the more cognitively capable patients. Another issue with T1 is that the gradient colours it uses do not translate well when printed. T5 was created for the second prototype and like T1 divides the day into 24 blocks, but instead of using gradient to display the distribution of activity stacked bars are used. This visualization is also similar to the chart used in the activPAL software, but in T5 seated or lying activity is not displayed with bars, this increases the readability of the graph. Despite this T1 was still the favourite because it is easier to stack days on top of each other when using gradient colouring instead of stack bars to represent activity within an hour. One benefit of T5 compared to T1 is that is works much better when printed, as it does not rely on a colour scale.
 
 For the second prototype personal and national goals were added. This addition was heavily requested by the physiotherapists after the first focus group. To show how the patient's activity compared to the goals that had been set, a visualization called goal circles was created. As the name suggests the visualization uses circles to display how far the patient is from reaching the goal or how far they have exceeded it. The goal circles were appended to each day of T1 and T5. The participants of the second focus group did not like this, and felt that the goal circles should have been its own visualization, used only to see if the patient were reaching the goals set. The goal circles are also intuitive and easy to understand, and they could be shown to some patients. An issue with the goal circles is that they do not display the currently set goals, all graphs using the goals should display what the current goals are set to. Goals are an important motivational factor when patients are attempting to become more active.
 
