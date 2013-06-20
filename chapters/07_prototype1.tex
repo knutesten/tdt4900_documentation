@@ -17,6 +17,8 @@ Before starting the implementation of the system we created a set of paper sketc
 \subsection{Overview charts}
 Getting an overview of the week as a whole can be useful as an introduction. By looking at an overview the user can quickly identify bad days that can then be investigated further. In other words these visualizations address the weekly overview requirement IR-1. They can also be used as the top level of an interactive application. Each day could then be clicked to show either a timeline or pie chart.
 
+The overview charts mainly focus on two type of visual variables (as described in Section~\ref{sec:visualVarables}): Position and size. If we look at Figure~\ref{fig:smileyWeek}, we see that the horizontal position of elements is used to illustrate how the day was classified. The close proximity of the elements in each horizontal level, makes us intuitively associate days that are on the same level as being part of a group. The size of each group makes it easy to see which classification has the most amount of days. Since size has a quantitative characteristic we can easily see that the top classification has twice as many days as the middle one, and four times as many as the bottom one.
+
 \subsubsection{Day classification}
 By calculating the overall activity level and classifying the days into three categories the physiotherapist can easily see which days a patient needs to be more active and which days the activity level is satisfactory. In our sketch, (see Figure \ref{fig:smileyWeek}, the three different classifications are illustrated by smilies (smiling face for active days, and sad face for inactive days).
 
@@ -27,7 +29,7 @@ By calculating the overall activity level and classifying the days into three ca
 		\label{fig:smileyWeek}
 \end{figure}
 
-A more complex version of the above chart, see Figure \ref{fig:detailedWeek} is to show a square for each hour, while still using the same classification into sad and happy smilies. Each day square contains 24 smaller squares that represent each hour of the day. The small hour squares are coloured with a gradient to show the activity level for that hour. With this chart the user can get an overview of the week as a whole, and identify what hours of the inactive days had the most sedentary behaviour. It also lets the user compare hours from multiple days as stated in requirement IR-4.
+A more complex version of the above chart, see Figure~\ref{fig:detailedWeek} is to show a square for each hour, while still using the same classification into sad and happy smilies. Each day square contains 24 smaller squares that represent each hour of the day. The small hour squares are coloured with a gradient to show the activity level for that hour. With this chart the user can get an overview of the week as a whole, and identify what hours of the inactive days had the most sedentary behaviour. It also lets the user compare hours from multiple days as stated in requirement IR-4.
 
 \begin{figure}[h!]
 	\centering
@@ -38,6 +40,8 @@ A more complex version of the above chart, see Figure \ref{fig:detailedWeek} is 
 
 \subsection{Aggregated charts}
 These type of charts show the sum of time spent sedentary, standing, and walking. Summing over the three classifications makes it easy to get an overview of the day as a whole. The drawback is that details are lost and it is not possible to pinpoint when each activity occurred during the day. Aggregated charts were created to cover the summary of daily activity requirement, IR-2. Aggregated charts can be used to get a general overview of the daily activity before spending time looking at more detailed visualizations. Additionally it can serve as an alert for patients with low activity levels, where the majority of the chart would be filled with inactivity.
+
+Aggregated charts make use of two visual variables: Size and colour. The quantitative characteristic of size is used to determine the amount of each type of activity. For example for a pie chart, looking at the size of the pie slices we can quickly see how the different activity types compare to each other. The selective characteristics of colour is used to separate the different types of activity from each other. Since there are only three different type of activity, it is easy to distinguish between the different colours. 
 
 \subsubsection{Pie chart}
 The pie chart is a standard way of showing the amount of time spent in each activity state. Due to the familiarity of the pie chart it will be easy to understand for both users and patients. A legend shows which colour represents each type of activity. The exact percentage for each activity state is also displayed.
@@ -53,7 +57,7 @@ A more symbolic approach (see Figure~\ref{fig:symbolicPie}) is to remove the leg
 \end{figure}
 
 \subsubsection{Ball chart}
-An alternative to the previous aggregated charts is to include more detail into a pie chart style, by using balls instead of normal pie slices. The balls are colour coded so that each colour reflects an activity state, while the size of the ball represent the continuous amount of time spent in the corresponding state. Each ball represents an interval of one of the classifications, so that many balls of one colour both represents the amount of that behaviour and shows how long each period of that behaviour was. This can also be used to identify if a user is active during the night, which is requirement IR-7. Figure~\ref{fig:ballChart} shows an example of such a graph. The benefit with this type of graph is that one can easily identify long periods of sedentary behaviour. Taking small breaks with movement can help ``split up'' those balls, which is beneficial for ones health. By adding interactivity to the chart the user can select each ball and see what time it corresponds to. Overall the chart allows for the large balls to be easily spotted and efficiently discovery when the incident occurred.
+An alternative to the previous aggregated charts is to include more detail into a pie chart style, by using balls instead of normal pie slices. The balls are colour coded so that each colour reflects an activity state, while the sikze of the ball represent the continuous amount of time spent in the corresponding state. Each ball represents an interval of one of the classifications, so that many balls of one colour both represents the amount of that behaviour and shows how long each period of that behaviour was. This can also be used to identify if a user is active during the night, which is requirement IR-7. Figure~\ref{fig:ballChart} shows an example of such a graph. The benefit with this type of graph is that one can easily identify long periods of sedentary behaviour. Taking small breaks with movement can help ``split up'' those balls, which is beneficial for ones health. By adding interactivity to the chart the user can select each ball and see what time it corresponds to. Overall the chart allows for the large balls to be easily spotted and efficiently discovery when the incident occurred.
 
 \begin{figure}[h!]
 	\centering
@@ -64,6 +68,8 @@ An alternative to the previous aggregated charts is to include more detail into 
 
 \subsection{Timeline charts}
 Timeline visualisations are effective at illustrating when various activities occurred during the day. Timelines use a long horizontal bar that has different colours for different behavioural classification. These visualizations primarily address requirements IR-3, IR-4, IR-5 and IR-6, which state the need to show and compare minutes and hours during the day. Timeline charts can also be used to identify patients that are active during the night, which is requirement IR-7.
+
+The timelines we sketched all make use of the visual variable position. The position either on a rectangle or on a circle, represents what time of the day activity occurred. Continuous timelines, as seen in Figure~\ref{fig:clocks12}, make use of the selective characteristic of colours to show what type of activity occurred at any point of the day. The blocked timeline, as seen in Figure~\ref{fig:timelineBlocks}, makes use of the visual variable value to convey the amount of activity for each respective hour of the day. Since value can be ordered, it is easy to see which hours have activity, and that one hour has more activity than another. Value is not qualitative however, so finding one hour with twice as much activity as another is difficult.
 
 \subsubsection{Continuous}
 One approach to this visualization type is to create a continuous timeline that contains every little detail of activity. The continuous timeline is useful for quickly identifying periods of the day with unsatisfactory behaviour, but the detail can also be distracting and make it hard to read the diagram.
