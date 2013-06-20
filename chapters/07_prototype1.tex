@@ -9,7 +9,8 @@ It is possible to display raw accelerometer data or provide event based data whe
 
 For the purpose of our thesis the event based \gls{csv} was the most suited format for the type of information we would need to create visualizations. Before feeding the data to our visualizations the system parses the data into more suitable data structures. activPAL is not a key part of our prototype, we chose this sensor because it had been proven trustworthy in other research, and was easy to acquire. Other sensor can be used as long as the data has the correct data format.
 
-% REVIEW, I NEED IT.
+\clearpage
+
 \section{Paper Sketches}
 \label{sec:paperSketches}
 Before starting the implementation of the system we created a set of paper sketches of the visualizations that we planned to implement. These were our first ideas on the visualizations that would fulfil the initial requirements efficiently, while providing several alternatives to choose from.
@@ -59,6 +60,7 @@ A more symbolic approach (see Figure~\ref{fig:symbolicPie}) is to remove the leg
 \subsubsection{Ball chart}
 An alternative to the previous aggregated charts is to include more detail into a pie chart style, by using balls instead of normal pie slices. The balls are colour coded so that each colour reflects an activity state, while the sikze of the ball represent the continuous amount of time spent in the corresponding state. Each ball represents an interval of one of the classifications, so that many balls of one colour both represents the amount of that behaviour and shows how long each period of that behaviour was. This can also be used to identify if a user is active during the night, which is requirement IR-7. Figure~\ref{fig:ballChart} shows an example of such a graph. The benefit with this type of graph is that one can easily identify long periods of sedentary behaviour. Taking small breaks with movement can help ``split up'' those balls, which is beneficial for ones health. By adding interactivity to the chart the user can select each ball and see what time it corresponds to. Overall the chart allows for the large balls to be easily spotted and efficiently discovery when the incident occurred.
 
+
 \begin{figure}[h!]
 	\centering
 		\includegraphics[width=0.7\textwidth]{ballChart.png}
@@ -87,14 +89,16 @@ Instead of having a continuous scale, a blocked approach can be used, as seen in
 \subsubsection{Clock}
 A timeline may need some explanation before the user understands it properly. By creating two clocks instead of a long horizontal bar the user can more intuitively understand what the visualization is presenting. Since a clock has only 12 hours, two clocks are created to represent the entire day. To make it easier to identify day and night, a descriptive background is necessary, see Figure \ref{fig:clock12}.
 
-\begin{figure}[h!]
+Another approach is to use one 24 hour clock. This makes it easier to see the transition between AM and PM, but 24 hour clocks are not natural, so it might be problematic for the user to understand.
+
+\clearpage
+
+\begin{figure}[t]
 	\centering
 		\includegraphics[width=0.7\textwidth]{clock12Sketch.png}
 		\caption[T3 sketch]{Two 12 hour clocks show the activity of the day.}
 		\label{fig:clock12}
 \end{figure}
-
-Another approach is to use one 24 hour clock. This makes it easier to see the transition between AM and PM, but 24 hour clocks are not natural, so it might be problematic for the user to understand.
 
 \section{Programming Framework}
 The task was to create custom visualizations from data gathered by the activPAL sensor. The choice of programming tools fell on HTML5 and an open source JavaScript framework called D3js.
@@ -146,7 +150,9 @@ Nine of the paper sketches were selected for implementation, so they could be pr
 
 The two diagrams U1 and U2 (see Figure~\ref{fig:uFirst}) are overview charts. These are designed to give a quick overview of the week. U2 experiments with adding more detail, and contains 24 small squares for each day that represent the activity of each hour. Holding the mouse cursor over a day in U1 will show the percentage of each type of activity for that day. Holding the mouse cursor over a square in U2 will show the percentage of each type of activity for the hour that the square represents. These diagrams satisfy requirement IR-1, which states that the visualizations should give an overview of the week. U2 also shows the hourly activity level for each day, meaning patients that are active during the night can be identified, and lets the user compare hours from multiple days as stated in requirement IR-7, IR-3, and IR-4. 
 
-\begin{figure}[h!]
+\clearpage
+
+\begin{figure}[t]
   \centering
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
@@ -164,7 +170,10 @@ The two diagrams U1 and U2 (see Figure~\ref{fig:uFirst}) are overview charts. Th
 
 Diagrams F1, F2 and F3 (see Figure~\ref{fig:fFirst}) are the aggregated charts. These diagrams shows the fraction of each type of activity for a day, requirement IR-2. F1 and F2 are similar, F1 is a standard pie diagram while F2 uses boxes with figures describing the activity. F1 and F2 has two types of view modes: one day or the entire week. F3 is more complex, this diagram shows each interval of activity as a ball. Long intervals of activity are represented by a larger ball than small intervals of activity. This graph can therefore be used both to see the distribution of the different activity types and, more importantly, the length of continuous activity, or sedentary behaviour. This is useful for identifying if the patient has very long periods of sedentary behaviour, or if the patient walks continuously for a long time. Holding the mouse cursor over a ball shows the time on which the activity interval occurred as well as the length of the interval. This enables the user to see if patients are active during the night as stated in requirement IR-7. F3 also offers a highlighting mode, where sedentary intervals longer than one hour are highlighted. 
 
-\begin{figure}[h!]
+
+\clearpage
+
+\begin{figure}[t]
   \centering
   \begin{subfigure}[b]{0.45\textwidth}
     \centering
