@@ -155,9 +155,59 @@ The final research question is concerned with visualizations and states:
 
 During the creation of the first paper sketches we created three groups of visualizations: overview charts, aggregated charts and timeline charts. The overview charts were designed to let the user to quickly get an overview of the week as a whole. For the first prototype two such overviews were created, U1 and U2. U2 was quickly discarded because it contained too many details which only confused the participants of the first focus group. U1 was kept in the second prototype and received positive feedback by the participants in the second focus group. U1 uses personal or national goals to classify each day into one of three categories. Making U1 very easy to understand, and one of the physiotherapists stated that because it was so easy to understand this might be one of the visualizations that would be shown to the patients. The visualization also works well for printouts, both colour and grayscale. To further improve U1 an indication as to what the current goal is set to should be added, such information would help the physiotherapist and patient understand what the different classifications correspond to.
 
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.49\textwidth}
+    \centering
+    \includegraphics[width=0.5\textwidth]{u1First.png}
+    \caption{\footnotesize U1 in prototype 1.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.29\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{u1Second.png}
+    \caption{\footnotesize U1 in prototype 2.}
+  \end{subfigure} 
+  \caption{Two versions U1}
+  \label{fig:uComparison}
+\end{figure}
+
 The aggregated charts sum up the day to show the distribution of different types of activity. Initially there were three types of aggregated charts: F1, F2 and F3. F1 and F2 were combined for the second prototype to become a standard pie chart with three slices, one for each activity type. The pie chart also contains illustrations that show what type of activity each slice corresponds to. Pie charts are easy to understand because most people will have seen them before, know what they mean and know how to read them. F1 can therefore also be shown to the patient when explaining their current level of activity. F3 is a bubble chart, most people will not have seen this type of chart before and it is not as intuitive as F1. The physiotherapists like the chart because it can be used to see intervals of activity, for example the longest walk a patient took during a day. This type of graph would most likely not be shown to the patients as most of them would not understand it. F3 could be used in communication with nursing homes and home care personnel, for example if the patient needs to be walking for longer periods of time not just in small intervals. 
 
-Timeline charts show the activity during the day continuously or in aggregated blocks. Four timeline charts were initially created: T1, T2, T3 and T4. T2, T3 and T4 showed activity during the day minute for minute without aggregating it into hours. These visualizations were discarded because the physiotherapists felt that the amount of detail was unnecessary and only made the visualizations harder to read and less useful. T1 uses 24 blocks where the activity of each hour were aggregated and displayed using a gradient. T1 was the preferred graph, as it was easy to get an overview of the day as a whole, as well as the entire week by stacking multiple days on top of each other. This meant that the physiotherapists could easily get an overview of the overall activity pattern of the patient. This made it easy to find inactive hours where the patient could be motivated to do exercises or move around. Noticing patients who are active during the night is also easy due to the way hours with activity gain increase in colour intensity. During the focus group one of the physiotherapists told us that a common problem for elderly patients is that they can not sleep and therefore walk around during the night, leading to less activity during the day. Such patterns can easily be detected using T1, as an example we were able to see from the example data that the patient would walk for a few minutes most nights at 4 am, probably to go to the toilet. 
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{1\textwidth}
+    \centering
+    \includegraphics[width=0.5\textwidth]{f1First.png}
+    \caption{\footnotesize F1 in prototype 1.}
+  \end{subfigure}
+  \\
+  \begin{subfigure}[b]{0.6\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{f1Second.png}
+    \caption{\footnotesize F1 in prototype 2.}
+  \end{subfigure} 
+  \caption{Two versions F1}
+  \label{fig:fComparison}
+\end{figure} 
+
+Timeline charts show the activity during the day continuously or in aggregated blocks. Four timeline charts were initially created: T1, T2, T3 and T4. T2, T3 and T4 showed activity during the day minute for minute without aggregating it into hours. These visualizations were discarded because the physiotherapists felt that the amount of detail was unnecessary and only made the visualizations harder to read and less useful. T1 uses 24 blocks where the activity of each hour were aggregated and displayed using a gradient. T1 was the preferred graph, as it was easy to get an overview of the day as a whole, as well as the entire week by stacking multiple days on top of each other. This meant that the physiotherapists could easily get an overview of the overall activity pattern of the patient. This made it easy to find inactive hours where the patient could be motivated to do exercises or move around. Noticing patients who are active during the night is also easy due to the way hours with activity gain increase in colour intensity. During the focus group one of the physiotherapists told us that a common problem for elderly patients is that they can not sleep and therefore walk around during the night, leading to less activity during the day. Such patterns can easily be detected using T1, as an example we were able to see from the example data that the patient would walk for a few minutes most nights at 4 am, probably to go to the toilet.
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{1\textwidth}
+    \centering
+    \includegraphics[width=0.5\textwidth]{t1FirstWeek.png}
+    \caption{\footnotesize T1 week view in prototype 1.}
+  \end{subfigure}
+  \\
+  \begin{subfigure}[b]{0.6\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{t1SecondWeek.png}
+    \caption{\footnotesize T1 week view in prototype 2.}
+  \end{subfigure} 
+  \caption{Two versions T1}
+  \label{fig:tComparison}
+\end{figure} 
 
 Though the T1 is not very hard to understand,  but it requires high cognitive capability than U1 and F1, therefore it could most likely only be displayed to the more cognitively capable patients. Another issue with T1 is that the gradient colours it uses do not translate well when printed. T5 was created for the second prototype and like T1 divides the day into 24 blocks, but instead of using gradient to display the distribution of activity stacked bars are used. This visualization is also similar to the chart used in the activPAL software, but in T5 seated or lying activity is not displayed with bars, this increases the readability of the graph. Despite this T1 was still the favourite because it is easier to stack days on top of each other when using gradient colouring instead of stack bars to represent activity within an hour. One benefit of T5 compared to T1 is that is works much better when printed, as it does not rely on a colour scale.
 
