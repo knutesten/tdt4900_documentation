@@ -5,7 +5,6 @@ The primary purpose of the first focus group was to receive feedback on the visu
 \section{Participants}
 The focus group session consisted of five physiotherapists who were all employed at Trondheim Kommune (municipality of Trondheim) physiotherapy department, but are responsible for different districts within the municipal. We had originally invited six, but one of them could not make it due to a sudden conflict in their schedule. Their work involves visiting patients that are too old or unable to show up at a regular physiotherapist for other reasons. Four of the participants were female and the last one was male, and the ages were primarily between 34 and 36, with one participant being 46. The participants represented a portion of potential users, but no patients were present.
 
-\clearpage
 \section{Location and Process}
 The session was held in a meeting room at St. Olav's Hospital. The participants were seated together around a table facing a live demonstration of the visualizations that was controlled by the assistant moderator. The primary moderator was responsible for conducting the session, providing explanations, and asking questions while not influencing the participants. Video recordings were made of the entire session, so that the participants feedback could be viewed at a later time. The entire session lasted for two hours including a ten minute break.
 
@@ -25,7 +24,7 @@ The opening questions were used to get an idea of the participants familiarity w
 
 After the opening questions the visualizations were presented one by one. In general each visualization was reviewed before the next one was shown, but we did switch between visualizations when this was relevant for comparison or requested by the participants. A few questions were prepared for each visualization to ensure a nice flow in the discussion.
 
-One the review of the visualizations was concluded the participants were allowed to take a short break. During the break we explained about the technical aspects of the project in more detail as well as showing the participants another data set than the one used under the review phase. %Skal vi skrive noe om at vi viste dataen vår som et alternativ og det fikk dem til å åpne mer?
+Once the review of the visualizations was concluded the participants were allowed to take a short break. During the break we explained about the technical aspects of the project in more detail as well as showing the participants another data set than the one used under the review phase. %Skal vi skrive noe om at vi viste dataen vår som et alternativ og det fikk dem til å åpne mer?
 
 Next, the participants were asked to discuss how they would create the perfect visualizations for their practice. Afterwards the drawings were discussed and reviewed by the other physiotherapists. When this was completed, we discussed some of our findings to clarify if we had interpreted the participants correctly.
 
@@ -50,11 +49,8 @@ The first part of the focus group session was used for discussing how the techno
 \end{table}
 
 \subsection{Requirements}
-Analysing the discussion and feedback on the visualizations, we revised the initial requirements and created a new set of requirements to be used at the second focus group. The new requirements were divided into the functional requirements and user experience requirements shown in Table~\ref{tab:functionalReqFirstFocus} and Table~\ref{tab:uxReqFirstFocus}. 
+Analysing the discussion and feedback on the visualizations, we revised the initial requirements and created a new set of requirements to be used for the second prototype. The new requirements were divided into the functional requirements and user experience requirements shown in Table~\ref{tab:functionalReqFirstFocus} and Table~\ref{tab:uxReqFirstFocus}. 
 
-
-\subsection{Visualizations}
-A large part of the focus group session was used to review the visualizations from prototype 1. Each visualization was reviewed one at a time, and the participants gave positive and negative feedback. We will now go through the most important parts of the feedback for each visualization group.
 
 \clearpage
 \begin{table}[t]
@@ -70,7 +66,7 @@ A large part of the focus group session was used to review the visualizations fr
       R1-5 & make it easy to identify hours of the day where activity can be added \\ \hline
       R1-6 & show the activity level compared to national or personal goals \\ \hline
       R1-7 & let the user identify patients that are active during the night \\ \hline
-      R1-8 & let the user compare two separate weeks to see the patients progress \\ \hline
+      R1-8 & let the user compare two separate weeks to see the patient's progress \\ \hline
       R1-9 & be printable in grayscale \\ \hline
   \end{tabular}
   \end{center}
@@ -84,8 +80,8 @@ A large part of the focus group session was used to review the visualizations fr
     \hline
       \textbf{Id} & \textbf{Requirement} \\ \hline
     \multicolumn{2}{|l|}{The visualizations should \ldots} \\ \hline
-      R1-10 & not be judgemental towards the patients activity level \\ \hline
-      R1-11 & be honest about the patients activity level \\ \hline
+      R1-10 & not be judgemental towards the patient's activity level \\ \hline
+      R1-11 & be honest about the patient's activity level \\ \hline
       R1-12 & motivate the patient to be more active \\ \hline
       R1-13 & be intuitive and easy to understand for the user \\ \hline
       R1-14 & be easy to explain to the patient \\ \hline
@@ -94,6 +90,9 @@ A large part of the focus group session was used to review the visualizations fr
   \caption[User experience requirements after the first focus group.]{User experience requirements from the first focus group.}
   \label{tab:uxReqFirstFocus}
 \end{table}
+
+\subsection{Visualizations}
+A large part of the focus group session was used to review the visualizations from prototype 1. Each visualization was reviewed one at a time, and the participants gave positive and negative feedback. We will now go through the most important parts of the feedback for each visualization group.
 
 \subsubsection{Overview charts}
 U1 was generally well received as a good way to get an overview of the week. There was some confusion as to how the days were classified, and it was suggested that one should be able to set custom goals to be used in the classification. One of the participants stated that the use of sad smilies would be judgemental toward the current activity level of the patient. Because a lot of the patients that receive help from physiotherapists have a low level of activity it was a fear that all days would be classified as sad smilies reducing the motivation of the patient. Using colours instead of smilies was suggested.
@@ -105,22 +104,22 @@ In general the participants liked the idea of an overview chart. Classifying the
 \subsubsection{Aggregated charts}
 F1 was seen as easy to understand because of the familiarity of pie charts. Several of the participants did not like the fact that nighttime was added because the patients are supposed to be inactive during the night and the chart gave an unnecessary bad impression of the day as a whole. It was also perceived as hard to separate good and bad days because the percentage of activity always remained very small compared to inactivity. They liked the ability to see the entire week at once.
 
-F2 was not as well liked as F1. Though the participants like the figures that illustrated the different types of activity, they did not like the box approach for visualizing the percentages. The participants thought it was easier to see the distribution using the pie chart compared to the box chart. One of the participants suggested adding the illustrations to the pie chart. Also here the participants wanted to remove nighttime.
+F2 was not as well liked as F1. Though the participants like the figures that illustrated the different types of activity, they did not like the box approach for visualizing the percentages. The participants thought it was easier to see the distribution using the pie chart compared to the box chart. One of the participants suggested adding the illustrations to the pie chart. The participants wanted to remove nighttime for this chart also.
 
 The participants were positive to F3, the ball chart. They liked the fact that the visualizations showed the length of the intervals. Some participants wanted nighttime to be removed, while others felt that it was interesting to see if a patient walked during the night. The participants agreed that this type of visualization is too complex to be show to patients, however it could be shown to other health care personnel. The highlighting functionality was perceived as redundant, since it was already easy to identify the largest periods of inactivity.
 
-The participants felt the F2, box chart, was hard to understand. They liked the illustrations of the F2 and wanted to add them to F1, the pie chart. There should be an option to see the entire week simultaneously. F3 was a good way to get an overview of the length of activity intervals. Highlighting was not needed for F3.
+The participants felt the F2, box chart, was hard to understand. They liked the illustrations of the F2 and wanted to add them to F1, the pie chart. There should be an option to see the entire week simultaneously. F3 was a good way to get an overview of the length of activity intervals. Highlighting was not needed for F3. Nighttime should be removed from the dataset.
 
 \subsubsection{Timeline and clock charts}
-T1, blocked timeline, was very well received by the participants, especially in week view. The participants praised the ability to easily see the patients habits. It was also stated that nighttime no longer got a negative impact on the visualization because it could easily identified and ignored. One of the participants liked to have the ability to see if the patient was awake during the night (in the example data one can see the 10 minutes of activity at 4 AM). The participants stated that it was very easy to get a quick and detailed overview of the entire week, and it was easy to identify hours where more activity could be added. The participants suggested using different type of colours to make the gradient clearer.
+T1, blocked timeline, was very well received by the participants, especially in week view. The participants praised the ability to easily see the patients habits. It was also stated that nighttime no longer got a negative impact on the visualization because it could easily be identified and ignored. One of the participants liked to have the ability to see if the patient was awake during the night (in the example data one can see the 10 minutes of activity at 4 AM). The participants stated that it was very easy to get a quick and detailed overview of the entire week, and it was easy to identify hours where more activity could be added. The participants suggested using different type of colours to make the gradient clearer.
 
-T2 was not well received. The participants felt that the red colour, representing inactivity, was way to dominating. The periods of activity were hidden by all the red. They also stated that it was hard to see periods of walking activity, because they were hidden by all the green and yellow (standing activity). When asked about the need for more detail, the participants answered that it was not useful with greater detail than the 24 hour blocks provided in T1.
+T2 was not well received. The participants felt that the red colour, representing inactivity, was way to dominating. The periods of activity were hidden by all the red. They also stated that it was hard to see periods of walking activity, because they were hidden by all the red and yellow (standing activity). When asked about the need for more detail, the participants answered that it was not useful with greater detail than the 24 hour blocks provided in T1.
 
 T3 displayed two clocks instead of a timeline. The participants did not like this visualization. They felt it was hard to identify when different events were occurring. They also stated that it was hard to compare multiple days because the circles could not be placed directly below each other like the timelines.
 
 T4 was better received than T3. Some of the participants felt it was confusing that the clock had 24 hours. It was also expressed concern that the red portions representing inactivity stood out too much, making it hard to see the periods of activity. Also it was seen as hard to compare multiple days.
 
-The participants liked T1 because it was easy to get an overview for both the day and week. The participants felt that there was no point in providing greater detail then 24 hour blocks. T2, T3 and T4 was seen as too hard to read, both because it was too detailed and because the active periods were buried by periods of inactivity.
+The participants liked T1 because it was easy to get an overview for both the day and week. The participants felt that there was no point in providing greater detail than 24 hour blocks. T2, T3 and T4 was seen as too hard to read, both because it was too detailed and because the active periods were buried by periods of inactivity.
 
 \subsection{Colours and Printouts}
 The participants were critical to some of the colour choices used in the visualizations. Several of the participants were critical to the use of red to represent a sedentary position, because the colour became too dominant which might demotivate patients. Several participants also complained that it was hard to see the gradient colours in T1. When the participants were shown the same visualization on a laptop instead of the projector, they saw the gradient much better. For visualizations utilizing gradients it is important to test the screen quality before they are used. Otherwise the diagram might be misinterpreted. 
