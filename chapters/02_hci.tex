@@ -3,7 +3,7 @@
 This chapter contains guidelines, best practices and theoretical information on how HCI research and development should be conducted. ISO 9241-210 is explained, before various techniques for information visualizations are presented. The remainder of the chapter is dedicated to research methods used to answer the research questions posed in Section~\ref{sec:researchQuestions}.
 
 \section{HCI and Human-Centred Design.}
-The science of \gls{hci} studies the interaction between humans and computers. The goal is to make this interaction as smooth and seamless as possible. Research done in the \gls{hci}-field has resulted in guidelines and design methods for the creation of efficient and usable software. An example of such a set of guidelines is ISO 9241-210 \cite{iso9241}.
+The science of \gls{hci} studies the interaction between humans and computers. The goal is to make this interaction as smooth and seamless as possible. Research done in the \gls{hci}-field has resulted in guidelines and design methods for the creation of efficient and usable software. An example of such guidelines is ISO 9241-210 \cite{iso9241}.
 
 ISO 9241-210 provides guidance and acts as a usability standard for \gls{hci} through the entire life cycle of an interactive system. The ISO takes a human-centred design approach to interactive system development. According to the ISO the aim of human-centred design is to make systems usable and useful by focusing on the users, their needs and requirements, and by applying human factors and usability knowledge and techniques.  
 
@@ -11,7 +11,7 @@ The standard describes six key principles, as listed below:
 \begin{enumerate}[noitemsep]
   \item Users are involved throughout design and development.
   \item The design team consists of members with varied backgrounds
-  \item The design is based upon an understanding of users, tasks and environments.
+  \item The design is based upon an understanding of users, tasks, and environment.
   \item The design is driven and refined by user centred evaluation.
   \item The process iterative.
   \item The design addresses the whole user experience.
@@ -72,7 +72,7 @@ One important factor to consider when creating visualizations are which visual v
   \begin{tabular}{|l|p{10cm}|}
       \hline
       Selective   & Will a change in this variable make it easier to select it from a group of variables? \\ \hline
-        Associative & Will changes in variables make us able to distinguish different groups of variables? \\ \hline 
+        Associative & Will changes in variables make it easy to distinguish different groups of variables? \\ \hline 
         Qualitative & Can the visual variable be used to illustrate the numerical value and relationship between variables? \\ \hline
         Order       & Will changes in the visual variables allow us to order them? \\ \hline
         Length      & How many changes is it possible to distinguish between for this type of variable? \\ \hline
@@ -91,12 +91,12 @@ Position fulfils all the characteristics of visual variables. When thinking of a
 
 Size fulfils all of the characteristics. It is both selective and associative, humans can easily identify for example the smallest circle in a group of circles. Though size can be used to visualize a numerical value, it is often hard for humans to accurately see how much larger one object is compared to another. Different sizes can easily be ordered. As for the length of this variable Carpendale suggest about five different sizes for selection and about 20 different sizes for distinction. It is important to note that humans can identify small changes in size when objects are close, however when the distance between objects increases, it is hard to distinguish between these differences.
 
-Value can be used both for selection and association. Humans can identify darker parts and group them with ease. It is not quantitative as it is difficult to identify that one tone of grey is twice as dark as another. One can however say that one grey tone is darker than another, and therefore they can ordered. Carpendale suggest that the length of this variable is less than 7 for selection, and about 10 for distinction.
+Value can be used both for selection and association. Humans can identify darker parts and group them with ease. It is not quantitative as it is difficult to identify that one tone of grey is twice as dark as another. One can however say that one grey tone is darker than another, and therefore they can be ordered. Carpendale suggest that the length of this variable should be less than seven for selection, and about ten for distinction.
 
-Colours are selective and associative. Unless the user is colour blind, the user he can easily identify and group different colours. Colours are not quantitative, it is hard for humans to say that one colours is twice that of another. Though we have colour scales, humans do not intuitively order colours, this can easily be illustrated by a question: Which colours is greater, blue or yellow? Most people will not have an answer. Carpendale suggests that one uses less than 7 different colours for selection, and about 10 for distinction.
+Colours are selective and associative. Unless the user is colour blind, the user he can easily identify and group different colours. Colours are not quantitative, as it is hard for humans to say that one colours is twice that of another. Though we have colour scales, humans do not intuitively order colours, this can easily be illustrated by a question: Which colour is greater, blue or yellow? Most people will not have an answer. Carpendale suggests that one uses less than seven different colours for selection, and about ten for distinction.
 
 \subsection{Interactivity}
-One of the benefits of creating visualizations for computers is the ability to add interactivity. Shneidermann mentions 6 tasks that should be implemented when creating information visualizations:
+One of the benefits of creating visualizations for computers is the ability to add interactivity. Shneidermann mentions six tasks that should be implemented when creating information visualizations:
 
 \begin{description}[itemsep=3pt, parsep=0cm]
   \item[Overview] Show an overview of the entire data set.
@@ -107,11 +107,11 @@ One of the benefits of creating visualizations for computers is the ability to a
   \item[Extract] Allow the user to extract a subset of the entire data set.
 \end{description}
 
-The first thing the users should see when interacting with an information visualization is an overview of the data set. This can be done by zooming out and then letting the user zoom in on areas of interest. Another approach is to aggregate the data in separate sections that can then be investigated further.
+The first thing the users should see when interacting with an information visualization is an overview of the data set. This can be done by zooming out and then letting the user zoom in on areas of interest. Another approach is to aggregate the data into separate sections that can then be investigated further.
 
-It is rare that the user is equally interested in every part of the data set, therefore it is useful to be able to zoom in on elements for a more detailed look. It is important to make sure that the user does not loose their sense of position and get lost in the visualization.
+It is rare that the user is equally interested in every part of the data set, therefore it is useful to be able to zoom in on elements for a more detailed look. It is important to make sure that the user does not loose their sense of position and gets lost in the visualization.
 
-Often some of the data in the set is not relevant and only distorts the visualization. In such cases one should be able to filter out those elements. The user should be able to filter out unwanted data using sliders, buttons etc. The update should happen real-time, to allow the user to see how the filter affects the visualization. 
+Often some of the data in the set is not relevant and only distorts the visualization. In such cases one should be able to filter out those elements. The user should be able to filter out unwanted data using sliders, buttons etc. The update should happen in real-time, allowing the user to see how the filter affects the visualization. 
 
 Typically information visualizations hide the numerical data (or other detailed data) behind the element. It is therefore paramount to give the user the ability to access this data when it is needed. The user should be able to select an element or a small group of elements and browse the details in a list or other textual representation.
 
@@ -130,7 +130,7 @@ Interviews are used to acquire knowledge from a subject (interviewee) by asking 
   \item[Structured interviews] have set of predefined questions with fixed wording and are in a pre-set order. It is much like a questionnaire but allows for slightly more open-response questions.
 \end{description}
 
-The ideal choice of structure for an interview depends on the purpose, what questions need to be addressed and how far has the development come? If the goal is to gather first impressions, initial design ideas or information about a particular topic then unstructured interviews are often the best approach. A more structured approach is useful when the goal is to get feedback on particular design features such as the layout of a website. In such cases structured interviews or semi-structured interviews are useful.
+The ideal choice of structure for an interview depends on the purpose, what questions need to be addressed and how far has the development come? If the goal is to gather first impressions, initial design ideas, or information about a particular topic, then unstructured interviews are often the best approach. A more structured approach is useful when the goal is to get feedback on particular design features such as the layout of a website. In such cases structured interviews or semi-structured interviews are useful.
 
 The advantage with interviews is that they are flexible and easy to alter prior or during an interview session. The interviewer gets an immediate response from the subject, and can change accordingly if the interview is not going as planned. Interviews do have drawbacks, often the interview has to be transcribed, which is a time consuming process. Bias might also be present, the subject being interviewed says things he believes the interviewer wants to be hear or neglects to provide information. This might particularly be the case when the interview has gone on for too long and the participant wants it to end \cite{realWorldResearch}.
 
@@ -151,7 +151,7 @@ Brainstorming is a generic technique used to generate, develop and refine ideas.
 A prototype is a realization of a design that stakeholders can interact with and explore. The limitation of a prototype is that it often only focuses on one product characteristic and neglects the others. A prototype can be anything from a complex piece of software to a simple storyboard or sketch. Prototypes serve as an aid by clarifying communication between team members, and efficiently exploring design ideas with stakeholders and designers. Building the prototype itself encourages reflection of the design and is recognized by designers from many disciplines as an important aspect of the design process \cite{interactionDesign}.
 
 \subsection{Low-fidelity vs. High fidelity}
-Low-fidelity prototypes do not resemble the finished product, but only some aspect with it. It often uses completely different and much cheaper materials then the final product, making them cheap, simple and easily modifiable. Examples of such prototypes are storyboards, sketching, and paper prototypes. Low-fidelity prototypes are important in early development stages because the simplicity encourages exploration and modification. The disadvantage is that these prototypes are never kept or integrated into the final product.
+Low-fidelity prototypes do not resemble the finished product, but only some aspect with it. It often uses completely different and much cheaper materials then the final product, making them cheap, simple and easily modifiable. Examples of such prototypes are storyboards, sketches, and paper prototypes. Low-fidelity prototypes are important in early development stages because the simplicity encourages exploration and modification. The disadvantage is that these prototypes are never kept or integrated into the final product.
 
 High-fidelity prototypes are much closer to the final product, and therefore give a much stronger impression of the final product. The high-fidelity prototype is useful for identifying technical issues and selling ideas to people. These prototypes are often reused or developed into a final product, but require more time and resources to create.
 
@@ -159,10 +159,9 @@ Two common compromises that are often traded against each other are breadth of f
 
 \subsection{What do Prototypes Prototype?}
 \label{sec:prototypesPrototype}
-In the article \textit{What do Prototypes Prototype}~\cite{prototypesPrototype}, Houde and Hill discuss how prototypes need to be designed to test or rather prototype a certain design aspect of the final product. The model shown in Figure~\ref{fig:hillTriangle} represents a space which corresponds to important design aspects of an interactive system. Each corner of the triangle represents a set of questions which are essential to the design of a system. \textit{Look and feel} covers questions that concern what the user feels, sees and hears when using the system, in other words the sensory experience. \textit{Role}, as the name states, refers to questions about what role the system has in the users life, what function does it serve and how is it useful to the user. \textit{Implementation} addressed the technical aspects of the system, what techniques and components should be used for it to perform the intended function. The triangle is intentionally skewed to emphasize that no set of questions is more important than the other.
-%WRITE ABOUT HOUD AND HILLS TRIANGLE OF AWESOMNESS http://hci.stanford.edu/courses/cs247/2012/readings/WhatDoPrototypesPrototype.pdf
+In the article \textit{What do Prototypes Prototype}~\cite{prototypesPrototype}, Houde and Hill discuss how prototypes need to be designed to test or rather prototype a certain design aspect of the final product. The model shown in Figure~\ref{fig:hillTriangle} represents a space which corresponds to important design aspects of an interactive system. Each corner of the triangle represents a set of questions which are essential to the design of a system. \textit{Look and feel} covers questions that are concerned with what the user feels, sees and hears when using the system, in other words the sensory experience. \textit{Role}, as the name states, refers to questions about what role the system has in the users life, what function does it serve and how is it useful to the user. \textit{Implementation} addresses the technical aspects of the system, what techniques and components should be used for it to perform the intended function. The triangle is intentionally skewed to emphasize that no set of questions is more important than the other.
 
-The purpose of the model is to help designers separate design issues into the three aforementioned set of questions, which often require very different approaches to prototyping. Look and feel requires the user experience to be created or simulated, implementation requires a running system to be built, and role involves researching the use context for the system. Categorizing the important design questions will help decide what kind of prototype should be built to answer and help focus the exploration.
+The purpose of the model is to help designers separate design issues into the three aforementioned set of questions, which often require very different approaches to prototyping. Look and feel requires the user experience to be created or simulated, implementation requires a running system to be built, and role involves researching the use context for the system. Categorizing the important design questions will help decide what kind of prototype should be built, and help focus the exploration.
 
 \begin{figure}[h!]
 	\centering
@@ -179,7 +178,7 @@ According to Nielsen~\cite{focusGroup}, the focus group should have at least six
 
 A single session may not be representative enough or can get sidetracked, it is therefore important to run more than one focus group. If improvements suggested by participants have been implemented it is important to run another iteration of the focus group with the same participants to attain feedback on the changes that have been made. Enough focus groups have been conducted when new information is no longer being received, i.e. a point of saturation has been reached~\cite{howFocusGroup}. 
 
-Nielsen discusses two pitfalls with focus groups. The first states that because sessions are in groups the users do not test the system themselves, instead they are presented with a demo. The problem with such a demo is that the participants never have to question what to do next or consider the meaning of the screen options. The second problem is that what participants say they want, is not necessarily what they need. The second pitfall is that ideas described by the moderator might be perceived differently by the participants. By providing concrete examples through prototypes of the technology, one can minimize this problem.
+Nielsen discusses two pitfalls with focus groups. The first states that because sessions are in groups the users do not test the system themselves, instead they are presented with a demo. The problem with such a demo is that the participants never have to question what to do next or consider the meaning of the screen options. Another problem is that what participants say they want, is not necessarily what they need. The second pitfall is that ideas described by the moderator might be perceived differently by the participants. By providing concrete examples through prototypes of the technology, one can minimize this problem.
 
 \section{Questionnaire}
 Questionnaires are a research tool that consist of a series of questions with the goal to attain information from the respondent. It is a well established technique for collecting demographic data and user opinion. Questionnaires are similar to interviews in the fact that they can contain both closed and open ended questions. Clear unambiguous questions and allowing efficient data collection is important, especially if a large quantity of questionnaires have been issued. Questionnaires can be used on their own or as an addition to other methods in order to gain background information, or deepen understanding of a particular topic. Below is a short and general guideline provided by Sharp et al.~\cite{interactionDesign} on things to watch out for when creating questionnaires:
@@ -191,11 +190,11 @@ Questionnaires are a research tool that consist of a series of questions with th
   \item Balance must be attained between whitespace and needing to keep the questionnaire as short as possible. Long questionnaires cost more, and might deter people from participating.
 \end{itemize}
 
-The advantage with questionnaires is that they provide a relatively simple and straight forward study, and may be adapted to collect generalized information from almost any human population which means high amounts of data standardization. If the survey is anonymous it can encourage more honesty than another research method would have if sensitive topics are involved. Questionnaires are also relatively cheap to perform compared to the amount of data that is gathered. There are downsides this method of data collection, people might respond in a way that puts them in a good light, and data is affected by the respondents characteristics. Their memory, knowledge, experience and motivation also influence how they answer the survey. If the questionnaire is performed without any kind of monitoring, participants will not be able to ask the researchers about ambiguous questions, which might lead to misunderstandings and biased results.
+The advantage with questionnaires is that they provide a relatively simple and straight forward study, and may be adapted to collect generalized information from almost any human population which means high amounts of data standardization. If the survey is anonymous it can encourage more honesty than another research method would have if sensitive topics are involved. Questionnaires are also relatively cheap to perform compared to the amount of data that is gathered. There are downsides to this method of data collection, people might respond in a way that puts them in a good light, and data is affected by the respondents characteristics. Their memory, knowledge, experience and motivation also influences how they answer the survey. If the questionnaire is performed without any kind of monitoring, participants will not be able to ask the researchers about ambiguous questions, which might lead to misunderstandings and biased results.
 
 \section{Validity of Research Methods}
 \label{subsec:threatsValidity}
-Validity addresses how trustworthy a study or parts of the study are, and to what extent the results are valid. Wohlin et al.~\cite{experimentInSE} provide a well structured overview of various types of validity:
+Validity addresses how trustworthy a study or parts of a study are, and to what extent the results are valid. Wohlin et al.~\cite{experimentInSE} provide a well structured overview of various types of validity:
 \begin{description}
   \item[Construct validity] is concerned with whether the method measures what it is suppose to measure. For example if an interview is conducted and the interviewee interprets the questions differently from the interviewer, there is a threat to validity.
 
@@ -203,7 +202,7 @@ Validity addresses how trustworthy a study or parts of the study are, and to wha
 
   \item[External validity] focuses on finding out to what extent it is possible to generalize the findings, and if they are of interesting to other people outside the investigative case. Generalizing qualitative methods is hard, and requires finding common characteristics and having findings that can be generalized for situations that meet a certain criteria, i.e. defining a theory.
 
-  \item[Reliability] looks at to what extent the data and analysis are depended on the specific research. Good reliability means that if the same study is conducted by a different researcher at a later time, the results should be the same. A questionnaire or interview with unclear questions, or a research report which lack important information on how the research was conducted are examples of threats to reliability.
+  \item[Reliability] looks at to what extent the data and analysis are depended on the specific research. Good reliability means that if the same study is conducted by a different researcher at a later time, the results should be the same. A questionnaire or interview with unclear questions, or a research report that lacks important information on how the research was conducted are examples of threats to reliability.
 \end{description}
 
 %\emph{Ecological Validity} is concerned with how the evaluation method and environment themselves influence and affect the results. If a subject is aware of being observed and the test is conducted outside of their natural surroundings their behaviour and answers will be influenced. 
